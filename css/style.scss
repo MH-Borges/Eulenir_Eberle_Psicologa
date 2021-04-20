@@ -1,0 +1,31 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+body{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+img,svg{
+    display: block;
+    width: 100%;
+}
+.container{
+    position:relative;
+    max-width: 85%;
+}
+@import 'compiler/colors_fonts';
+
+#btn_UP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    text-decoration: none;
+    z-index:998;
+    img{width: 4vw;}
+}
