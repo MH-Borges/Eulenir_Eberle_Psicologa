@@ -1,3 +1,4 @@
+@import 'compiler/colors_fonts';
 *, *::after, *::before{
     padding: 0;
     margin: 0;
@@ -7,6 +8,7 @@ body{
     width: 100%;
     display: flex;
     position: relative;
+    background: $White;
 }
 img,svg{
     display: block;
@@ -16,16 +18,21 @@ img,svg{
     position:relative;
     max-width: 85%;
 }
-@import 'compiler/colors_fonts';
-
 #btn_UP{
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 1vh;
-    right: 1vw;
-    text-decoration: none;
+    bottom: 2.5vw;
+    right: 0;
     z-index:998;
-    img{width: 4vw;}
+    background-color: $Black;
+    border-top-left-radius: 1.5vw;
+    border-bottom-left-radius: 1.5vw;
+    i{
+        color: $White;
+        font-size: 2vw;
+        padding: 1vw 1vw 1vw 1.3vw;
+    }
 }
+@import 'compiler/menu';

@@ -4,23 +4,31 @@
 }
 /*font-family: "Alexander Lettering"*/
 
-$Red:#EA1A1A;
-$Red-light:#FF3D3D;
-$Red-dark:#C90202;
+/*Base Colors*/
+$Brown:#51403F;
+$Green: #94A89D;
+$Green_T: #D0D8CE;
+$Pink: #DDB8B1;
+$Black: #171A18;
+$White:#F9F3F2;
+/*Base Colors*/
 
-$Blue: #0EEBC9;
-$Blue-light:#30FFDF;
-$Blue-dark:#00C9AA;
+/*Light n Shadows*/
+$Brown_light: #735D5C;
+$Brown_dark: #332322;
 
-$Green: #6AEB26;
-$Green-light:#88FF4A;
-$Green-dark:#4BC908;
+$Green_light: #B8CCC1;
+$Green_dark: #678775;
 
-$Black: #323232;
-$Black-light:#4D4D4D;
-$Black-dark: #0F0F0F;
+$Green_T_light: #E3F2DF;
+$Green_T_dark: #9DB897;
 
-$White:#F7F0F0;
-$White-light:#FFF7F7;
-$White-dark:#CCC6C6;
-/*bases*/
+$Pink_light: #F2D4CE;
+$Pink_dark: #BF8C82;
+
+$White_light: #FFFFFF;
+$White_dark: #EEE2DB;
+
+$Black_light: #4B524E;
+$Black_dark: #0A0D0B;
+/*Light n Shadows*/

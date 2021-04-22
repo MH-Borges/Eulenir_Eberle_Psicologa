@@ -1,0 +1,46 @@
+.head{
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: chocolate;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.nav_contato{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    img{
+        position: absolute;
+        top: 0;
+    }
+    .cont_contato{
+        background: coral;
+        display: flex;
+        position: relative;
+        .nav_email{
+            display: flex;
+            background-color: darkcyan;
+            justify-content: center;
+            align-items: center;
+            color: $White;
+            font-size: 1.5vw;
+            font-family: 'Raleway';
+        }
+        .nav_redes{
+            margin-left: auto;
+            background: crimson;
+        }
+    }
+}
