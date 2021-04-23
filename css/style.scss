@@ -8,7 +8,8 @@ body{
     width: 100%;
     display: flex;
     position: relative;
-    background: $White;
+    background: $Green_T;
+    height: 1180vh;
 }
 img,svg{
     display: block;
@@ -31,8 +32,9 @@ img,svg{
     border-bottom-left-radius: 1.5vw;
     i{
         color: $White;
-        font-size: 2vw;
+        font-size: 1.7vw;
         padding: 1vw 1vw 1vw 1.3vw;
     }
 }
 @import 'compiler/menu';
+

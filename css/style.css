@@ -21,7 +21,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background: #F9F3F2;
+  background: #D0D8CE;
+  height: 1180vh;
 }
 
 img, svg {
@@ -55,7 +56,7 @@ img, svg {
 
 #btn_UP i {
   color: #F9F3F2;
-  font-size: 2vw;
+  font-size: 1.7vw;
   padding: 1vw 1vw 1vw 1.3vw;
 }
 
@@ -68,14 +69,13 @@ img, svg {
   width: 100%;
 }
 
-.navbar {
+.head .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   margin: 0;
   padding: 0;
-  background: chocolate;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -85,7 +85,7 @@ img, svg {
   width: 100%;
 }
 
-.nav_contato {
+.head .navbar .nav_contato {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,26 +98,25 @@ img, svg {
           align-items: center;
   width: 100%;
   padding: 0;
+  background: #51403F;
 }
 
-.nav_contato img {
+.head .navbar .nav_contato img {
   position: absolute;
   top: 0;
 }
 
-.nav_contato .cont_contato {
-  background: coral;
+.head .navbar .nav_contato .cont_contato {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-.nav_contato .cont_contato .nav_email {
+.head .navbar .nav_contato .cont_contato .nav_email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: darkcyan;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -125,12 +124,129 @@ img, svg {
       -ms-flex-align: center;
           align-items: center;
   color: #F9F3F2;
-  font-size: 1.5vw;
-  font-family: 'Raleway';
+  font-size: 1vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  padding: 0.25vw 0;
 }
 
-.nav_contato .cont_contato .nav_redes {
+.head .navbar .nav_contato .cont_contato .nav_email i {
+  font-size: 1.3vw;
+  padding: 0.5vw;
+}
+
+.head .navbar .nav_contato .cont_contato .nav_redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
-  background: crimson;
+}
+
+.head .navbar .nav_contato .cont_contato .nav_redes i {
+  font-size: 1.3vw;
+  color: #F9F3F2;
+  padding: 0 0.4vw;
+}
+
+.head .navbar .nav_contato .cont_contato .nav_redes i:hover {
+  color: #94A89D;
+}
+
+.head .navbar .nav_menu {
+  width: 100%;
+  background: #F9F3F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head .navbar .nav_menu .cont_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head .navbar .nav_menu .cont_menu img {
+  width: 42%;
+  margin-left: 1vw;
+  padding: 0.5vw;
+}
+
+.head .navbar .nav_menu .cont_menu .menu_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+  margin: 0 0.8vw 0 auto;
+}
+
+.head .navbar .nav_menu .cont_menu .menu_box li {
+  margin: 0.5vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.1vw;
+}
+
+.head .navbar .nav_menu .cont_menu .menu_box li a {
+  padding: 0.5vw;
+  color: #51403F;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.nav-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  font-family: "Next-Heavy";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.nav-menu ul .BTmenu {
+  margin: 0px 5px;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  -webkit-transition: .6s;
+  transition: .6s;
+  text-decoration: none;
+}
+
+.nav-menu ul .BTmenu.actived {
+  font-size: 1em;
 }
 /*# sourceMappingURL=style.css.map */
