@@ -9,7 +9,7 @@ body{
     display: flex;
     position: relative;
     background: $Green_T;
-    height: 1180vh;
+    flex-wrap: wrap;
 }
 img,svg{
     display: block;
@@ -27,7 +27,7 @@ img,svg{
     bottom: 2.5vw;
     right: 0;
     z-index:998;
-    background-color: $Black;
+    background-color: $Brown;
     border-top-left-radius: 1.5vw;
     border-bottom-left-radius: 1.5vw;
     i{
@@ -37,4 +37,19 @@ img,svg{
     }
 }
 @import 'compiler/menu';
+@import 'compiler/banner';
 
+
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){	
+}
+/* Small Device = 320px */
+@media only screen and (max-width: 479px){
+}

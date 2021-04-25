@@ -2,20 +2,17 @@
 $(window).scroll(function(event){
 
     const efeito = window.pageYOffset;
-    const posicao = 180;
+    const posicao = 160;
     if (efeito > posicao){
-        $(".head").addClass('actived');
-        $(".logo").addClass('actived');
-        $(".logo2").addClass('actived');
-        $(".BTmenu").addClass('actived');
+        $(".nav_contato").addClass('actived');
+        $("#logo").addClass('actived');
     }else{
-        $(".head").removeClass('actived');
-        $(".logo").removeClass('actived');
-        $(".logo2").removeClass('actived');
-        $(".BTmenu").removeClass('actived');
+        $(".nav_contato").removeClass('actived');
+        $("#logo").removeClass('actived');
     }
 });
 
+console.log(event);
 /*Menu escondido effeito*/
 $(document).ready(function(){
     $('.menuHidden').click(function(){

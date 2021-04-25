@@ -1,0 +1,49 @@
+#banner{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: 9.7vw;
+    #ImgBanner{
+        width: 55%;
+    }
+    .Block{
+        background-color: $Green;
+        width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: $White;
+        text-align: center;
+        font-family: 'Raleway';
+        img{
+            position: absolute;
+            height: 100%;
+            left: -26.7vw;
+            width: 60%;
+        }
+        h3{
+            font-size: 4vw;
+            text-transform:uppercase;
+            font-weight: 800;
+            margin-right: 6vw;
+        }
+        p{
+            width: 60%;
+            font-size: 1.4vw;
+            line-height: 1.7vw;
+            margin:2vw 6vw 3.5vw 0;
+        }
+        h1{
+            margin-right: 6vw;
+            font-weight: 700;
+            font-size: 1.6vw;
+        }
+    }
+}
+
+.text{
+    height: 1500px;
+}

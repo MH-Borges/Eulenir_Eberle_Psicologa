@@ -1,5 +1,5 @@
 /*rolamento menu*/ 
-const menuItems = document.querySelectorAll('.menu_box a[href^="#"]');
+const menuItems = document.querySelectorAll('.cont_menu a[href^="#"]');
 menuItems.forEach(item => {item.addEventListener('click', scrollToIdOnClick);});
 function scrollToIdOnClick(event){
     event.preventDefault();

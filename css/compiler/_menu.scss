@@ -19,7 +19,11 @@
             width: 100%;
             padding: 0;
             background: $Brown;
-            img{position: absolute;top: 0;}
+            transition: 0.6s;
+            img{
+                position: absolute;
+                top: 0;
+            }
             .cont_contato{
                 display: flex;
                 position: relative;
@@ -53,6 +57,9 @@
                 }
             }
         }
+        .nav_contato.actived{
+            margin-top: -5vw;
+        }
         .nav_menu{
             width: 100%;
             background: $White;
@@ -60,14 +67,21 @@
             position: relative;
             justify-content: center;
             align-items: center;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
             .cont_menu{
                 display: flex;
                 position: relative;
                 align-items: center;
-                img{
+                #logo{
                     width: 42%;
                     margin-left: 1vw;
                     padding: 0.5vw;
+                    transition: 0.6s;
+                }
+                #logo.actived{
+                    margin-left: -1vw;
+                    width: 35%;
+                    padding: 0vw;
                 }
                 .menu_box{
                     display: flex;
@@ -91,28 +105,4 @@
             }
         }
     }
-}
-
-.nav-menu{
-    display: flex;
-    position: relative;
-    align-items: unset;
-    
-    ul{
-      display: flex;
-      list-style: none;    
-
-      li{
-        font-family: "Next-Heavy";
-        display: flex;
-        position: relative;
-      }
-      .BTmenu{
-        margin: 0px 5px;
-        padding: 10px 15px;
-        font-size: 1.1em;
-        transition: .6s;
-        text-decoration: none;}
-      .BTmenu.actived{	font-size: 1em;}
-  }
 }
