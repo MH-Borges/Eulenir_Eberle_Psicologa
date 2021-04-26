@@ -6,9 +6,11 @@ $(window).scroll(function(event){
     if (efeito > posicao){
         $(".nav_contato").addClass('actived');
         $("#logo").addClass('actived');
+        $(".menu_box").addClass('actived');
     }else{
         $(".nav_contato").removeClass('actived');
         $("#logo").removeClass('actived');
+        $(".menu_box").removeClass('actived');
     }
 });
 

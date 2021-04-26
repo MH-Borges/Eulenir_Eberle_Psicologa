@@ -214,6 +214,8 @@ img, svg {
   text-decoration: none;
   list-style: none;
   margin: 0 0.8vw 0 auto;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .head .navbar .nav_menu .cont_menu .menu_box li {
@@ -229,6 +231,10 @@ img, svg {
   text-decoration: none;
 }
 
+.head .navbar .nav_menu .cont_menu .menu_box.actived {
+  margin-right: -1vw;
+}
+
 #banner {
   width: 100%;
   display: -webkit-box;
@@ -236,6 +242,7 @@ img, svg {
   display: flex;
   position: relative;
   margin-top: 9.7vw;
+  margin-bottom: 7.7vw;
 }
 
 #banner #ImgBanner {
@@ -268,7 +275,7 @@ img, svg {
 #banner .Block img {
   position: absolute;
   height: 100%;
-  left: -26.7vw;
+  left: -26.6vw;
   width: 60%;
 }
 
