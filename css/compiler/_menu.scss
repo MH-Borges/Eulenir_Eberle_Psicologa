@@ -19,7 +19,7 @@
             width: 100%;
             padding: 0;
             background: $Brown;
-            transition: 0.6s;
+            transition: 0.3s ease-in-out;
             img{
                 position: absolute;
                 top: 0;
@@ -76,12 +76,12 @@
                     width: 42%;
                     margin-left: 1vw;
                     padding: 0.5vw;
-                    transition: 0.6s;
+                    transition: 0.3s ease-in-out;
                 }
                 #logo.actived{
                     margin-left: -1vw;
                     width: 35%;
-                    padding: 0vw;
+                    padding: 0.2vw;
                 }
                 .menu_box{
                     display: flex;
@@ -89,18 +89,38 @@
                     text-decoration: none;
                     list-style: none;
                     margin: 0 0.8vw 0 auto;
-                    transition: 0.6s;
+                    transition: 0.3s ease-in-out;
                     li{
                         margin: 0.5vw;
                         font-family: 'Raleway', sans-serif;
                         font-weight: 700;
                         font-size: 1.1vw;
+                        transition: 0.5s ease-in-out;
+                        position: relative;
                         a{
                             padding: 0.5vw;
                             color: $Brown;
                             text-decoration: none;
                         }
-
+                        ::after{
+                            display: block;
+                            content: '';
+                            width: 80%;
+                            height: 0;
+                            background-color: $Brown;
+                            position: absolute;
+                            bottom: -1.5vw;
+                            left:10%;
+                            border-radius: 2vw;
+                            transition: 0.3s ease;
+                        }
+                        &:hover{
+                            a{color: $Black;}
+                            ::after{
+                                height: 0.35vw;
+                                bottom: -0.8vw;
+                            }
+                        }
                     }
                 }
                 .menu_box.actived{

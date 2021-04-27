@@ -2,7 +2,7 @@
 $(window).scroll(function(event){
 
     const efeito = window.pageYOffset;
-    const posicao = 160;
+    const posicao = 320;
     if (efeito > posicao){
         $(".nav_contato").addClass('actived');
         $("#logo").addClass('actived');

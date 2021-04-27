@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Alex_Letter";
-  src: url(../fonts/Alexander_Lettering.ttf);
+  src: url(../fonts/Alexander_Lettering.otf);
 }
 
 /*font-family: "Alexander Lettering"*/
@@ -21,7 +21,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background: #D0D8CE;
+  background: #F9F3F2;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -34,6 +34,30 @@ img, svg {
 .container {
   position: relative;
   max-width: 85%;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 23%;
+}
+
+.title img {
+  position: absolute;
+  z-index: -1;
+}
+
+.title h2 {
+  font-family: "Alex_Letter";
+  font-size: 5.5vw;
+  -webkit-text-stroke: 0.6px #51403F;
+  color: #51403F;
+  margin-left: 1.3vw;
 }
 
 #btn_UP {
@@ -59,6 +83,18 @@ img, svg {
   color: #F9F3F2;
   font-size: 1.7vw;
   padding: 1vw 1vw 1vw 1.3vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #D0D8CE;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94A89D;
 }
 
 .head {
@@ -100,8 +136,8 @@ img, svg {
   width: 100%;
   padding: 0;
   background: #51403F;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .head .navbar .nav_contato img {
@@ -196,14 +232,14 @@ img, svg {
   width: 42%;
   margin-left: 1vw;
   padding: 0.5vw;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .head .navbar .nav_menu .cont_menu #logo.actived {
   margin-left: -1vw;
   width: 35%;
-  padding: 0vw;
+  padding: 0.2vw;
 }
 
 .head .navbar .nav_menu .cont_menu .menu_box {
@@ -214,8 +250,8 @@ img, svg {
   text-decoration: none;
   list-style: none;
   margin: 0 0.8vw 0 auto;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .head .navbar .nav_menu .cont_menu .menu_box li {
@@ -223,12 +259,38 @@ img, svg {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 1.1vw;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  position: relative;
 }
 
 .head .navbar .nav_menu .cont_menu .menu_box li a {
   padding: 0.5vw;
   color: #51403F;
   text-decoration: none;
+}
+
+.head .navbar .nav_menu .cont_menu .menu_box li ::after {
+  display: block;
+  content: '';
+  width: 80%;
+  height: 0;
+  background-color: #51403F;
+  position: absolute;
+  bottom: -1.5vw;
+  left: 10%;
+  border-radius: 2vw;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.head .navbar .nav_menu .cont_menu .menu_box li:hover a {
+  color: #171A18;
+}
+
+.head .navbar .nav_menu .cont_menu .menu_box li:hover ::after {
+  height: 0.35vw;
+  bottom: -0.8vw;
 }
 
 .head .navbar .nav_menu .cont_menu .menu_box.actived {
@@ -241,7 +303,7 @@ img, svg {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-top: 9.7vw;
+  padding-top: 9.7vw;
   margin-bottom: 7.7vw;
 }
 
@@ -299,8 +361,140 @@ img, svg {
   font-size: 1.6vw;
 }
 
-.text {
-  height: 1500px;
+#servicos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  margin-bottom: 100vh;
+}
+
+#servicos #img_serv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#servicos .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#servicos .container p {
+  color: #171A18;
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 1.35vw;
+  margin: 1vw;
+}
+
+#servicos .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin-top: 4.5vw;
+}
+
+#servicos .container .cards a {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  text-decoration: none;
+}
+
+#servicos .container .cards a .Card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#servicos .container .cards a .Card img {
+  width: 58%;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+#servicos .container .cards a .Card h3 {
+  text-align: center;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 1.3vw;
+  color: #51403F;
+  margin-top: 3vw;
+  padding: 0 1vw;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+#servicos .container .cards a :hover img {
+  margin-top: -0.5vw;
+}
+
+#servicos .container .cards a :hover h3 {
+  margin-top: 4vw;
+}
+
+#servicos .container .cards :nth-child(2) .Card img {
+  width: 55%;
+}
+
+#servicos .container .cards :nth-child(2) .Card h3 {
+  margin-top: 2.8vw;
+}
+
+#servicos .container .cards :nth-child(2) :hover img {
+  margin-top: -0.5vw;
+}
+
+#servicos .container .cards :nth-child(2) :hover h3 {
+  margin-top: 3.8vw;
+}
+
+#servicos .container .cards :nth-child(3) .Card {
+  margin-top: -0.8vw;
+}
+
+#servicos .container .cards :nth-child(3) .Card img {
+  width: 53%;
+}
+
+#servicos .container .cards :nth-child(3) .Card h3 {
+  margin-top: 2.8vw;
+}
+
+#servicos .container .cards :nth-child(3) :hover img {
+  margin-top: -0.5vw;
+}
+
+#servicos .container .cards :nth-child(3) :hover h3 {
+  margin-top: 3.8vw;
 }
 
 /* Medium Device = 1200px */
