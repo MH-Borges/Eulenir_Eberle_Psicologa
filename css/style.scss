@@ -36,7 +36,21 @@ img,svg{
         margin-left: 1.3vw;
     }
 }
-
+.botao{
+    display: flex;
+    position: relative;
+    font-family: 'Raleway';
+    button{
+        font-size: 1.1vw;
+        font-weight: 700;
+        color: $Brown;
+        background-color: $Pink;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 1vw;
+        padding: 0.5vw 1vw;
+        border: none;
+    }
+}
 #btn_UP{
     display: flex;
     justify-content: center;
@@ -60,6 +74,7 @@ img,svg{
 @import 'compiler/menu';
 @import 'compiler/banner';
 @import 'compiler/servicos';
+@import 'compiler/sobre';
 
 
 

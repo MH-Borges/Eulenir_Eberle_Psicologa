@@ -60,6 +60,26 @@ img, svg {
   margin-left: 1.3vw;
 }
 
+.botao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-family: 'Raleway';
+}
+
+.botao button {
+  font-size: 1.1vw;
+  font-weight: 700;
+  color: #51403F;
+  background-color: #DDB8B1;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1vw;
+  padding: 0.5vw 1vw;
+  border: none;
+}
+
 #btn_UP {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,7 +365,7 @@ img, svg {
 }
 
 #banner .Block h3 {
-  font-size: 4vw;
+  font-size: 3.8vw;
   text-transform: uppercase;
   font-weight: 800;
   margin-right: 6vw;
@@ -355,7 +375,7 @@ img, svg {
   width: 60%;
   font-size: 1.4vw;
   line-height: 1.7vw;
-  margin: 2vw 6vw 3.5vw 0;
+  margin: 1vw 6vw 3vw 0;
 }
 
 #banner .Block h1 {
@@ -371,6 +391,7 @@ img, svg {
   position: relative;
   width: 100%;
   height: 75vh;
+  margin-bottom: 5vw;
 }
 
 #servicos #img_serv {
@@ -497,6 +518,97 @@ img, svg {
 
 #servicos .container .cards :nth-child(3) :hover h3 {
   margin-top: 3.8vw;
+}
+
+#sobre {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100vw;
+}
+
+#sobre .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sobre .container .sobre_block {
+  width: 58%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#sobre .container .sobre_block::before {
+  position: absolute;
+  content: '';
+  width: 90%;
+  height: 8vh;
+  background: #DDB8B1;
+  top: 1vw;
+  left: -20vw;
+  border-radius: 3vw;
+}
+
+#sobre .container .sobre_block h2 {
+  font-family: 'Alex_Letter';
+  font-size: 4vw;
+  z-index: 2;
+  color: #51403F;
+  -webkit-text-stroke: 0.5px #51403F;
+  padding-top: 1.3vw;
+}
+
+#sobre .container .sobre_block .Sobre_txt {
+  width: 75%;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 1.2vw;
+  margin: 3vw 0 0 4vw;
+}
+
+#sobre .container .sobre_block .Sobre_txt p {
+  position: relative;
+}
+
+#sobre .container .sobre_block .Sobre_txt p::before {
+  position: absolute;
+  content: '';
+  width: 0.7vw;
+  height: 0.7vw;
+  background-color: #DDB8B1;
+  top: 0.4vw;
+  left: -1.5vw;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#sobre .container .sobre_block .sobreBT {
+  margin: 4vw 7vw 1vw auto;
+}
+
+#sobre .container img {
+  margin: 2.5vw 0;
+  width: 23%;
+  border-radius: 2vw;
 }
 
 /* Medium Device = 1200px */

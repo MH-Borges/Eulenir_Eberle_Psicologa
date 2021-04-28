@@ -1,0 +1,65 @@
+#sobre{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100vw;
+    .container{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        .sobre_block{
+            width: 58%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            &::before{
+                position: absolute;
+                content: '';
+                width: 90%;
+                height: 8vh;
+                background: $Pink;
+                top: 1vw;
+                left: -20vw;
+                border-radius: 3vw;
+            }
+            h2{
+                font-family: 'Alex_Letter';
+                font-size: 4vw;
+                z-index: 2;
+                color: $Brown;
+                -webkit-text-stroke: 0.5px $Brown;
+                padding-top: 1.3vw;
+            }
+            .Sobre_txt{
+                width: 75%;
+                font-family: 'Raleway';
+                font-weight: 400;
+                font-size: 1.2vw;
+                margin: 3vw 0 0 4vw;
+                p{
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        width: 0.7vw;
+                        height: 0.7vw;
+                        background-color: $Pink;
+                        top: 0.4vw;
+                        left: -1.5vw;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+            .sobreBT{
+                margin: 4vw 7vw 1vw auto;
+            }
+        }
+        img{
+            margin: 2.5vw 0;
+            width: 23%;
+            border-radius: 2vw;
+        }
+    }
+}
