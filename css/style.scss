@@ -49,6 +49,11 @@ img,svg{
         border-radius: 1vw;
         padding: 0.5vw 1vw;
         border: none;
+        transition: 0.3s ease;
+        &:hover{
+            transform: translateY(-8px);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+        }
     }
 }
 #btn_UP{
@@ -75,6 +80,7 @@ img,svg{
 @import 'compiler/banner';
 @import 'compiler/servicos';
 @import 'compiler/sobre';
+@import 'compiler/blog';
 
 
 

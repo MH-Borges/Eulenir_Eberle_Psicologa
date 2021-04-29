@@ -1,0 +1,189 @@
+#blog{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50vh;
+    padding: 3vw 0;
+    .container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        .blog_Block{
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            margin-top: 1vw;
+            .Simp_cards{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 43%;
+                a{
+                    display: flex;
+                    position: relative;
+                    text-decoration: none;
+                    color: $Brown;
+                    .card_blog{
+                        background-color: $Green_T;
+                        display: flex;
+                        position: relative;
+                        border-radius: 2vw;
+                        margin: 1vw 0;
+                        padding: 1vw;
+                        img{
+                            border-radius: 2.3vw;
+                            border-bottom-right-radius: 10vw;
+                            width: 60%;
+                        }
+                        .blog_infos{
+                            width:40%;
+                            display: flex;
+                            position: relative;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: 'Raleway';
+                            h3{
+                                font-size: 1.5vw;
+                                font-weight: 700;
+                                color: $Brown;
+                                text-align: center;
+                                margin: 2.5vw 1vw;
+                            }
+                            i{
+                                color: $Green;
+                                font-size: 1.5vw;
+                            }
+                            h4{
+                                font-size: 1.3vw;
+                                position: relative;
+                                font-weight: 600;
+                                margin: 0.2vw 1vw 0 2vw;
+                                &::before{
+                                    position: absolute;
+                                    content: '';
+                                    width: 0.8vw;
+                                    height: 0.8vw;
+                                    background-color: $Pink;
+                                    top: 0.35vw;
+                                    left: -1.4vw;
+                                    transform: rotate(45deg);
+                                }
+                            }
+                            p{
+                                font-size: 0.9vw;
+                                position: relative;
+                                font-weight: 600;
+                                margin: 0.2vw 0.9vw 0 2vw;
+                                &::before{
+                                    position: absolute;
+                                    content: '';
+                                    width: 0.6vw;
+                                    height: 0.6vw;
+                                    background-color: $Pink;
+                                    top: 0.35vw;
+                                    left: -1.2vw;
+                                    transform: rotate(45deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .Big_card{
+                width: 55%;
+                display: flex;
+                position: relative;
+                background-color: $Green_T;
+                margin: 1.5vw 0;
+                padding: 1vw;
+                border-radius: 2vw;
+                a{
+                    display: flex;
+                    position: relative;
+                    flex-wrap: wrap;
+                    text-decoration: none;
+                    color: $Black;
+                    font-family: 'Raleway';
+                    color: $Brown;
+                    h2{
+                        text-align: center;
+                        font-size: 1.5vw;
+                        font-weight: 700;
+                        max-width: 10vw;
+                        margin-top: 9vw;
+                    }
+                    img{
+                        width: 75%;
+                        margin-left: auto;
+                        border-radius: 2vw;
+                    }
+                    .icons{
+                        display: flex;
+                        position: relative;
+                        margin-top: 2vw;
+                        justify-content: space-between;
+                        width: 100%;
+                        i{
+                            color: $Green;
+                            font-size: 1.6vw;
+                        }
+                        h4{
+                            position: relative;
+                            font-size: 1.2vw;
+                            font-weight: 600;
+                            margin-top: 0.1vw;
+                            margin-left: 0.8vw;
+                            &::before{
+                                position: absolute;
+                                content: '';
+                                width: 0.7vw;
+                                height: 0.7vw;
+                                background-color: $Pink;
+                                top: 0.25vw;
+                                left: -1.4vw;
+                                transform: rotate(45deg);
+                            }
+                        }
+                        p{
+                            position: relative;
+                            font-size: 1vw;
+                            margin-left: 0.8vw;
+                            &::before{
+                                position: absolute;
+                                content: '';
+                                width: 0.7vw;
+                                height: 0.7vw;
+                                background-color: $Pink;
+                                top: 0.4vw;
+                                left: -1.25vw;
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                    .resume_txt{
+                        padding: 1.5vw 1vw;
+                        background-color: $White;
+                        font-size: 1.2vw;
+                        font-weight: 600;
+                        border-radius: 1.5vw;
+                        margin-top: 1vw;
+                    }
+                }
+            }
+        }
+        .blogBT{
+            margin: 1.5vw 2vw 0 auto;
+            button{
+                font-size: 1.3vw;
+                color: $Brown;
+                background-color: $Green;
+                border-radius: 0.7vw;
+                padding: 0.5vw 1.3vw;
+            }
+        }
+    }
+}
