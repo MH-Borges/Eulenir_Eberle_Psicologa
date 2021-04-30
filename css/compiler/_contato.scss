@@ -1,0 +1,90 @@
+#contato{
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $Brown;
+    padding: 5vw 0;
+    #vetorBrown{
+        margin-top: -50vw;
+        position: absolute;
+    }
+    .container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        .Tl_cont{
+            position: absolute;
+            margin-top: -13vw;
+        }
+        h3{
+            font-family: 'Raleway';
+            font-weight: 700;
+            color: $Green_T;
+            font-size: 2.5vw;
+            margin-right: 9vw;
+        }
+        form{
+            width: 55%;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            justify-content: center;
+            padding: 1vw 0;
+        }
+        .BlockBox{
+            width: 65%;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 0 1.8vw 0;
+            border-radius: 0.8vw;
+        }
+        .BlockBox input, textarea{
+            width: 95% !important; 
+            resize: none;
+            padding: 1vw 0;
+            margin-left: 0.8vw;
+            font-size: 1vw;
+            color: $White;
+            border: none;
+            background: none;
+            outline: none;   
+        }
+        .BlockBox textarea{
+            min-height: 150px;
+        }
+        .BlockBox span{
+            font-family: 'Raleway';
+            position: absolute;
+            font-style: italic;
+            left: 1vw;
+            top: 0.8vw;
+            font-size: 1.2vw;
+            color: $Green_T;
+            transition: 0.5s;
+            pointer-events: none;
+        }
+        .BlockBox input:focus ~ span, textarea:focus ~ span, input:valid ~ span, textarea:valid ~ span{
+            transform:translate(-0.7vw, -2.3vw);
+            font-size: 1.1vw;
+            color:$Green;
+        }
+        .Bt_cont{ 
+            position: absolute;
+            left: 40%;
+            bottom: 0;
+            input{
+                font-size: 1.5vw;
+                font-family:"Raleway";
+                color: $Brown;
+                background-color: $White;
+                padding: 0.5vw 2vw;
+                border-radius: 0.5vw;
+                
+            }
+        }
+    }
+}

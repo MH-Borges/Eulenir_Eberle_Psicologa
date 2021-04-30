@@ -68,7 +68,7 @@ img, svg {
   font-family: 'Raleway';
 }
 
-.botao button {
+.botao button, .botao input {
   font-size: 1.1vw;
   font-weight: 700;
   color: #51403F;
@@ -82,7 +82,7 @@ img, svg {
   transition: 0.3s ease;
 }
 
-.botao button:hover {
+.botao button:hover, .botao input:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
   -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
@@ -570,7 +570,7 @@ img, svg {
   position: absolute;
   content: '';
   width: 90%;
-  height: 8vh;
+  height: 4.5vw;
   background: #DDB8B1;
   top: 1vw;
   left: -20vw;
@@ -630,7 +630,7 @@ img, svg {
   position: absolute;
   content: '';
   width: 23%;
-  height: 49vh;
+  height: 26.5vw;
   top: 1.6vw;
   right: 7.4vw;
   z-index: 2;
@@ -650,7 +650,7 @@ img, svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50vh;
+  margin-bottom: 15vw;
   padding: 3vw 0;
 }
 
@@ -744,24 +744,25 @@ img, svg {
 
 #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos i {
   color: #94A89D;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
+  margin-left: 0.5vw;
 }
 
 #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos h4 {
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   position: relative;
   font-weight: 600;
-  margin: 0.2vw 1vw 0 2vw;
+  margin: 0.3vw 1.5vw 0 2vw;
 }
 
 #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos h4::before {
   position: absolute;
   content: '';
-  width: 0.8vw;
-  height: 0.8vw;
+  width: 0.65vw;
+  height: 0.65vw;
   background-color: #DDB8B1;
-  top: 0.35vw;
-  left: -1.4vw;
+  top: 0.2vw;
+  left: -1.3vw;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -838,15 +839,14 @@ img, svg {
 
 #blog .container .blog_Block .Big_card a .icons i {
   color: #94A89D;
-  font-size: 1.6vw;
+  font-size: 1.3vw;
 }
 
 #blog .container .blog_Block .Big_card a .icons h4 {
   position: relative;
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-weight: 600;
-  margin-top: 0.1vw;
-  margin-left: 0.8vw;
+  margin-left: 0.4vw;
 }
 
 #blog .container .blog_Block .Big_card a .icons h4::before {
@@ -856,25 +856,24 @@ img, svg {
   height: 0.7vw;
   background-color: #DDB8B1;
   top: 0.25vw;
-  left: -1.4vw;
+  left: -1.5vw;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 #blog .container .blog_Block .Big_card a .icons p {
   position: relative;
-  font-size: 1vw;
-  margin-left: 0.8vw;
+  font-size: 0.9vw;
 }
 
 #blog .container .blog_Block .Big_card a .icons p::before {
   position: absolute;
   content: '';
-  width: 0.7vw;
-  height: 0.7vw;
+  width: 0.6vw;
+  height: 0.6vw;
   background-color: #DDB8B1;
   top: 0.4vw;
-  left: -1.25vw;
+  left: -1.3vw;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -898,6 +897,129 @@ img, svg {
   background-color: #94A89D;
   border-radius: 0.7vw;
   padding: 0.5vw 1.3vw;
+}
+
+#contato {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #51403F;
+  padding: 5vw 0;
+}
+
+#contato #vetorBrown {
+  margin-top: -50vw;
+  position: absolute;
+}
+
+#contato .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contato .container .Tl_cont {
+  position: absolute;
+  margin-top: -13vw;
+}
+
+#contato .container h3 {
+  font-family: 'Raleway';
+  font-weight: 700;
+  color: #D0D8CE;
+  font-size: 2.5vw;
+  margin-right: 9vw;
+}
+
+#contato .container form {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1vw 0;
+}
+
+#contato .container .BlockBox {
+  width: 65%;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 0 1.8vw 0;
+  border-radius: 0.8vw;
+}
+
+#contato .container .BlockBox input, #contato .container textarea {
+  width: 95% !important;
+  resize: none;
+  padding: 1vw 0;
+  margin-left: 0.8vw;
+  font-size: 1vw;
+  color: #F9F3F2;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+#contato .container .BlockBox textarea {
+  min-height: 150px;
+}
+
+#contato .container .BlockBox span {
+  font-family: 'Raleway';
+  position: absolute;
+  font-style: italic;
+  left: 1vw;
+  top: 0.8vw;
+  font-size: 1.2vw;
+  color: #D0D8CE;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+#contato .container .BlockBox input:focus ~ span, #contato .container textarea:focus ~ span, #contato .container input:valid ~ span, #contato .container textarea:valid ~ span {
+  -webkit-transform: translate(-0.7vw, -2.3vw);
+          transform: translate(-0.7vw, -2.3vw);
+  font-size: 1.1vw;
+  color: #94A89D;
+}
+
+#contato .container .Bt_cont {
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+}
+
+#contato .container .Bt_cont input {
+  font-size: 1.5vw;
+  font-family: "Raleway";
+  color: #51403F;
+  background-color: #F9F3F2;
+  padding: 0.5vw 2vw;
+  border-radius: 0.5vw;
 }
 
 /* Medium Device = 1200px */

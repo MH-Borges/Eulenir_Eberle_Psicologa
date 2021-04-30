@@ -40,7 +40,7 @@ img,svg{
     display: flex;
     position: relative;
     font-family: 'Raleway';
-    button{
+    button, input{
         font-size: 1.1vw;
         font-weight: 700;
         color: $Brown;
@@ -81,7 +81,7 @@ img,svg{
 @import 'compiler/servicos';
 @import 'compiler/sobre';
 @import 'compiler/blog';
-
+@import 'compiler/contato';
 
 
 /* Medium Device = 1200px */
