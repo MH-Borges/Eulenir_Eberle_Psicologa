@@ -135,11 +135,46 @@
                 margin: 1vw;
                 display: flex;
                 position: relative;
-                width: 30%;
+                flex-wrap: wrap;
+                width: 32%;
                 background-color: $Green_T;
-            }
-            .featured__item {
-                background-color: greenyellow;
+                padding: 1.3vw;
+                border-radius: 1vw;
+                .icons_blog_page{
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    justify-content: center;
+                    color: $Brown;
+                    i{
+                        font-size: 1.1vw;
+                        color: $Green;
+                    }
+                    p, h3{
+                        font-size: 0.7vw;
+                        padding: 0.5vw 0.3vw;
+                        margin: 0;
+                    }
+                }
+                .tag{
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    width: 35%;
+                    background-color: darkcyan;
+                }
+                .title_blog{
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    width: 65%;
+                    background-color: cornflowerblue;
+                }
+                p{
+                    margin: 0;
+                }
             }
         }
     }
