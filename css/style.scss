@@ -62,11 +62,12 @@ img,svg{
     align-items: center;
     position: fixed;
     bottom: 2.5vw;
-    right: 0;
+    right: -0.1vw;
     z-index:998;
     background-color: $Brown;
     border-top-left-radius: 1.5vw;
     border-bottom-left-radius: 1.5vw;
+    border: 1px $White solid;
     i{
         color: $White;
         font-size: 1.7vw;
@@ -82,6 +83,10 @@ img,svg{
 @import 'compiler/sobre';
 @import 'compiler/blog';
 @import 'compiler/contato';
+@import 'compiler/newsletter';
+@import 'compiler/rodape';
+
+@import 'compiler/Blog_PAGE';
 
 
 /* Medium Device = 1200px */

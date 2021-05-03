@@ -1,0 +1,73 @@
+#newsletter{
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: $Green_T;
+    padding: 4vw 0;
+    .container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        p{
+            font-family: 'Raleway';
+            font-weight: 600;
+            font-size: 1.3vw;
+            margin-left: 6vw;
+        }
+        form{
+            display: flex;
+            position: relative;
+            padding: 1vw 0;
+            margin: -1vw 0 0 8vw;
+        }
+        .Box_News{
+            width: 35%;
+            position: relative;
+            background-color: rgba(148, 168, 157, 0.6);
+            margin: 1vw 1.5vw;
+            border-radius: 1vw;
+        }
+        .Box_News input{
+            width: 95% !important; 
+            resize: none;
+            padding: 1vw 0;
+            margin-left: 0.8vw;
+            font-size: 1vw;
+            color: $Black;
+            border: none;
+            background: none;
+            outline: none;  
+        }
+        .Box_News span{
+            font-family: 'Raleway';
+            position: absolute;
+            font-style: italic;
+            left: 1vw;
+            top: 0.8vw;
+            font-size: 1.2vw;
+            color: $Black;
+            transition: 0.5s;
+            pointer-events: none;
+        }
+        .Box_News input:focus ~ span, input:valid ~ span{
+            transform:translate(-0.5vw, -2.4vw);
+            font-size: 1.1vw;
+            color:$Brown;
+            font-weight: 600
+        }
+        .Bt_news{ 
+            position: absolute;
+            right: 8vw;
+            top: 2.1vw;
+            input{
+                font-size: 1.5vw;
+                font-family:"Raleway";
+                color: $White;
+                background-color: $Brown;
+                padding: 0.5vw 1.5vw;
+                border-radius: 0.5vw;
+                
+            }
+        }
+    }
+}

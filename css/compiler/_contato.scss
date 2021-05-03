@@ -24,8 +24,8 @@
             font-family: 'Raleway';
             font-weight: 700;
             color: $Green_T;
-            font-size: 2.5vw;
-            margin-right: 9vw;
+            font-size: 2.2vw;
+            margin-right: 11vw;
         }
         form{
             width: 55%;
@@ -34,44 +34,45 @@
             position: relative;
             justify-content: center;
             padding: 1vw 0;
+            .BlockBox{
+                width: 65%;
+                position: relative;
+                background-color: rgba(255, 255, 255, 0.2);
+                margin: 0 0 1.8vw 0;
+                border-radius: 0.8vw;
+                input, textarea{
+                    width: 95% !important; 
+                    resize: none;
+                    padding: 1vw 0;
+                    margin-left: 0.8vw;
+                    font-size: 1vw;
+                    color: $White;
+                    border: none;
+                    background: none;
+                    outline: none;   
+                }
+                textarea{
+                    min-height: 9vw;
+                }
+                span{
+                    font-family: 'Raleway';
+                    position: absolute;
+                    font-style: italic;
+                    left: 1vw;
+                    top: 0.8vw;
+                    font-size: 1.2vw;
+                    color: $Green_T;
+                    transition: 0.5s;
+                    pointer-events: none;
+                }
+            }
+            .BlockBox input:focus ~ span, textarea:focus ~ span, input:valid ~ span, textarea:valid ~ span{
+                transform:translate(-0.7vw, -2.3vw);
+                font-size: 1.1vw;
+                color:$Green;
+            }
         }
-        .BlockBox{
-            width: 65%;
-            position: relative;
-            background-color: rgba(255, 255, 255, 0.2);
-            margin: 0 0 1.8vw 0;
-            border-radius: 0.8vw;
-        }
-        .BlockBox input, textarea{
-            width: 95% !important; 
-            resize: none;
-            padding: 1vw 0;
-            margin-left: 0.8vw;
-            font-size: 1vw;
-            color: $White;
-            border: none;
-            background: none;
-            outline: none;   
-        }
-        .BlockBox textarea{
-            min-height: 150px;
-        }
-        .BlockBox span{
-            font-family: 'Raleway';
-            position: absolute;
-            font-style: italic;
-            left: 1vw;
-            top: 0.8vw;
-            font-size: 1.2vw;
-            color: $Green_T;
-            transition: 0.5s;
-            pointer-events: none;
-        }
-        .BlockBox input:focus ~ span, textarea:focus ~ span, input:valid ~ span, textarea:valid ~ span{
-            transform:translate(-0.7vw, -2.3vw);
-            font-size: 1.1vw;
-            color:$Green;
-        }
+        
         .Bt_cont{ 
             position: absolute;
             left: 40%;

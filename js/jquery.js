@@ -14,7 +14,6 @@ $(window).scroll(function(event){
     }
 });
 
-console.log(event);
 /*Menu escondido effeito*/
 $(document).ready(function(){
     $('.menuHidden').click(function(){
@@ -22,6 +21,7 @@ $(document).ready(function(){
         $('.head').toggleClass('act')
     });
 });
+
 /*botão effeito*/
 jQuery(document).ready(function(){
 
@@ -41,3 +41,20 @@ jQuery(window).scroll(function () {
             }
         });
 });
+
+    $(window).on('load', function () {
+        $(".loader").fadeOut();
+        $("#preloder").delay(200).fadeOut("slow");
+
+        /*------------------
+            Gallery filter
+        --------------------*/
+        $('.Itens_blog li').on('click', function () {
+            $('.Itens_blog li').removeClass('active');
+            $(this).addClass('active');
+        });
+        if ($('.Cards_Blog_Page').length > 0) {
+            var containerEl = document.querySelector('.Cards_Blog_Page');
+            var mixer = mixitup(containerEl);
+        }
+    });

@@ -1,0 +1,32 @@
+footer{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: $Brown;
+    .rodapeBox{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 1vw 0;
+        font-family: 'Raleway';
+        color: $White;
+        h5{
+            font-size: 1vw;
+            font-weight: 300;
+        }
+        p{
+            width: 20%;
+            display: flex;
+            margin-left: auto;
+            align-items: center;
+            font-size: 1vw;
+            margin-top: 0.8vw;
+            a{
+                width: 50%;
+                margin-left: 1vw;
+            }
+        }
+    }
+}

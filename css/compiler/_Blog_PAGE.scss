@@ -1,0 +1,150 @@
+#banner_Blog{
+    width: 100%;
+    height: 17vw;
+    background-color: $Pink;
+    margin-top: 9vw;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    img{
+        position: absolute;
+        width: 11%;
+        opacity: 0.15;
+    }
+    #vecto01{
+        transform: rotate(35deg);
+        bottom: -1.5vw;
+        left: -1vw;
+    }
+    #vecto02{
+        transform: rotate(215deg);
+        right: -1vw;
+        top: -1vw;
+    }
+    .container{
+        display: flex;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        h2{
+            width: 50%;
+            font-size: 1.5vw;
+            font-weight: 400;
+            color: $Brown;
+            line-height: 2.2vw;
+            margin-top: 1vw;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+#cards_blog{
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding: 5vw 0;
+    .container{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        padding: 1vw 1.5vw;
+        .Itens_blog {
+            width: 100%;
+            display: flex;
+            position: relative;
+            ul{
+                display: flex;
+                position: relative;
+                font-family: 'Raleway';
+                font-size: 1.1vw;
+                li {
+                    display: inline-block;
+                    position: relative;
+                    cursor: pointer;
+                    list-style: none;
+                    font-weight: 700;
+                    color: $Brown;
+                    margin-right: 1.5vw;
+                    &::after{
+                        position: absolute;
+                        left: 0;
+                        bottom: -0.3vw;
+                        width: 100%;
+                        height: 0.25vw;
+                        background: $Brown;
+                        content: "";
+                        opacity: 0;
+                        border-radius: 2vw;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                li.active{
+                    color: $Green;
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+            form{
+                display: flex;
+                position: relative;
+                margin-left: auto;
+                button{
+                    position: absolute;
+                    background: none;
+                    border: none;
+                    font-size: 1.3vw;
+                    color: $Brown;
+                    left: -0.3vw;
+                    top: 0.5vw;
+                }
+                #close{
+                    font-size: 1.4vw;
+                    margin-left: 11.5vw;
+                    top: 0.3vw;
+                }
+                input{
+                    padding: 0.5vw 0;
+                    margin-left: 1.5vw;
+                    font-size: 1vw;
+                    font-family: 'Raleway';
+                    color: $Brown;
+                    font-weight: 600;
+                    border: none;
+                    outline: none; 
+                    background: none;
+                    border-bottom: 0.25vw solid $Brown;
+                }
+            }
+        }
+        .Cards_Blog_Page{
+            width: 100%;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            background-color: coral;
+            padding: 1vw 0;
+            justify-content: space-around;
+            margin: 1vw 0;
+            .card_blog{
+                margin: 1vw;
+                display: flex;
+                position: relative;
+                width: 30%;
+                background-color: $Green_T;
+            }
+            .featured__item {
+                background-color: greenyellow;
+            }
+        }
+    }
+}
+
+
+
+

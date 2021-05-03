@@ -101,11 +101,12 @@ img, svg {
           align-items: center;
   position: fixed;
   bottom: 2.5vw;
-  right: 0;
+  right: -0.1vw;
   z-index: 998;
   background-color: #51403F;
   border-top-left-radius: 1.5vw;
   border-bottom-left-radius: 1.5vw;
+  border: 1px #F9F3F2 solid;
 }
 
 #btn_UP i {
@@ -945,8 +946,8 @@ img, svg {
   font-family: 'Raleway';
   font-weight: 700;
   color: #D0D8CE;
-  font-size: 2.5vw;
-  margin-right: 9vw;
+  font-size: 2.2vw;
+  margin-right: 11vw;
 }
 
 #contato .container form {
@@ -963,7 +964,7 @@ img, svg {
   padding: 1vw 0;
 }
 
-#contato .container .BlockBox {
+#contato .container form .BlockBox {
   width: 65%;
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
@@ -971,7 +972,7 @@ img, svg {
   border-radius: 0.8vw;
 }
 
-#contato .container .BlockBox input, #contato .container textarea {
+#contato .container form .BlockBox input, #contato .container form .BlockBox textarea {
   width: 95% !important;
   resize: none;
   padding: 1vw 0;
@@ -983,11 +984,11 @@ img, svg {
   outline: none;
 }
 
-#contato .container .BlockBox textarea {
-  min-height: 150px;
+#contato .container form .BlockBox textarea {
+  min-height: 9vw;
 }
 
-#contato .container .BlockBox span {
+#contato .container form .BlockBox span {
   font-family: 'Raleway';
   position: absolute;
   font-style: italic;
@@ -1000,7 +1001,7 @@ img, svg {
   pointer-events: none;
 }
 
-#contato .container .BlockBox input:focus ~ span, #contato .container textarea:focus ~ span, #contato .container input:valid ~ span, #contato .container textarea:valid ~ span {
+#contato .container form .BlockBox input:focus ~ span, #contato .container form textarea:focus ~ span, #contato .container form input:valid ~ span, #contato .container form textarea:valid ~ span {
   -webkit-transform: translate(-0.7vw, -2.3vw);
           transform: translate(-0.7vw, -2.3vw);
   font-size: 1.1vw;
@@ -1020,6 +1021,344 @@ img, svg {
   background-color: #F9F3F2;
   padding: 0.5vw 2vw;
   border-radius: 0.5vw;
+}
+
+#newsletter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: #D0D8CE;
+  padding: 4vw 0;
+}
+
+#newsletter .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#newsletter .container p {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 1.3vw;
+  margin-left: 6vw;
+}
+
+#newsletter .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 1vw 0;
+  margin: -1vw 0 0 8vw;
+}
+
+#newsletter .container .Box_News {
+  width: 35%;
+  position: relative;
+  background-color: rgba(148, 168, 157, 0.6);
+  margin: 1vw 1.5vw;
+  border-radius: 1vw;
+}
+
+#newsletter .container .Box_News input {
+  width: 95% !important;
+  resize: none;
+  padding: 1vw 0;
+  margin-left: 0.8vw;
+  font-size: 1vw;
+  color: #171A18;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+#newsletter .container .Box_News span {
+  font-family: 'Raleway';
+  position: absolute;
+  font-style: italic;
+  left: 1vw;
+  top: 0.8vw;
+  font-size: 1.2vw;
+  color: #171A18;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+#newsletter .container .Box_News input:focus ~ span, #newsletter .container input:valid ~ span {
+  -webkit-transform: translate(-0.5vw, -2.4vw);
+          transform: translate(-0.5vw, -2.4vw);
+  font-size: 1.1vw;
+  color: #51403F;
+  font-weight: 600;
+}
+
+#newsletter .container .Bt_news {
+  position: absolute;
+  right: 8vw;
+  top: 2.1vw;
+}
+
+#newsletter .container .Bt_news input {
+  font-size: 1.5vw;
+  font-family: "Raleway";
+  color: #F9F3F2;
+  background-color: #51403F;
+  padding: 0.5vw 1.5vw;
+  border-radius: 0.5vw;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #51403F;
+}
+
+footer .rodapeBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1vw 0;
+  font-family: 'Raleway';
+  color: #F9F3F2;
+}
+
+footer .rodapeBox h5 {
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+footer .rodapeBox p {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1vw;
+  margin-top: 0.8vw;
+}
+
+footer .rodapeBox p a {
+  width: 50%;
+  margin-left: 1vw;
+}
+
+#banner_Blog {
+  width: 100%;
+  height: 17vw;
+  background-color: #DDB8B1;
+  margin-top: 9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+#banner_Blog img {
+  position: absolute;
+  width: 11%;
+  opacity: 0.15;
+}
+
+#banner_Blog #vecto01 {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  bottom: -1.5vw;
+  left: -1vw;
+}
+
+#banner_Blog #vecto02 {
+  -webkit-transform: rotate(215deg);
+          transform: rotate(215deg);
+  right: -1vw;
+  top: -1vw;
+}
+
+#banner_Blog .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#banner_Blog .container h2 {
+  width: 50%;
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #51403F;
+  line-height: 2.2vw;
+  margin-top: 1vw;
+}
+
+#banner_Blog .container h2 span {
+  font-weight: 700;
+}
+
+#cards_blog {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 5vw 0;
+}
+
+#cards_blog .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1vw 1.5vw;
+}
+
+#cards_blog .container .Itens_blog {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+#cards_blog .container .Itens_blog ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-family: 'Raleway';
+  font-size: 1.1vw;
+}
+
+#cards_blog .container .Itens_blog ul li {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  color: #51403F;
+  margin-right: 1.5vw;
+}
+
+#cards_blog .container .Itens_blog ul li::after {
+  position: absolute;
+  left: 0;
+  bottom: -0.3vw;
+  width: 100%;
+  height: 0.25vw;
+  background: #51403F;
+  content: "";
+  opacity: 0;
+  border-radius: 2vw;
+}
+
+#cards_blog .container .Itens_blog ul li:last-child {
+  margin-right: 0;
+}
+
+#cards_blog .container .Itens_blog ul li.active {
+  color: #94A89D;
+}
+
+#cards_blog .container .Itens_blog ul li.active:after {
+  opacity: 1;
+}
+
+#cards_blog .container .Itens_blog form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-left: auto;
+}
+
+#cards_blog .container .Itens_blog form button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 1.3vw;
+  color: #51403F;
+  left: -0.3vw;
+  top: 0.5vw;
+}
+
+#cards_blog .container .Itens_blog form #close {
+  font-size: 1.4vw;
+  margin-left: 11.5vw;
+  top: 0.3vw;
+}
+
+#cards_blog .container .Itens_blog form input {
+  padding: 0.5vw 0;
+  margin-left: 1.5vw;
+  font-size: 1vw;
+  font-family: 'Raleway';
+  color: #51403F;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 0.25vw solid #51403F;
+}
+
+#cards_blog .container .Cards_Blog_Page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: coral;
+  padding: 1vw 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1vw 0;
+}
+
+#cards_blog .container .Cards_Blog_Page .card_blog {
+  margin: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 30%;
+  background-color: #D0D8CE;
+}
+
+#cards_blog .container .Cards_Blog_Page .featured__item {
+  background-color: greenyellow;
 }
 
 /* Medium Device = 1200px */
