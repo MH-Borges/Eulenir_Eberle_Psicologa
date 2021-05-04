@@ -1340,28 +1340,48 @@ footer .rodapeBox p a {
   position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: coral;
-  padding: 1vw 0;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin: 1vw 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-#cards_blog .container .Cards_Blog_Page .card_blog {
-  margin: 1vw;
+#cards_blog .container .Cards_Blog_Page a {
+  width: 30%;
+  color: #171A18;
+  text-decoration: none;
+  margin: 2vw 1.3vw;
+}
+
+#cards_blog .container .Cards_Blog_Page a .card_blog {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 32%;
   background-color: #D0D8CE;
-  padding: 1.3vw;
+  padding: 1vw;
   border-radius: 1vw;
+  font-family: 'Raleway';
 }
 
-#cards_blog .container .Cards_Blog_Page .card_blog .icons_blog_page {
+#cards_blog .container .Cards_Blog_Page a .card_blog #img {
+  width: 100%;
+  height: 55%;
+}
+
+#cards_blog .container .Cards_Blog_Page a .card_blog #img img {
+  border-radius: 1vw;
+  width: 100%;
+  height: 100%;
+}
+
+#cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page {
+  width: 100%;
+  height: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1369,24 +1389,50 @@ footer .rodapeBox p a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 0.3vw;
+}
+
+#cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page i {
+  font-size: 0.9vw;
+  color: #94A89D;
+  margin: 0;
+}
+
+#cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page p, #cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page h3 {
+  font-size: 0.6vw;
+  font-weight: 600;
+  padding: 0 0.2vw;
+  margin: 0;
+}
+
+#cards_blog .container .Cards_Blog_Page a .card_blog .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 15%;
+}
+
+#cards_blog .container .Cards_Blog_Page a .card_blog .tag p {
+  margin: 0;
+  font-size: 0.75vw;
+  font-weight: 700;
+  background-color: #DDB8B1;
+  padding: 0.15vw 0.6vw;
+  border-radius: 1vw;
   color: #51403F;
 }
 
-#cards_blog .container .Cards_Blog_Page .card_blog .icons_blog_page i {
-  font-size: 1.1vw;
-  color: #94A89D;
-}
-
-#cards_blog .container .Cards_Blog_Page .card_blog .icons_blog_page p, #cards_blog .container .Cards_Blog_Page .card_blog .icons_blog_page h3 {
-  font-size: 0.7vw;
-  padding: 0.5vw 0.3vw;
-  margin: 0;
-}
-
-#cards_blog .container .Cards_Blog_Page .card_blog .tag {
+#cards_blog .container .Cards_Blog_Page a .card_blog .title_blog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1397,27 +1443,34 @@ footer .rodapeBox p a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 35%;
-  background-color: darkcyan;
+  width: 70%;
+  height: 15%;
+  padding: 0.5vw;
 }
 
-#cards_blog .container .Cards_Blog_Page .card_blog .title_blog {
+#cards_blog .container .Cards_Blog_Page a .card_blog .title_blog h4 {
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  font-size: 1vw;
+}
+
+#cards_blog .container .Cards_Blog_Page a .card_blog .prev {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 65%;
-  background-color: cornflowerblue;
-}
-
-#cards_blog .container .Cards_Blog_Page .card_blog p {
+  height: 25%;
+  background-color: #F9F3F2;
   margin: 0;
+  text-align: center;
+  padding: 0 1.5vw;
+  border-radius: 1vw;
+  font-weight: 600;
+  font-size: 0.8vw;
+  overflow: hidden;
 }
 
 /* Medium Device = 1200px */
