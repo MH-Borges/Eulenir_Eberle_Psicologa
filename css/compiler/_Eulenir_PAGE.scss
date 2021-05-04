@@ -1,0 +1,116 @@
+#Eulenir_Page{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: 9vw;
+    .container{
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        padding: 5vw 1vw;
+        .text_Eule{
+            width: 60%;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            h2{
+                font-family:"Alex_Letter";
+                font-size: 4.7vw;
+                -webkit-text-stroke: 0.5px $Brown;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 75%;
+                    height: 4.5vw;
+                    background-color: $Pink;
+                    top: 0;
+                    left: -15vw;
+                    z-index: -1;
+                    border-radius: 2.5vw;
+                }
+            }
+            p{
+                margin: 1.5vw 0;
+                font-family: 'Raleway';
+                font-size: 1vw;
+                padding: 0 10vw 0 5vw;
+            }
+        }
+        #img_Eule{
+            width: 40%;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            img{
+                position: relative;
+                width: 80%;
+                border-radius: 2.5vw;
+                
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 80%;
+                height: 81.5%;
+                top: 5.2vw;
+                right: 2.3vw;
+                z-index: 1;
+                border-radius: 2.5vw;
+                border: 0.5vw solid $Pink;
+            }
+        }
+    }
+}
+#skill{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 8vw;
+    background-color: $Green_T;
+    padding: 2.5vw 0;
+    .container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .Eulenir_title{
+            img{
+                z-index: 1;
+            }
+            h2{
+                
+                font-size: 4.5vw;
+                z-index: 2;
+            }
+        }
+        .Itens_skills{
+            width: 75%;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 1.5vw 0;
+            font-family: 'Raleway';
+            p{
+                display: flex;
+                position: relative;
+                width: 40%;
+                margin: 1vw;
+                align-items: center;
+                font-weight: 600;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 1vw;
+                    height: 1vw;
+                    background-color: $Green;
+                    left: -2vw;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}

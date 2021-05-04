@@ -1473,6 +1473,170 @@ footer .rodapeBox p a {
   overflow: hidden;
 }
 
+#Eulenir_Page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 9vw;
+}
+
+#Eulenir_Page .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5vw 1vw;
+}
+
+#Eulenir_Page .container .text_Eule {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#Eulenir_Page .container .text_Eule h2 {
+  font-family: "Alex_Letter";
+  font-size: 4.7vw;
+  -webkit-text-stroke: 0.5px #51403F;
+}
+
+#Eulenir_Page .container .text_Eule h2::before {
+  content: '';
+  position: absolute;
+  width: 75%;
+  height: 4.5vw;
+  background-color: #DDB8B1;
+  top: 0;
+  left: -15vw;
+  z-index: -1;
+  border-radius: 2.5vw;
+}
+
+#Eulenir_Page .container .text_Eule p {
+  margin: 1.5vw 0;
+  font-family: 'Raleway';
+  font-size: 1vw;
+  padding: 0 10vw 0 5vw;
+}
+
+#Eulenir_Page .container #img_Eule {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Eulenir_Page .container #img_Eule img {
+  position: relative;
+  width: 80%;
+  border-radius: 2.5vw;
+}
+
+#Eulenir_Page .container #img_Eule::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 81.5%;
+  top: 5.2vw;
+  right: 2.3vw;
+  z-index: 1;
+  border-radius: 2.5vw;
+  border: 0.5vw solid #DDB8B1;
+}
+
+#skill {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 8vw;
+  background-color: #D0D8CE;
+  padding: 2.5vw 0;
+}
+
+#skill .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skill .container .Eulenir_title img {
+  z-index: 1;
+}
+
+#skill .container .Eulenir_title h2 {
+  font-size: 4.5vw;
+  z-index: 2;
+}
+
+#skill .container .Itens_skills {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.5vw 0;
+  font-family: 'Raleway';
+}
+
+#skill .container .Itens_skills p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 40%;
+  margin: 1vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+#skill .container .Itens_skills p::before {
+  position: absolute;
+  content: '';
+  width: 1vw;
+  height: 1vw;
+  background-color: #94A89D;
+  left: -2vw;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 /* Medium Device = 1200px */
 /* Tablet Device = 768px */
 /* Wide Mobile = 480px */
