@@ -131,9 +131,11 @@
             justify-content: flex-start;
             a{
                 width: 30%;
+                height: 30vw;
                 color: $Black;
                 text-decoration: none;
                 margin: 2vw 1.3vw;
+                
                 .card_blog{
                     width: 100%;
                     height: 100%;
@@ -144,9 +146,13 @@
                     padding: 1vw;
                     border-radius: 1vw;
                     font-family: 'Raleway';
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        transform: translateY(-0.6vw);
+                    }
                     #img{
                         width: 100%;
-                        height: 55%;
+                        height: 50%;
                         img{
                             border-radius: 1vw;
                             width:100%;
@@ -155,21 +161,20 @@
                     }
                     .icons_blog_page{
                         width: 100%;
-                        height: 5%;
+                        height: 7%;
                         display: flex;
                         position: relative;
                         align-items: center;
                         justify-content: space-around;
-                        margin-top: 0.3vw;
+                        margin-top: 0.5vw;
                         i{
-                            font-size: 0.9vw;
+                            font-size: 1vw;
                             color: $Green;
                             margin: 0;
                         }
                         p, h3{
-                            font-size: 0.6vw;
+                            font-size: 0.8vw;
                             font-weight: 600;
-                            padding: 0 0.2vw;
                             margin: 0;
                         }
                     }
@@ -199,7 +204,7 @@
                         height: 15%;
                         padding: 0.5vw;
                         h4{
-                            font-weight: 600;
+                            font-weight: 700;
                             text-align: center;
                             margin: 0;
                             font-size: 1vw;
@@ -212,7 +217,7 @@
                         background-color: $White;
                         margin: 0;
                         text-align: center;
-                        padding: 0 1.5vw;
+                        padding: 0 1.1vw;
                         border-radius: 1vw;
                         font-weight: 600;
                         font-size: 0.8vw;

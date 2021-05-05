@@ -21,6 +21,7 @@
                 flex-direction: column;
                 position: relative;
                 width: 43%;
+                
                 a{
                     display: flex;
                     position: relative;
@@ -33,6 +34,10 @@
                         border-radius: 2vw;
                         margin: 1vw 0;
                         padding: 1vw;
+                        transition: ease-in-out 0.3s;
+                        &:hover{
+                            transform: translateY(-0.5vw);
+                        }
                         img{
                             border-radius: 2.3vw;
                             border-bottom-right-radius: 10vw;
@@ -102,6 +107,10 @@
                 margin: 1.5vw 0;
                 padding: 1vw;
                 border-radius: 2vw;
+                transition: ease-in-out 0.3s;
+                &:hover{
+                    transform: translateY(-0.5vw);
+                }
                 a{
                     display: flex;
                     position: relative;
@@ -164,12 +173,13 @@
                         }
                     }
                     .resume_txt{
-                        padding: 1.5vw 1vw;
+                        padding: 1.5vw;
                         background-color: $White;
                         font-size: 1.2vw;
                         font-weight: 600;
                         border-radius: 1.5vw;
                         margin-top: 1vw;
+                        margin: 0;
                     }
                 }
             }

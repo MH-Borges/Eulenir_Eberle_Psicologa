@@ -1,0 +1,104 @@
+#txt_um{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: 10vw;
+    padding: 2vw 0;
+    .container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway';
+        .Tl_Ebook{
+            h2{
+                font-size: 4.5vw;
+                margin-top: 0.4vw;
+                margin-left: 1vw;
+            }
+        }
+        p{
+            width: 55.5%;
+            font-size: 1.2vw;
+            padding: 2.5vw 0;
+        }
+    }
+}
+#ebook_img{
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color:$Green_T;
+    #V1{
+        width: 25%;
+        position: absolute;
+        top: -13.6vw;
+        left: 0;
+    }
+    #V2{
+        width: 25%;
+        position: absolute;
+        bottom: -13.6vw;
+        right: 0;
+        transform: rotate(180deg);
+    }
+    .container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway';
+        padding: 3vw 0;
+        a{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 35%;
+                transition: 0.3s ease-in-out;
+
+                &:hover{
+                    transform: translateY(-0.6vw);
+                }
+            }   
+        }
+        h2{
+            font-weight: 800;
+            font-size: 1.8vw;
+            margin: 0;
+            margin-top: 1vw;
+        }
+        p{
+            margin: 0;
+            font-size: 1.6vw;
+            font-style: italic;
+            margin-top: 0.5vw;
+        }
+    }
+}
+#txt_dois{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 5vw;
+    .container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway';
+        p{
+            width: 55.5%;
+            font-size: 1.2vw;
+            padding: 2.5vw 0;
+            a{
+                font-weight: 800;
+                color: $Black;
+                text-decoration: none;
+            }
+        }
+    }
+}

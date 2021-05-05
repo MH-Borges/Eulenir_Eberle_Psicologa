@@ -17,7 +17,7 @@
             h2{
                 font-family:"Alex_Letter";
                 font-size: 4.7vw;
-                -webkit-text-stroke: 0.5px $Brown;
+                -webkit-text-stroke: 0.05vw $Brown;
                 &::before{
                     content: '';
                     position: absolute;
@@ -31,10 +31,10 @@
                 }
             }
             p{
-                margin: 1.5vw 0;
+                margin: 2vw 0;
                 font-family: 'Raleway';
-                font-size: 1vw;
-                padding: 0 10vw 0 5vw;
+                font-size: 1.2vw;
+                padding: 0 7.5vw 0 3vw;
             }
         }
         #img_Eule{
@@ -47,15 +47,15 @@
                 position: relative;
                 width: 80%;
                 border-radius: 2.5vw;
-                
+                transform: translateY(-5vw)
             }
             &::before{
                 content: '';
                 position: absolute;
-                width: 80%;
-                height: 81.5%;
-                top: 5.2vw;
-                right: 2.3vw;
+                width: 80.5%;
+                height: 67.4%;
+                top: 5vw;
+                right: 2vw;
                 z-index: 1;
                 border-radius: 2.5vw;
                 border: 0.5vw solid $Pink;
@@ -87,7 +87,7 @@
             }
         }
         .Itens_skills{
-            width: 75%;
+            width: 85%;
             display: flex;
             position: relative;
             flex-wrap: wrap;
@@ -97,10 +97,11 @@
             p{
                 display: flex;
                 position: relative;
-                width: 40%;
-                margin: 1vw;
+                width: 42%;
+                margin: 1.5vw;
                 align-items: center;
                 font-weight: 600;
+                font-size: 1.2vw;
                 &::before{
                     position: absolute;
                     content: '';

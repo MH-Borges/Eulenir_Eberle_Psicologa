@@ -710,6 +710,13 @@ img, svg {
   border-radius: 2vw;
   margin: 1vw 0;
   padding: 1vw;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+#blog .container .blog_Block .Simp_cards a .card_blog:hover {
+  -webkit-transform: translateY(-0.5vw);
+          transform: translateY(-0.5vw);
 }
 
 #blog .container .blog_Block .Simp_cards a .card_blog img {
@@ -797,6 +804,13 @@ img, svg {
   margin: 1.5vw 0;
   padding: 1vw;
   border-radius: 2vw;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+#blog .container .blog_Block .Big_card:hover {
+  -webkit-transform: translateY(-0.5vw);
+          transform: translateY(-0.5vw);
 }
 
 #blog .container .blog_Block .Big_card a {
@@ -880,12 +894,13 @@ img, svg {
 }
 
 #blog .container .blog_Block .Big_card a .resume_txt {
-  padding: 1.5vw 1vw;
+  padding: 1.5vw;
   background-color: #F9F3F2;
   font-size: 1.2vw;
   font-weight: 600;
   border-radius: 1.5vw;
   margin-top: 1vw;
+  margin: 0;
 }
 
 #blog .container .blogBT {
@@ -940,6 +955,10 @@ img, svg {
 #contato .container .Tl_cont {
   position: absolute;
   margin-top: -13vw;
+}
+
+#contato .container .Tl_cont h2 {
+  margin-left: 0;
 }
 
 #contato .container h3 {
@@ -1348,6 +1367,7 @@ footer .rodapeBox p a {
 
 #cards_blog .container .Cards_Blog_Page a {
   width: 30%;
+  height: 30vw;
   color: #171A18;
   text-decoration: none;
   margin: 2vw 1.3vw;
@@ -1366,11 +1386,18 @@ footer .rodapeBox p a {
   padding: 1vw;
   border-radius: 1vw;
   font-family: 'Raleway';
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#cards_blog .container .Cards_Blog_Page a .card_blog:hover {
+  -webkit-transform: translateY(-0.6vw);
+          transform: translateY(-0.6vw);
 }
 
 #cards_blog .container .Cards_Blog_Page a .card_blog #img {
   width: 100%;
-  height: 55%;
+  height: 50%;
 }
 
 #cards_blog .container .Cards_Blog_Page a .card_blog #img img {
@@ -1381,7 +1408,7 @@ footer .rodapeBox p a {
 
 #cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page {
   width: 100%;
-  height: 5%;
+  height: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1391,19 +1418,18 @@ footer .rodapeBox p a {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 0.3vw;
+  margin-top: 0.5vw;
 }
 
 #cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page i {
-  font-size: 0.9vw;
+  font-size: 1vw;
   color: #94A89D;
   margin: 0;
 }
 
 #cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page p, #cards_blog .container .Cards_Blog_Page a .card_blog .icons_blog_page h3 {
-  font-size: 0.6vw;
+  font-size: 0.8vw;
   font-weight: 600;
-  padding: 0 0.2vw;
   margin: 0;
 }
 
@@ -1449,7 +1475,7 @@ footer .rodapeBox p a {
 }
 
 #cards_blog .container .Cards_Blog_Page a .card_blog .title_blog h4 {
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   margin: 0;
   font-size: 1vw;
@@ -1466,7 +1492,7 @@ footer .rodapeBox p a {
   background-color: #F9F3F2;
   margin: 0;
   text-align: center;
-  padding: 0 1.5vw;
+  padding: 0 1.1vw;
   border-radius: 1vw;
   font-weight: 600;
   font-size: 0.8vw;
@@ -1508,7 +1534,7 @@ footer .rodapeBox p a {
 #Eulenir_Page .container .text_Eule h2 {
   font-family: "Alex_Letter";
   font-size: 4.7vw;
-  -webkit-text-stroke: 0.5px #51403F;
+  -webkit-text-stroke: 0.05vw #51403F;
 }
 
 #Eulenir_Page .container .text_Eule h2::before {
@@ -1524,10 +1550,10 @@ footer .rodapeBox p a {
 }
 
 #Eulenir_Page .container .text_Eule p {
-  margin: 1.5vw 0;
+  margin: 2vw 0;
   font-family: 'Raleway';
-  font-size: 1vw;
-  padding: 0 10vw 0 5vw;
+  font-size: 1.2vw;
+  padding: 0 7.5vw 0 3vw;
 }
 
 #Eulenir_Page .container #img_Eule {
@@ -1548,15 +1574,17 @@ footer .rodapeBox p a {
   position: relative;
   width: 80%;
   border-radius: 2.5vw;
+  -webkit-transform: translateY(-5vw);
+          transform: translateY(-5vw);
 }
 
 #Eulenir_Page .container #img_Eule::before {
   content: '';
   position: absolute;
-  width: 80%;
-  height: 81.5%;
-  top: 5.2vw;
-  right: 2.3vw;
+  width: 80.5%;
+  height: 67.4%;
+  top: 5vw;
+  right: 2vw;
   z-index: 1;
   border-radius: 2.5vw;
   border: 0.5vw solid #DDB8B1;
@@ -1600,7 +1628,7 @@ footer .rodapeBox p a {
 }
 
 #skill .container .Itens_skills {
-  width: 75%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1618,12 +1646,13 @@ footer .rodapeBox p a {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 40%;
-  margin: 1vw;
+  width: 42%;
+  margin: 1.5vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-weight: 600;
+  font-size: 1.2vw;
 }
 
 #skill .container .Itens_skills p::before {
@@ -1635,6 +1664,322 @@ footer .rodapeBox p a {
   left: -2vw;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+#txt_um {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 10vw;
+  padding: 2vw 0;
+}
+
+#txt_um .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway';
+}
+
+#txt_um .container .Tl_Ebook h2 {
+  font-size: 4.5vw;
+  margin-top: 0.4vw;
+  margin-left: 1vw;
+}
+
+#txt_um .container p {
+  width: 55.5%;
+  font-size: 1.2vw;
+  padding: 2.5vw 0;
+}
+
+#ebook_img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: #D0D8CE;
+}
+
+#ebook_img #V1 {
+  width: 25%;
+  position: absolute;
+  top: -13.6vw;
+  left: 0;
+}
+
+#ebook_img #V2 {
+  width: 25%;
+  position: absolute;
+  bottom: -13.6vw;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#ebook_img .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway';
+  padding: 3vw 0;
+}
+
+#ebook_img .container a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#ebook_img .container a img {
+  width: 35%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#ebook_img .container a img:hover {
+  -webkit-transform: translateY(-0.6vw);
+          transform: translateY(-0.6vw);
+}
+
+#ebook_img .container h2 {
+  font-weight: 800;
+  font-size: 1.8vw;
+  margin: 0;
+  margin-top: 1vw;
+}
+
+#ebook_img .container p {
+  margin: 0;
+  font-size: 1.6vw;
+  font-style: italic;
+  margin-top: 0.5vw;
+}
+
+#txt_dois {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 5vw;
+}
+
+#txt_dois .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway';
+}
+
+#txt_dois .container p {
+  width: 55.5%;
+  font-size: 1.2vw;
+  padding: 2.5vw 0;
+}
+
+#txt_dois .container p a {
+  font-weight: 800;
+  color: #171A18;
+  text-decoration: none;
+}
+
+#txt_um {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 10vw;
+  padding: 2vw 0;
+}
+
+#txt_um .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway';
+}
+
+#txt_um .container .Tl_Ebook h2 {
+  font-size: 4.5vw;
+  margin-top: 0.4vw;
+  margin-left: 1vw;
+}
+
+#txt_um .container p {
+  width: 55.5%;
+  font-size: 1.2vw;
+  padding: 2.5vw 0;
+}
+
+#ebook_img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: #D0D8CE;
+}
+
+#ebook_img #V1 {
+  width: 25%;
+  position: absolute;
+  top: -13.6vw;
+  left: 0;
+}
+
+#ebook_img #V2 {
+  width: 25%;
+  position: absolute;
+  bottom: -13.6vw;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#ebook_img .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway';
+  padding: 3vw 0;
+}
+
+#ebook_img .container a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#ebook_img .container a img {
+  width: 35%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#ebook_img .container a img:hover {
+  -webkit-transform: translateY(-0.6vw);
+          transform: translateY(-0.6vw);
+}
+
+#ebook_img .container h2 {
+  font-weight: 800;
+  font-size: 1.8vw;
+  margin: 0;
+  margin-top: 1vw;
+}
+
+#ebook_img .container p {
+  margin: 0;
+  font-size: 1.6vw;
+  font-style: italic;
+  margin-top: 0.5vw;
+}
+
+#txt_dois {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 5vw;
+}
+
+#txt_dois .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway';
+}
+
+#txt_dois .container p {
+  width: 55.5%;
+  font-size: 1.2vw;
+  padding: 2.5vw 0;
+}
+
+#txt_dois .container p a {
+  font-weight: 800;
+  color: #171A18;
+  text-decoration: none;
 }
 
 /* Medium Device = 1200px */
