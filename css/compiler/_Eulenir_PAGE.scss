@@ -45,17 +45,17 @@
             align-items: center;
             img{
                 position: relative;
-                width: 80%;
+                width: 75%;
                 border-radius: 2.5vw;
-                transform: translateY(-5vw)
+                transform: translateY(-3vw)
             }
             &::before{
                 content: '';
                 position: absolute;
-                width: 80.5%;
-                height: 67.4%;
-                top: 5vw;
-                right: 2vw;
+                width: 75.1%;
+                height: 63.4%;
+                top: 7.9vw;
+                right: 3vw;
                 z-index: 1;
                 border-radius: 2.5vw;
                 border: 0.5vw solid $Pink;

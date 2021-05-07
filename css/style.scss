@@ -29,9 +29,9 @@ img,svg{
         z-index: -1;
     }
     h2{
-        font-family:"Alex_Letter";
+        font-family:"Alex_Letter" !important;
         font-size: 5.5vw;
-        -webkit-text-stroke: 0.6px $Brown;
+        -webkit-text-stroke: 0.03vw $Brown;
         color: $Brown;
         margin-left: 1.3vw;
     }
