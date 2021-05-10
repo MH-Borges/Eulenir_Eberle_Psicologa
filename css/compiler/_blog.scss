@@ -195,3 +195,126 @@
         }
     }
 }
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    #blog{
+        margin-bottom: 0;
+        padding: 8vw 0;
+        .container{
+            .blog_Block{
+                flex-wrap: wrap;
+                margin: 2vw 0;
+                .Simp_cards{
+                    width: 100%;     
+                    a{
+                        .card_blog{
+                            border-radius: 3vw;
+                            margin: 2.5vw 0;
+                            padding: 2vw;
+                            &:hover{transform:none;}
+                            img{
+                                border-radius: 3vw;
+                                border-bottom-right-radius: 25vw;
+                                width: 55%;
+                            }
+                            .blog_infos{
+                                width:45%;
+                                h3{
+                                    font-size: 4vw;
+                                    margin: 3vw 2vw;
+                                }
+                                i{
+                                    font-size: 3.5vw;
+                                    margin-left: 3.5vw;
+                                }
+                                h4{
+                                    font-size: 3vw;
+                                    margin: 0.5vw 3vw 0 3vw;
+                                    &::before{display: none;}
+                                }
+                                p{
+                                    font-size: 2vw;
+                                    margin: 0 1vw 0 2vw;
+                                    &::before{display: none;}
+                                }
+                            }
+                        }
+                    }
+                }
+                .Big_card{
+                    width: 100%;
+                    border-radius: 3vw;
+                    margin: 2.5vw 0;
+                    padding: 3vw;
+                    &:hover{
+                        transform: none;
+                    }
+                    a{
+                        h2{
+                            position: absolute;
+                            width: 100%;
+                            text-align: center;
+                            font-size: 4vw;
+                            max-width: 100%;
+                            top: 50vw;
+                        }
+                        img{
+                            width: 100%;
+                            border-radius: 3vw;
+                            margin-bottom: 10vw;
+                        }
+                        .icons{
+                            margin-top: 0;
+                            justify-content: space-around;
+                            width: 100%;
+                            i{
+                                color: $Green;
+                                font-size: 3.5vw;
+                            }
+                            h4{
+                                font-size: 3vw;
+                                margin-left: 0.4vw;
+                                &::before{display: none;}
+                            }
+                            p{
+                                font-size: 2vw;
+                                &::before{display: none;}
+                            }
+                        }
+                        .resume_txt{
+                            text-align: center;
+                            padding: 1.5vw 3vw;
+                            font-size: 3vw;
+                            border-radius: 2vw;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .blogBT{
+                justify-content: center;
+                width: 100%;
+                margin: 3vw 0 0 0;
+                a{
+                    padding: 1vw;
+                    button{
+                        font-size: 4vw;
+                        border-radius: 2vw;
+                        padding: 1vw 2.5vw;
+                        transition: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Small Device = 320px */
+@media only screen and (max-width: 479px){
+}

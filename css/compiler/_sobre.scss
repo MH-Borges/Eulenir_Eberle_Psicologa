@@ -77,3 +77,77 @@
         }
     }
 }
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    #sobre{
+        padding: 0;
+        margin: 0 0 8vw 0;
+        .container{
+            .sobre_block{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                &::before{
+                    width: 70%;
+                    height: 10vw;
+                    top: 1vw;
+                    left: 15%;
+                    border-radius: 10vw;
+                }
+                h2{
+                    font-size: 10vw;
+                    -webkit-text-stroke: 0.05vw $Brown;
+                    padding-top: 1vw;
+                }
+                .Sobre_txt{
+                    width: 90%;
+                    font-size: 3vw;
+                    padding:0 3vw;
+                    margin: 85vw 0 0 0;
+                    text-align: center;
+                    p{padding: 0;&::before{display: none;}}
+                }
+                .sobreBT{
+                    justify-content: center;
+                    width: 100%;
+                    margin: 4vw 0 0 0;
+                    a{
+                        padding: 1vw;
+                        button, input{
+                            font-size: 3.4vw;
+                            border-radius: 2vw;
+                            padding: 1vw 2.5vw;
+                            transition: none;
+                            &:hover{transform: none;}
+                       }
+                    }
+                }
+            }
+            img{
+                top: 15%;
+                position: absolute;
+                margin: 0;
+                width: 50%;
+                border-radius: 5vw;
+            }
+            &::before{
+                width: 50%;
+                height: 44%;
+                top: 16.5%;
+                right: 22%;
+                border-radius:5vw;
+                border: 1vw solid $Pink;
+            }
+        }
+    }
+}
+/* Small Device = 320px */
+@media only screen and (max-width: 479px){
+}

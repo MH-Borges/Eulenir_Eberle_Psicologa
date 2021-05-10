@@ -83,3 +83,49 @@
         }
     }
 }
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    #servicos{
+        height: auto;
+        padding: 7vw 0 1vw 0;
+        overflow: hidden;
+        margin: 0;
+        #img_serv{display: none;}
+        .container{
+            p{
+                font-size: 3vw;
+                margin: 4vw 0;
+                text-align: center;
+            }
+            .cards{
+                width: 100%;
+                margin-top: 2vw;
+                flex-wrap: wrap;
+                a{
+                    width: 60%;
+                    margin: 3vw 0;
+                    padding: 5vw 0;
+                    .Card{
+                        img{width: 60%;}
+                        h3{
+                            font-size: 3vw;
+                            margin: 3vw 0;
+                            padding: 0 1vw;
+                        }
+                    }
+                }
+                
+            }
+        }
+    } 
+}
+/* Small Device = 320px */
+@media only screen and (max-width: 479px){
+}

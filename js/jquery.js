@@ -12,7 +12,7 @@ $(window).scroll(function(event){
         $(".nav_contato").removeClass('actived');
         $("#logo").removeClass('actived');
         $(".menu_box").removeClass('actived');
-        $(".Menu_Mobile").removeClass('actived');
+        $(".menu_box").removeClass('actived');
     }
 });
 

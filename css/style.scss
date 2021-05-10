@@ -102,7 +102,24 @@ img,svg{
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 }
 /* Wide Mobile = 480px */
-@media only screen and (max-width: 767px){	
+@media only screen and (max-width: 767px){
+    .container{max-width: 95%;}
+    .title{width: 100%;
+        img{width: 50%;}
+        h2{font-size: 13vw;}
+    }
+    #btn_UP{
+        bottom: 5vw;
+        right: -0.5vw;
+        border-top-left-radius: 2vw;
+        border-bottom-left-radius: 2vw;
+        border: 0.3vw $White solid;
+        i{
+            font-size: 6vw;
+            padding: 2.5vw;
+            padding-left: 3vw;
+        }
+    }
 }
 /* Small Device = 320px */
 @media only screen and (max-width: 479px){

@@ -182,8 +182,8 @@
                         transition: 0.3s ease-in-out;
                     }
                     #logo.actived{
-                        margin-left: -1vw;
-                        width: 55%;
+                        margin-left: 0;
+                        width: 60%;
                         padding: 0.5vw 1vw;
                     }
                     .menu_box{
@@ -195,9 +195,9 @@
                         transition: none;
                         margin: 1.5vw 0;
                         li{
-                            font-size: 3.5vw;
+                            font-size: 4vw;
                             a{
-                                padding: 1vw 3vw;
+                                padding: 1.5vw 3.5vw;
                             }
                             ::after{
                                 display: none;
@@ -207,7 +207,7 @@
                     .menu_box.actived{  
                         margin-right: 0;
                         li{
-                            font-size: 3vw;
+                            font-size: 3.5vw;
                         }
                     }
                     .menu_box.act{
@@ -224,7 +224,7 @@
                         transition: 0.2s ease-in-out;
                     }
                     .Menu_Mobile.actived{
-                        font-size: 4vw;
+                        font-size: 5vw;
                         top: 2.5vw;
                     }
                 }

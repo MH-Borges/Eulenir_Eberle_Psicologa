@@ -3,7 +3,7 @@
     display: flex;
     position: relative;
     padding-top: 9.7vw;
-    margin-bottom: 5vw;
+    margin-bottom: 0;
     #ImgBanner{
         width: 55%;
     }
@@ -55,11 +55,9 @@
 @media only screen and (max-width: 767px){
     #banner{
         width: 100%;
-        display: flex;
-        position: relative;
         flex-wrap: wrap;
         padding-top:28vw;
-        margin-bottom: 5vw;
+        margin: 0;
         overflow: hidden;
         #ImgBanner{
             width: 110%;

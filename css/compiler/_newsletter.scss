@@ -19,41 +19,41 @@
             position: relative;
             padding: 1vw 0;
             margin: -1vw 0 0 8vw;
-        }
-        .Box_News{
-            width: 35%;
-            position: relative;
-            background-color: rgba(148, 168, 157, 0.6);
-            margin: 1vw 1.5vw;
-            border-radius: 1vw;
-        }
-        .Box_News input{
-            width: 95% !important; 
-            resize: none;
-            padding: 1vw 0;
-            margin-left: 0.8vw;
-            font-size: 1vw;
-            color: $Black;
-            border: none;
-            background: none;
-            outline: none;  
-        }
-        .Box_News span{
-            font-family: 'Raleway';
-            position: absolute;
-            font-style: italic;
-            left: 1vw;
-            top: 0.8vw;
-            font-size: 1.2vw;
-            color: $Black;
-            transition: 0.5s;
-            pointer-events: none;
-        }
-        .Box_News input:focus ~ span, input:valid ~ span{
-            transform:translate(-0.5vw, -2.4vw);
-            font-size: 1.1vw;
-            color:$Brown;
-            font-weight: 600
+            .Box_News{
+                width: 35%;
+                position: relative;
+                background-color: rgba(148, 168, 157, 0.6);
+                margin: 1vw 1.5vw;
+                border-radius: 1vw;
+                input{
+                    width: 95% !important; 
+                    resize: none;
+                    padding: 1vw 0;
+                    margin-left: 0.8vw;
+                    font-size: 1vw;
+                    color: $Black;
+                    border: none;
+                    background: none;
+                    outline: none;  
+                }
+                span{
+                    font-family: 'Raleway';
+                    position: absolute;
+                    font-style: italic;
+                    left: 1vw;
+                    top: 0.8vw;
+                    font-size: 1.2vw;
+                    color: $Black;
+                    transition: 0.5s;
+                    pointer-events: none;
+                }
+            }
+            .Box_News input:focus ~ span, input:valid ~ span{
+                transform:translate(-0.5vw, -2.4vw);
+                font-size: 1.1vw;
+                color:$Brown;
+                font-weight: 600
+            }
         }
         .Bt_news{ 
             position: absolute;
@@ -70,4 +70,57 @@
             }
         }
     }
+}
+
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    #newsletter{padding: 5vw 0;
+        .container{
+            p{font-size: 3.5vw;margin-left: 0;}
+            form{
+                padding: 0;
+                margin: 0;
+                flex-wrap: wrap;
+                .Box_News{
+                    width: 75%;
+                    border-radius: 2vw;
+                    margin: 2vw 0;
+                    input{
+                        padding: 1vw 0;
+                        margin-left: 1.5vw;
+                        font-size: 3vw;
+                    }
+                    span{
+                        left: 1.5vw;
+                        font-size: 3.5vw;
+                    }
+                }
+                .Box_News input:focus ~ span, input:valid ~ span{
+                    transform:translate(-1vw, -4.2vw);
+                    font-size: 3vw;
+                }
+            }
+            .Bt_news{ 
+                position: absolute;
+                right: 2vw;
+                top: 35%;
+                input{
+                    font-size: 4vw;
+                    padding: 1vw 2vw;
+                    border-radius: 1.5vw;
+                    
+                }
+            }
+        }
+    }
+}
+/* Small Device = 320px */
+@media only screen and (max-width: 479px){
 }
