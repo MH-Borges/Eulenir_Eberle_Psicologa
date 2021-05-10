@@ -3,7 +3,7 @@ const menuItems = document.querySelectorAll('.cont_menu a[href^="#"]');
 menuItems.forEach(item => {item.addEventListener('click', scrollToIdOnClick);});
 function scrollToIdOnClick(event){
     event.preventDefault();
-    const to = getScrollTopByHref(event.currentTarget)- 110;
+    const to = getScrollTopByHref(event.currentTarget)- 100;
     scrollToPosition(to);
 }
 

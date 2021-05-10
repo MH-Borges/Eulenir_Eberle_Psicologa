@@ -24,6 +24,9 @@ img,svg{
     position: relative;
     justify-content: center;
     width: 23%;
+    a{
+        text-decoration: none;
+    }
     img{
         position: absolute;
         z-index: -1;

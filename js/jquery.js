@@ -7,18 +7,19 @@ $(window).scroll(function(event){
         $(".nav_contato").addClass('actived');
         $("#logo").addClass('actived');
         $(".menu_box").addClass('actived');
+        $(".Menu_Mobile").addClass('actived');
     }else{
         $(".nav_contato").removeClass('actived');
         $("#logo").removeClass('actived');
         $(".menu_box").removeClass('actived');
+        $(".Menu_Mobile").removeClass('actived');
     }
 });
 
 /*Menu escondido effeito*/
 $(document).ready(function(){
-    $('.menuHidden').click(function(){
-        $('.nav-menu').toggleClass('act')
-        $('.head').toggleClass('act')
+    $('.Menu_Mobile').click(function(){
+        $('.menu_box').toggleClass('act')
     });
 });
 
@@ -42,19 +43,19 @@ jQuery(window).scroll(function () {
         });
 });
 
-    $(window).on('load', function () {
-        $(".loader").fadeOut();
-        $("#preloder").delay(200).fadeOut("slow");
+$(window).on('load', function () {
+    $(".loader").fadeOut();
+    $("#preloder").delay(200).fadeOut("slow");
 
-        /*------------------
-            Gallery filter
-        --------------------*/
-        $('.Itens_blog li').on('click', function () {
-            $('.Itens_blog li').removeClass('active');
-            $(this).addClass('active');
-        });
-        if ($('.Cards_Blog_Page').length > 0) {
-            var containerEl = document.querySelector('.Cards_Blog_Page');
-            var mixer = mixitup(containerEl);
-        }
+    /*------------------
+        Gallery filter
+    --------------------*/
+    $('.Itens_blog li').on('click', function () {
+        $('.Itens_blog li').removeClass('active');
+        $(this).addClass('active');
     });
+    if ($('.Cards_Blog_Page').length > 0) {
+        var containerEl = document.querySelector('.Cards_Blog_Page');
+        var mixer = mixitup(containerEl);
+    }
+});

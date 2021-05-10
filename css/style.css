@@ -47,6 +47,10 @@ img, svg {
   width: 23%;
 }
 
+.title a {
+  text-decoration: none;
+}
+
 .title img {
   position: absolute;
   z-index: -1;
@@ -204,6 +208,11 @@ img, svg {
   padding: 0.5vw;
 }
 
+.head .navbar .nav_contato .cont_contato .nav_email a {
+  color: #F9F3F2;
+  text-decoration: none;
+}
+
 .head .navbar .nav_contato .cont_contato .nav_redes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,6 +339,134 @@ img, svg {
   margin-right: -1vw;
 }
 
+.head .navbar .nav_menu .cont_menu .Menu_Mobile {
+  position: absolute;
+  color: #51403F;
+  padding: 2vw;
+  font-size: 1.3vw;
+  right: 0;
+  top: -8vw;
+}
+
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  .head .navbar .nav_contato img {
+    width: 210%;
+  }
+  .head .navbar .nav_contato .cont_contato .nav_email i {
+    font-size: 3vw;
+    padding: 0 2vw 0 0;
+  }
+  .head .navbar .nav_contato .cont_contato .nav_email a {
+    font-size: 3vw;
+  }
+  .head .navbar .nav_contato .cont_contato .nav_redes i {
+    font-size: 4vw;
+    padding: 1vw 1.5vw;
+  }
+  .head .navbar .nav_contato.actived {
+    margin-top: -6vw;
+  }
+  .head .navbar .nav_menu {
+    width: 100%;
+    background: #F9F3F2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  }
+  .head .navbar .nav_menu .cont_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .head .navbar .nav_menu .cont_menu a {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .head .navbar .nav_menu .cont_menu #logo {
+    width: 75%;
+    margin-left: 0;
+    padding: 0 1vw;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .head .navbar .nav_menu .cont_menu #logo.actived {
+    margin-left: -1vw;
+    width: 55%;
+    padding: 0.2vw;
+  }
+  .head .navbar .nav_menu .cont_menu .menu_box {
+    position: absolute;
+    width: 100%;
+    margin: 0vw;
+    bottom: 25vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    margin: 1vw 0;
+  }
+  .head .navbar .nav_menu .cont_menu .menu_box li {
+    font-size: 3vw;
+  }
+  .head .navbar .nav_menu .cont_menu .menu_box li a {
+    padding: 1vw 3vw;
+    color: #51403F;
+    text-decoration: none;
+  }
+  .head .navbar .nav_menu .cont_menu .menu_box li ::after {
+    display: none;
+  }
+  .head .navbar .nav_menu .cont_menu .menu_box li:hover a {
+    color: #171A18;
+  }
+  .head .navbar .nav_menu .cont_menu .menu_box li:hover ::after {
+    height: 0.3vw;
+    bottom: -0.4vw;
+  }
+  .head .navbar .nav_menu .cont_menu .menu_box.actived {
+    margin-right: 0;
+  }
+  .head .navbar .nav_menu .cont_menu .menu_box.act {
+    bottom: 0;
+    position: relative;
+  }
+  .head .navbar .nav_menu .cont_menu .Menu_Mobile {
+    position: absolute;
+    color: #51403F;
+    padding: 2.5vw;
+    font-size: 4.5vw;
+    right: 1vw;
+    top: 3.5vw;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+  .head .navbar .nav_menu .cont_menu .Menu_Mobile.actived {
+    font-size: 3.5vw;
+    top: 2vw;
+  }
+}
+
+/* Small Device = 320px */
 #banner {
   width: 100%;
   display: -webkit-box;
@@ -934,7 +1071,7 @@ img, svg {
 }
 
 #contato #vetorBrown {
-  margin-top: -50vw;
+  margin-top: -54vw;
   position: absolute;
 }
 
@@ -988,7 +1125,7 @@ img, svg {
   width: 65%;
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 0 1.8vw 0;
+  margin: 0 0 2.2vw 0;
   border-radius: 0.8vw;
 }
 
@@ -1013,7 +1150,7 @@ img, svg {
   position: absolute;
   font-style: italic;
   left: 1vw;
-  top: 0.8vw;
+  top: 0.75vw;
   font-size: 1.2vw;
   color: #D0D8CE;
   -webkit-transition: 0.5s;

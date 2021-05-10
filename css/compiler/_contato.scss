@@ -8,7 +8,7 @@
     background-color: $Brown;
     padding: 5vw 0;
     #vetorBrown{
-        margin-top: -50vw;
+        margin-top: -54vw;
         position: absolute;
     }
     .container{
@@ -42,7 +42,7 @@
                 width: 65%;
                 position: relative;
                 background-color: rgba(255, 255, 255, 0.2);
-                margin: 0 0 1.8vw 0;
+                margin: 0 0 2.2vw 0;
                 border-radius: 0.8vw;
                 input, textarea{
                     width: 95% !important; 
@@ -63,7 +63,7 @@
                     position: absolute;
                     font-style: italic;
                     left: 1vw;
-                    top: 0.8vw;
+                    top: 0.75vw;
                     font-size: 1.2vw;
                     color: $Green_T;
                     transition: 0.5s;
