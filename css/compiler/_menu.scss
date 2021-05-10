@@ -155,37 +155,21 @@
     .head{
         .navbar{
             .nav_contato{
-                img{
-                    width: 210%;
-                }
+                img{width: 250%;}
                 .cont_contato{
                     .nav_email{
-                        i{
-                            font-size: 3vw;
-                            padding: 0 2vw 0 0;
-                        }
+                        i{font-size: 3vw;padding: 0 2vw 0 0;}
                         a{font-size: 3vw;}
                     }
                     .nav_redes{
-                        i{font-size: 4vw;padding:1vw 1.5vw;}
+                        i{font-size: 4.5vw; padding:2.5vw;}
                     }
                 }
             }
-            .nav_contato.actived{
-                margin-top: -6vw;
-            }
+            .nav_contato.actived{margin-top: -10vw;}
             .nav_menu{
-                width: 100%;
-                background: $White;
-                display: flex;
-                position: relative;
-                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
                 .cont_menu{
-                    display: flex;
-                    position: relative;
-                    align-items: center;
                     flex-wrap: wrap;
-                    transition: 0.3s ease-in-out;
                     a{
                         width: 100%;
                         display: flex;
@@ -193,14 +177,14 @@
                     }
                     #logo{
                         width: 75%;
-                        margin-left: 0;
+                        margin:1vw 0;
                         padding: 0 1vw;
                         transition: 0.3s ease-in-out;
                     }
                     #logo.actived{
                         margin-left: -1vw;
                         width: 55%;
-                        padding: 0.2vw;
+                        padding: 0.5vw 1vw;
                     }
                     .menu_box{
                         position: absolute;
@@ -208,29 +192,23 @@
                         margin: 0vw;
                         bottom: 25vw;
                         justify-content: center;
-                        transition: 0.3s ease-in-out;
-                        margin: 1vw 0;
+                        transition: none;
+                        margin: 1.5vw 0;
                         li{
-                            font-size: 3vw;
+                            font-size: 3.5vw;
                             a{
                                 padding: 1vw 3vw;
-                                color: $Brown;
-                                text-decoration: none;
                             }
                             ::after{
                                 display: none;
-                            }
-                            &:hover{
-                                a{color: $Black;}
-                                ::after{
-                                    height: 0.3vw;
-                                    bottom: -0.4vw;
-                                }
                             }
                         }
                     }
                     .menu_box.actived{  
                         margin-right: 0;
+                        li{
+                            font-size: 3vw;
+                        }
                     }
                     .menu_box.act{
                         bottom: 0;
@@ -240,14 +218,14 @@
                         position: absolute;
                         color: $Brown;
                         padding: 2.5vw;
-                        font-size: 4.5vw;
-                        right: 1vw;
-                        top: 3.5vw;
+                        font-size: 5vw;
+                        right: 1.5vw;
+                        top: 4vw;
                         transition: 0.2s ease-in-out;
                     }
                     .Menu_Mobile.actived{
-                        font-size: 3.5vw;
-                        top: 2vw;
+                        font-size: 4vw;
+                        top: 2.5vw;
                     }
                 }
             }
