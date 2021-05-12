@@ -449,7 +449,7 @@ img, svg {
   display: flex;
   position: relative;
   padding-top: 9.7vw;
-  margin-bottom: 0;
+  margin-bottom: 5vw;
 }
 
 #banner #ImgBanner {
@@ -1723,7 +1723,7 @@ footer .rodapeBox p a {
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   footer .rodapeBox {
-    padding: 6vw 0;
+    padding: 5vw 0;
   }
   footer .rodapeBox h5 {
     width: 100%;
@@ -2245,155 +2245,76 @@ footer .rodapeBox p a {
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   #Eulenir_Page {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    padding-top: 28vw;
+    padding: 28vw 0 12vw 0;
   }
   #Eulenir_Page .container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 5vw 1vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
   }
   #Eulenir_Page .container .text_Eule {
-    width: 60%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 100%;
   }
   #Eulenir_Page .container .text_Eule h2 {
-    font-family: "Alex_Letter";
-    font-size: 4.7vw;
-    -webkit-text-stroke: 0.05vw #51403F;
+    margin-left: 2vw;
+    font-size: 13vw;
+    -webkit-text-stroke: 0.08vw #51403F;
   }
   #Eulenir_Page .container .text_Eule h2::before {
-    content: '';
-    position: absolute;
     width: 75%;
-    height: 4.5vw;
-    background-color: #DDB8B1;
+    height: 13vw;
     top: 0;
-    left: -15vw;
-    z-index: -1;
-    border-radius: 2.5vw;
+    left: -8vw;
+    border-radius: 5.5vw;
   }
   #Eulenir_Page .container .text_Eule p {
-    margin: 2vw 0;
-    font-family: 'Raleway';
-    font-size: 1.2vw;
-    padding: 0 7.5vw 0 3vw;
+    font-size: 3.3vw;
+    margin: 0;
+    padding: 3vw 7vw 9vw 7vw;
   }
   #Eulenir_Page .container #img_Eule {
-    width: 40%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 80%;
+    margin: 2vw 0;
   }
   #Eulenir_Page .container #img_Eule img {
-    position: relative;
-    width: 75%;
-    border-radius: 2.5vw;
-    -webkit-transform: translateY(-3vw);
-            transform: translateY(-3vw);
+    border-radius: 6vw;
+    -webkit-transform: none;
+            transform: none;
+    margin: 0;
   }
   #Eulenir_Page .container #img_Eule::before {
-    content: '';
-    position: absolute;
-    width: 75.1%;
-    height: 63.4%;
-    top: 7.9vw;
-    right: 3vw;
-    z-index: 1;
-    border-radius: 2.5vw;
-    border: 0.5vw solid #DDB8B1;
+    width: 75%;
+    height: 100%;
+    top: 2.5vw;
+    right: 7vw;
+    border-radius: 6vw;
+    border: 1vw solid #DDB8B1;
   }
   #skill {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    margin-bottom: 8vw;
-    background-color: #D0D8CE;
-    padding: 2.5vw 0;
+    margin: 0;
+    padding: 5vw 0;
   }
   #skill .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #skill .container .Eulenir_title img {
-    z-index: 1;
+    padding: 0 0 8vw 0;
   }
   #skill .container .Eulenir_title h2 {
-    font-size: 4.5vw;
-    z-index: 2;
+    margin-top: 0.5vw;
+    font-size: 10vw;
   }
   #skill .container .Itens_skills {
     width: 85%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 1.5vw 0;
-    font-family: 'Raleway';
+    padding: 2vw 0;
   }
   #skill .container .Itens_skills p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    width: 42%;
-    margin: 1.5vw;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-weight: 600;
-    font-size: 1.2vw;
+    width: 85%;
+    margin: 2vw;
+    font-size: 3vw;
   }
   #skill .container .Itens_skills p::before {
-    position: absolute;
-    content: '';
-    width: 1vw;
-    height: 1vw;
-    background-color: #94A89D;
-    left: -2vw;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    width: 2.5vw;
+    height: 2.5vw;
+    left: -6vw;
   }
 }
 
@@ -2978,7 +2899,6 @@ footer .rodapeBox p a {
 }
 
 #agenda #VA1 {
-  top: 0;
   width: 25%;
   top: 23vw;
   left: 0;
@@ -3086,6 +3006,208 @@ footer .rodapeBox p a {
   padding: 3vw 1vw 7vw 1vw;
 }
 
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  #line_up {
+    width: 100%;
+    height: 8vw;
+    margin-top: 30vw;
+    position: relative;
+    background-color: #D0D8CE;
+  }
+  #line_up img {
+    width: 25%;
+    position: absolute;
+    bottom: -17vw;
+  }
+  #line_up #VL2 {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+    right: 0;
+  }
+  #oque {
+    margin: 1vw 0;
+    padding: 4vw 0;
+  }
+  #oque .container {
+    padding: 3vw 0;
+  }
+  #oque .container .Tl_oq img {
+    width: 50%;
+  }
+  #oque .container .Tl_oq h2 {
+    font-size: 9vw;
+    margin: 2vw 0 0 0;
+  }
+  #oque .container .icon_OQ {
+    margin: 0;
+    padding: 5vw 0;
+  }
+  #oque .container .icon_OQ .icons_OQ {
+    font-size: 3vw;
+    margin: 0 5vw;
+  }
+  #oque .container .icon_OQ .icons_OQ img {
+    width: 75%;
+    padding: 2vw;
+    -webkit-transition: none;
+    transition: none;
+  }
+  #oque .container .icon_OQ .icons_OQ img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  #oque .container p {
+    width: 80%;
+    font-size: 3vw;
+    line-height: 4.5vw;
+    margin: 0;
+    padding: 3vw 0 0 0;
+  }
+  #quem {
+    margin: 1vw 0;
+    padding: 5vw 0;
+  }
+  #quem .container {
+    padding: 2vw 0;
+  }
+  #quem .container .tl_who img {
+    width: 50%;
+  }
+  #quem .container .tl_who h2 {
+    font-size: 10vw;
+    margin: 2vw 0 0 0;
+  }
+  #quem .container p {
+    width: 80%;
+    font-size: 3vw;
+    line-height: 4vw;
+    margin: 0;
+    padding: 8vw 0;
+  }
+  #quem .container .Img_areaWho {
+    width: 65%;
+    margin: 0;
+    padding: 1vw 0 2vw 0;
+  }
+  #beneficios {
+    margin: 1vw 0;
+    padding: 5vw 0;
+  }
+  #beneficios .container {
+    padding: 1vw 0 40% 0;
+  }
+  #beneficios .container .tl_ben img {
+    width: 50%;
+  }
+  #beneficios .container .tl_ben h2 {
+    font-size: 10vw;
+    margin: 2vw 0 0 0;
+  }
+  #beneficios .container p {
+    width: 80%;
+    font-size: 3vw;
+    line-height: 4vw;
+    margin: 0;
+    padding: 8vw 0;
+  }
+  #beneficios .container .Img_areaBen {
+    position: absolute;
+    width: 65%;
+    margin: 0;
+    padding: 0;
+    top: 59%;
+  }
+  #beneficios .container .Img_areaBen img {
+    width: 65%;
+  }
+  #funciona {
+    margin: 1vw 0;
+    padding: 5vw 0;
+  }
+  #funciona .container {
+    padding: 3vw 0;
+  }
+  #funciona .container .tl_fun img {
+    width: 50%;
+  }
+  #funciona .container .tl_fun h2 {
+    font-size: 10vw;
+    margin: 2vw 0 0 0;
+  }
+  #funciona .container p {
+    width: 80%;
+    font-size: 3vw;
+    line-height: 4.5vw;
+    margin: 0;
+    padding: 6vw 0;
+  }
+  #funciona .container .Img_areafun {
+    width: 65%;
+    margin: 0;
+  }
+  #funciona .container .Img_areafun img {
+    width: 70%;
+  }
+  #agenda {
+    margin: 12vw 0 5vw 0;
+  }
+  #agenda img {
+    top: -7.85vw;
+  }
+  #agenda #VA1 {
+    width: 30%;
+    top: 62.2vw;
+  }
+  #agenda #VA2 {
+    width: 30%;
+    top: 62.2vw;
+  }
+  #agenda .container {
+    padding: 5vw 0;
+  }
+  #agenda .container h2 {
+    font-weight: 800;
+    font-size: 4vw;
+    margin-top: 0;
+  }
+  #agenda .container p {
+    width: 80%;
+    padding: 4vw 0;
+    font-size: 3vw;
+    margin: 0 0 4vw 0;
+  }
+  #agenda .container .Bt_Agenda button, #agenda .container .Bt_Agenda input {
+    font-size: 3.5vw;
+    border-radius: 1.5vw;
+    padding: 1vw 3vw;
+  }
+  #palestra {
+    margin: 1vw 0 10vw 0;
+    padding: 5vw 0;
+  }
+  #palestra .container {
+    padding: 3vw 0;
+  }
+  #palestra .container .tl_pas img {
+    width: 50%;
+  }
+  #palestra .container .tl_pas h2 {
+    font-size: 7.5vw;
+    margin: 2vw 0 0 0;
+  }
+  #palestra .container p {
+    width: 80%;
+    font-size: 3vw;
+    line-height: 4vw;
+    margin: 2vw 0 0 0;
+    padding: 7vw 0;
+  }
+}
+
+/* Small Device = 320px */
 /* Medium Device = 1200px */
 /* Tablet Device = 768px */
 /* Wide Mobile = 480px */
