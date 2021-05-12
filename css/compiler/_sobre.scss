@@ -87,22 +87,23 @@
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
     #sobre{
-        padding: 0;
-        margin: 0 0 8vw 0;
+        padding: 2vw 0 8vw 0;
+        margin: 0;
+        overflow: hidden;
         .container{
             .sobre_block{
                 width: 100%;
                 flex-direction: column;
                 align-items: center;
                 &::before{
-                    width: 70%;
-                    height: 10vw;
-                    top: 1vw;
-                    left: 15%;
-                    border-radius: 10vw;
+                    width:120%;
+                    height: 14vw;
+                    top: 0;
+                    left: -10%;
+                    border-radius: 2vw;
                 }
                 h2{
-                    font-size: 10vw;
+                    font-size: 12vw;
                     -webkit-text-stroke: 0.05vw $Brown;
                     padding-top: 1vw;
                 }
@@ -121,17 +122,18 @@
                     a{
                         padding: 1vw;
                         button, input{
-                            font-size: 3.4vw;
+                            font-size: 3.7vw;
                             border-radius: 2vw;
-                            padding: 1vw 2.5vw;
+                            padding: 1vw 3vw;
                             transition: none;
+                            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
                             &:hover{transform: none;}
                        }
                     }
                 }
             }
             img{
-                top: 15%;
+                top: 16%;
                 position: absolute;
                 margin: 0;
                 width: 50%;
@@ -139,8 +141,8 @@
             }
             &::before{
                 width: 50%;
-                height: 44%;
-                top: 16.5%;
+                height: 43%;
+                top: 17.5%;
                 right: 22%;
                 border-radius:5vw;
                 border: 1vw solid $Pink;

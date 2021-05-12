@@ -115,3 +115,133 @@
         }
     }
 }
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    #Eulenir_Page{
+        width: 100%;
+        display: flex;
+        position: relative;
+        padding-top: 28vw;
+        .container{
+            width: 100%;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            padding: 5vw 1vw;
+            .text_Eule{
+                width: 60%;
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                h2{
+                    font-family:"Alex_Letter";
+                    font-size: 4.7vw;
+                    -webkit-text-stroke: 0.05vw $Brown;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 75%;
+                        height: 4.5vw;
+                        background-color: $Pink;
+                        top: 0;
+                        left: -15vw;
+                        z-index: -1;
+                        border-radius: 2.5vw;
+                    }
+                }
+                p{
+                    margin: 2vw 0;
+                    font-family: 'Raleway';
+                    font-size: 1.2vw;
+                    padding: 0 7.5vw 0 3vw;
+                }
+            }
+            #img_Eule{
+                width: 40%;
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                img{
+                    position: relative;
+                    width: 75%;
+                    border-radius: 2.5vw;
+                    transform: translateY(-3vw)
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 75.1%;
+                    height: 63.4%;
+                    top: 7.9vw;
+                    right: 3vw;
+                    z-index: 1;
+                    border-radius: 2.5vw;
+                    border: 0.5vw solid $Pink;
+                }
+            }
+        }
+    }
+    #skill{
+        width: 100%;
+        display: flex;
+        position: relative;
+        margin-bottom: 8vw;
+        background-color: $Green_T;
+        padding: 2.5vw 0;
+        .container{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .Eulenir_title{
+                img{
+                    z-index: 1;
+                }
+                h2{
+                    
+                    font-size: 4.5vw;
+                    z-index: 2;
+                }
+            }
+            .Itens_skills{
+                width: 85%;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: 1.5vw 0;
+                font-family: 'Raleway';
+                p{
+                    display: flex;
+                    position: relative;
+                    width: 42%;
+                    margin: 1.5vw;
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 1.2vw;
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        width: 1vw;
+                        height: 1vw;
+                        background-color: $Green;
+                        left: -2vw;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}
+/* Small Device = 320px */
+@media only screen and (max-width: 479px){
+}

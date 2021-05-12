@@ -102,3 +102,88 @@
         }
     }
 }
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    #txt_um{
+        margin-top: 8vw;
+        padding:28vw 0 3.5vw 0;
+        .container{
+            .Tl_Ebook{
+                h2{
+                    font-size: 12vw;
+                    margin: 0;
+                }
+            }
+            p{
+                width: 82%;
+                font-size: 3.2vw;
+                padding: 3vw 0;
+                margin: 2vw 0;
+            }
+        }
+    }
+    #ebook_img{
+        #V1{
+            width: 30%;
+            position: absolute;
+            top: -16.5vw;
+            left: 0;
+        }
+        #V2{
+            width: 30%;
+            position: absolute;
+            bottom: -16.5vw;
+            right: 0;
+            transform: rotate(180deg);
+        }
+        .container{
+            padding: 5vw 0;
+            a{
+                justify-content: center;
+                img{
+                    width: 70%;
+                    transition: none;
+                }   
+            }
+            h2{
+                font-size: 4vw;
+                margin-top: 3vw;
+            }
+            p{
+                text-align: center;
+                margin: 0;
+                font-size: 3.5vw;
+                margin-top: 2vw;
+            }
+        }
+    }
+    #txt_dois{
+        margin:3.5vw 0 8vw 0;
+        .container{
+            p{
+                width: 82%;
+                font-size: 3.2vw;
+                padding: 5vw 0;
+                margin: 0;
+                a{
+                    font-size: 3.5vw;
+                    font-weight: 800;
+                    color: $Black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+/* Small Device = 320px */
+@media only screen and (max-width: 479px){
+}
+
+

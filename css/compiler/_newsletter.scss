@@ -81,41 +81,48 @@
 }
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
-    #newsletter{padding: 5vw 0;
+    #newsletter{
+        padding: 8vw 0 16vw 0;
         .container{
-            p{font-size: 3.5vw;margin-left: 0;}
+            justify-content: center;
+            p{
+                margin:0 0 3vw 0;
+                font-size: 3.5vw;
+                text-align: center;
+            }
             form{
                 padding: 0;
                 margin: 0;
                 flex-wrap: wrap;
+                justify-content: center;
                 .Box_News{
-                    width: 75%;
+                    width: 70%;
                     border-radius: 2vw;
                     margin: 2vw 0;
                     input{
-                        padding: 1vw 0;
-                        margin-left: 1.5vw;
+                        padding: 2vw 0;
+                        margin-left: 1.8vw;
                         font-size: 3vw;
                     }
                     span{
-                        left: 1.5vw;
-                        font-size: 3.5vw;
+                        left: 2vw;
+                        top: 1.8vw;
+                        font-size: 3.2vw;
                     }
                 }
                 .Box_News input:focus ~ span, input:valid ~ span{
-                    transform:translate(-1vw, -4.2vw);
-                    font-size: 3vw;
+                    transform:translate(-1vw, -5.9vw);
+                    font-size: 2.9vw;
                 }
             }
             .Bt_news{ 
                 position: absolute;
-                right: 2vw;
-                top: 35%;
+                left: 40.5%;
+                top: 105%;
                 input{
-                    font-size: 4vw;
-                    padding: 1vw 2vw;
+                    font-size: 3.6vw;
+                    padding: 1vw 3.5vw;
                     border-radius: 1.5vw;
-                    
                 }
             }
         }

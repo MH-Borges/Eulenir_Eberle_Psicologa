@@ -206,7 +206,7 @@
 @media only screen and (max-width: 767px){
     #blog{
         margin-bottom: 0;
-        padding: 8vw 0;
+        padding: 7vw 0 15vw 0;
         .container{
             .blog_Block{
                 flex-wrap: wrap;
@@ -263,35 +263,45 @@
                             text-align: center;
                             font-size: 4vw;
                             max-width: 100%;
-                            top: 50vw;
+                            top: 51.5vw;
                         }
                         img{
                             width: 100%;
                             border-radius: 3vw;
-                            margin-bottom: 10vw;
+                            margin-bottom: 9vw;
                         }
                         .icons{
-                            margin-top: 0;
                             justify-content: space-around;
                             width: 100%;
+                            padding: 2.5vw 0;
+                            margin: 0;
+                            :nth-child(3){
+                                display: none;
+                            }
+                            :nth-child(4){
+                                display: none;
+                            }
                             i{
                                 color: $Green;
-                                font-size: 3.5vw;
+                                font-size: 3.8vw;
                             }
                             h4{
                                 font-size: 3vw;
-                                margin-left: 0.4vw;
+                                margin: 0;
+                                padding: 0;
                                 &::before{display: none;}
                             }
                             p{
-                                font-size: 2vw;
+                                font-size: 2.8vw;
+                                margin: 0;
+                                padding: 0;
                                 &::before{display: none;}
                             }
                         }
                         .resume_txt{
                             text-align: center;
-                            padding: 1.5vw 3vw;
-                            font-size: 3vw;
+                            padding: 2vw 4vw;
+                            font-size: 2.8vw;
                             border-radius: 2vw;
                             margin: 0;
                         }
@@ -299,15 +309,15 @@
                 }
             }
             .blogBT{
-                justify-content: center;
                 width: 100%;
                 margin: 3vw 0 0 0;
                 a{
-                    padding: 1vw;
+                    margin-left: auto;
+                    padding: 2vw 0 2vw 2vw;
                     button{
                         font-size: 4vw;
                         border-radius: 2vw;
-                        padding: 1vw 2.5vw;
+                        padding: 1vw 3vw;
                         transition: none;
                     }
                 }
