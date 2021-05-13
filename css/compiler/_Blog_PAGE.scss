@@ -237,228 +237,110 @@
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
     #banner_Blog{
-        width: 100%;
-        height: 17vw;
-        background-color: $Pink;
-        margin-top: 9vw;
-        display: flex;
-        position: relative;
-        overflow: hidden;
+        height: 30vw;
+        margin-top: 30vw;
         img{
             position: absolute;
-            width: 11%;
-            opacity: 0.15;
+            width: 15%;
+            opacity: 0.2;
         }
         #vecto01{
             transform: rotate(35deg);
-            bottom: -1.5vw;
-            left: -1vw;
+            bottom: -2vw;
+            left: -2vw;
         }
         #vecto02{
             transform: rotate(215deg);
-            right: -1vw;
-            top: -1vw;
+            right: -2vw;
+            top: -2vw;
         }
         .container{
-            display: flex;
-            position: relative;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
             h2{
-                width: 50%;
-                font-size: 1.5vw;
-                font-weight: 400;
-                color: $Brown;
-                line-height: 2.2vw;
-                margin-top: 1vw;
-                span{
-                    font-weight: 700;
-                }
+                width: 80%;
+                font-size: 3.2vw;
+                line-height: 5vw;
+                margin-top: 2vw;
             }
         }
     }
     #cards_blog{
-        width: 100%;
-        display: flex;
-        position: relative;
-        padding: 5vw 0;
+        padding: 5vw 0 20vw 0;
         .container{
-            display: flex;
-            position: relative;
-            flex-wrap: wrap;
-            padding: 1vw 1.5vw;
+            padding: 2vw 1vw;
             .Itens_blog {
-                width: 100%;
-                display: flex;
-                position: relative;
+                flex-wrap: wrap;
                 ul{
-                    display: flex;
-                    position: relative;
-                    font-family: 'Raleway';
-                    font-size: 1.1vw;
-                    li {
-                        display: inline-block;
-                        position: relative;
-                        cursor: pointer;
-                        list-style: none;
-                        font-weight: 700;
-                        color: $Brown;
-                        margin-right: 1.5vw;
+                    width: 100%;
+                    font-size: 3.5vw;
+                    justify-content: space-around;
+                    margin: 15vw 0 2vw 0;
+                    li{
                         &::after{
-                            position: absolute;
-                            left: 0;
-                            bottom: -0.3vw;
-                            width: 100%;
-                            height: 0.25vw;
-                            background: $Brown;
-                            content: "";
-                            opacity: 0;
-                            border-radius: 2vw;
-                        }
-                        &:last-child {
-                            margin-right: 0;
-                        }
-                    }
-                    li.active{
-                        color: $Green;
-                        &:after {
-                            opacity: 1;
+                            bottom: -0.6vw;
+                            height: 0.75vw;
+                            border-radius: 2.5vw;
                         }
                     }
                 }
                 form{
-                    display: flex;
-                    position: relative;
-                    margin-left: auto;
+                    width: 25%;
+                    position: absolute;
+                    right: 0;
                     button{
-                        position: absolute;
-                        background: none;
-                        border: none;
-                        font-size: 1.3vw;
-                        color: $Brown;
-                        left: -0.3vw;
-                        top: 0.5vw;
+                        font-size: 3vw;
+                        left: -4vw;
+                        top: 0.4vw;
                     }
                     #close{
-                        font-size: 1.4vw;
-                        margin-left: 11.5vw;
-                        top: 0.3vw;
+                        font-size: 3vw;
+                        margin-left: 24vw;
+                        top: 0.4vw;
                     }
                     input{
-                        padding: 0.5vw 0;
-                        margin-left: 1.5vw;
-                        font-size: 1vw;
-                        font-family: 'Raleway';
-                        color: $Brown;
-                        font-weight: 600;
-                        border: none;
-                        outline: none; 
-                        background: none;
-                        border-bottom: 0.25vw solid $Brown;
+                        width: 96%;
+                        margin-left: 0;
+                        font-size: 2.5vw;
+                        border-bottom: 0.5vw solid $Brown;
                     }
                 }
             }
             .Cards_Blog_Page{
-                width: 100%;
-                display: flex;
-                position: relative;
-                flex-wrap: wrap;
-                margin: 1vw 0;
-                justify-content: flex-start;
+                margin: 2vw 0;
+                padding: 2vw 0;
+                justify-content: center;
                 a{
-                    width: 30%;
-                    height: 30vw;
-                    color: $Black;
-                    text-decoration: none;
-                    margin: 2vw 1.3vw;
-                    
+                    width: 85%;
+                    height: 100vw;
+                    margin: 3vw 0 10vw 0;  
                     .card_blog{
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        position: relative;
-                        flex-wrap: wrap;
-                        background-color: $Green_T;
-                        padding: 1vw;
-                        border-radius: 1vw;
-                        font-family: 'Raleway';
-                        transition: 0.3s ease-in-out;
-                        &:hover{
-                            transform: translateY(-0.6vw);
-                        }
-                        #img{
-                            width: 100%;
-                            height: 50%;
-                            img{
-                                border-radius: 1vw;
-                                width:100%;
-                                height: 100%;
-                            }
-                        }
+                        padding: 2.5vw;
+                        border-radius: 4vw;
+                        transition: none;
+                        &:hover{transform: none;}
+                        #img{img{border-radius: 2.5vw;}}
                         .icons_blog_page{
-                            width: 100%;
-                            height: 7%;
-                            display: flex;
-                            position: relative;
-                            align-items: center;
-                            justify-content: space-around;
-                            margin-top: 0.5vw;
-                            i{
-                                font-size: 1vw;
-                                color: $Green;
-                                margin: 0;
-                            }
-                            p, h3{
-                                font-size: 0.8vw;
-                                font-weight: 600;
-                                margin: 0;
-                            }
+                            margin-top: 1vw;
+                            i{font-size: 3.5vw;}
+                            p, h3{font-size: 2.2vw;}
                         }
                         .tag{
-                            display: flex;
-                            position: relative;
-                            justify-content: center;
-                            align-items: center;
-                            width: 30%;
-                            height: 15%;
                             p{
-                                margin: 0;
-                                font-size: 0.75vw;
-                                font-weight: 700;
-                                background-color: $Pink;
-                                padding: 0.15vw 0.6vw;
-                                border-radius: 1vw;
-                                color: $Brown;
+                                font-size: 3vw;
+                                padding: 0.3vw 1.8vw;
+                                border-radius: 1.5vw;
                             }
                         }
                         .title_blog{
-                            display: flex;
-                            position: relative;
-                            justify-content: center;
-                            align-items: center;
-                            width: 70%;
-                            height: 15%;
-                            padding: 0.5vw;
                             h4{
-                                font-weight: 700;
-                                text-align: center;
-                                margin: 0;
-                                font-size: 1vw;
+                                padding: 0 2vw;
+                                font-size: 3.5vw;
                             }
                         }
                         .prev{
-                            display: flex;
-                            align-items: center;
                             height: 25%;
-                            background-color: $White;
-                            margin: 0;
-                            text-align: center;
-                            padding: 0 1.1vw;
-                            border-radius: 1vw;
-                            font-weight: 600;
-                            font-size: 0.8vw;
-                            overflow: hidden;
+                            padding: 0 2.5vw;
+                            border-radius: 2vw;
+                            font-size: 2.8vw;
                         }
                     }
                 }
