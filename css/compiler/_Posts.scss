@@ -1,0 +1,257 @@
+#header_text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vw;
+    padding: 6.5vw 0 0 0;
+    border-bottom: 0.5vw solid $Brown;
+    .container{
+        display: flex;
+        position: relative;
+        font-family: 'Raleway';
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 ;
+        p, i, span, h3{
+            margin: 0;
+            padding: 0;
+            color: $Brown;
+        }
+        h1{
+            width: 100%;
+            font-weight: 700;
+            font-size: 2.8vw;
+            padding: 1vw 0 1.5vw 0;
+            color: $Black;
+        }
+        i{
+            font-size: 1.2vw;
+            color: $Green;
+            padding: 0.5vw 0.8vw 0.5vw 2.5vw;
+        }
+        :nth-child(3){margin-left: -1.5vw;}
+        :nth-child(8){margin-left: auto;}
+        p{font-size: 1vw;}
+        h3{font-size: 1vw;font-weight: 700;}
+        span{font-weight: 700;}
+    }
+}
+
+#article_Post{
+    width: 100%;
+    .container{
+        display: flex;
+        padding: 0;
+        margin-bottom: 7vw;
+        .Text_Prin{
+            width: 70%;
+            color: $Black;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            font-family: 'Raleway';
+            align-items: center;
+            h1{
+                padding: 2vw 0 0 0;
+                font-weight: 900;
+                color: $Brown;
+            }
+            img{
+                width: 85%;
+                border-radius: 1.5vw;
+            }
+            article{
+                margin: 0;
+                padding: 2vw 3.5vw 5vw 3.5vw;
+                font-weight: 500;
+                font-size: 1.1vw;
+                line-height: 1.8vw;
+            }
+            :nth-child(1){
+                border-radius: 0;
+                border-bottom-left-radius: 3vw;
+                border-bottom-right-radius: 3vw;
+            }
+            p{
+                width: 100%;
+                font-size: 0.8vw;
+                margin: 1vw 0;
+                padding: 0 0 0 6vw;
+            }
+            .fontes{
+                width: 100%;
+                h2{
+                    font-size: 2.5vw;
+                    font-weight: 800;
+                }
+                p{
+                    font-size: 1.1vw;
+                    font-style: italic;
+                    padding: 0 8vw 0 2.5vw;
+                    margin: 1vw 0;
+                    border-radius: 0;
+                }
+            }
+        }
+        .Pages_links{
+            width: 30%;
+            height: 45vw;
+            background-color: $Green_T;
+            padding: 3vw;
+            border-bottom-left-radius: 2.5vw;
+            border-bottom-right-radius: 2.5vw;
+            font-family: 'Raleway';
+            color: $Brown;
+            h3{
+                font-size: 1.7vw;
+                font-weight: 900;
+            }
+            ul{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                margin: 0.6vw 0 4vw 0;
+                a{
+                    position: relative;
+                    margin: 0.1vw 1vw 0.1vw 2.5vw;
+                    padding: 0.8vw 0;
+                    color: $Brown;
+                    text-decoration: none;
+                    li{
+                        list-style: none;
+                        font-size: 1vw;
+                        font-weight: 500;
+                    }
+                    ::after{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        background-color: $Pink;
+                        width: 8%;
+                        height: 0.35vw;
+                        border-radius: 0.5vw;
+                        top: 45%;
+                        left: -13%;
+                        transition: 0.3s ease-in;
+                    }
+                    &:hover{
+                        ::after{
+                            top: 40%;
+                            border-radius: 0;
+                            width: 4.5%;
+                            height: 24%;
+                            left: -10%;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#recomend{
+    width: 100%;
+    display: flex;
+    padding: 2vw 0;
+    margin-bottom: 5vw;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 7.8vw;
+        background-color: $Pink;
+        opacity: 0.6;
+    }
+    .container{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1vw 0;
+        font-family: 'Raleway';
+        h3{
+            color: $Brown;
+            font-weight: 800;
+            width: 30%;
+            font-size: 2.8vw;
+            padding: 0 5vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            span{font-size: 1.6vw;}
+        }
+        .Cards_Post{
+            width: 100%;
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            margin: 5vw 0 1vw 0;
+            justify-content: space-around;
+            a{
+                width: 30%;
+                height: 20vw;
+                color: $Black;
+                text-decoration: none;
+                .card_blog{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    position: relative;
+                    flex-wrap: wrap;
+                    background-color: $Green_T;
+                    padding: 1vw;
+                    border-radius: 1vw;
+                    font-family: 'Raleway';
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        transform: translateY(-0.6vw);
+                    }
+                    #img{
+                        width: 100%;
+                        height: 75%;
+                        img{
+                            border-radius: 1vw;
+                            width:100%;
+                            height: 100%;
+                        }
+                    }
+                    .tag{
+                        display: flex;
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 10%;
+                        p{
+                            margin: 0;
+                            font-size: 0,9vw;
+                            font-weight: 700;
+                            background-color: $Pink;
+                            padding: 0.15vw 0.6vw;
+                            border-radius: 1vw;
+                            color: $Brown;
+                        }
+                    }
+                    .title_blog{
+                        display: flex;
+                        position: relative;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 15%;
+                        padding: 0.5vw;
+                        h4{
+                            font-weight: 700;
+                            text-align: center;
+                            margin: 0;
+                            font-size: 1.1vw;
+                            padding: 0 3vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
