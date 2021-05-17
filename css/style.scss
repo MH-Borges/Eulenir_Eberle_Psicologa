@@ -27,9 +27,14 @@ img,svg{
     a{
         text-decoration: none;
     }
-    img{
+    svg{
         position: absolute;
         z-index: -1;
+        g{
+           path{
+                fill: $Green_T;
+           } 
+        }
     }
     h2{
         font-family:"Alex_Letter" !important;
@@ -107,6 +112,25 @@ img,svg{
     .title{width: 100%;
         img{width: 50%;}
         h2{font-size: 13vw;}
+    }
+    .title{
+        width: 100%;
+        svg{
+            width: 50%;
+            position: absolute;
+            z-index: -1;
+            top: -37%;
+            g{
+               path{
+                    fill: $Green_T;
+               } 
+            }
+        }
+        h2{
+            font-size: 13vw;
+            margin: 0;
+            -webkit-text-stroke: 0.1vw $Brown;
+        }
     }
     #btn_UP{
         bottom: 5vw;

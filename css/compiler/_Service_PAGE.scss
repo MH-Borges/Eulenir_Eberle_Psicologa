@@ -30,8 +30,16 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            img{
-                width: 23%;
+            svg{
+                position: absolute;
+                z-index: -1;
+                top: -10%;
+                g{
+                   path{
+                        fill: rgba(221, 184, 177, 1);
+                        opacity: 0.5;
+                    } 
+                }
             }
             h2{
                 font-size: 4vw;
@@ -86,8 +94,16 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            img{
-                width: 23%;
+            svg{
+                position: absolute;
+                z-index: -1;
+                top: -5%;
+                g{
+                   path{
+                        fill: rgba(81, 64, 63, 1);
+                        opacity: 0.25;
+                    } 
+                }
             }
             h2{
                 font-size: 4vw;
@@ -128,8 +144,16 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            img{
-                width: 23%;
+            svg{
+                position: absolute;
+                z-index: -1;
+                top: -5%;
+                g{
+                   path{
+                        fill: rgba(148, 168, 157, 1);
+                        opacity: 0.5;
+                    } 
+                }
             }
             h2{
                 font-size: 4vw;
@@ -174,8 +198,16 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            img{
-                width: 23%;
+            svg{
+                position: absolute;
+                z-index: -1;
+                top: -5%;
+                g{
+                   path{
+                        fill: rgba(184, 204, 193, 1);
+                        opacity: 0.45;
+                    } 
+                }
             }
             h2{
                 font-size: 4vw;
@@ -274,8 +306,16 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            img{
-                width: 30%;
+            svg{
+                position: absolute;
+                z-index: -1;
+                top: -5%;
+                g{
+                   path{
+                        fill: rgba(221, 184, 177, 1);
+                        opacity: 0.45;
+                    } 
+                }
             }
             h2{
                 font-size: 4vw;
@@ -325,7 +365,7 @@
         .container{
             padding: 3vw 0;
             .Tl_oq{
-                img{width: 50%;}
+                svg{top: -40%;}
                 h2{
                     font-size: 9vw;
                     margin: 2vw 0 0 0;
@@ -360,7 +400,7 @@
         .container{
             padding: 2vw 0;
             .tl_who{
-                img{width: 50%;}
+                svg{top: -37%;}
                 h2{
                     font-size: 10vw;
                     margin: 2vw 0 0 0;
@@ -386,7 +426,7 @@
         .container{
             padding: 1vw 0 40% 0;
             .tl_ben{
-                img{width: 50%;}
+                svg{top: -37%;}
                 h2{
                     font-size: 10vw;
                     margin: 2vw 0 0 0;
@@ -415,7 +455,7 @@
         .container{
             padding: 3vw 0;
             .tl_fun{
-                img{width: 50%;}
+                svg{top: -37%;}
                 h2{
                     font-size: 10vw;
                     margin: 2vw 0 0 0;
@@ -478,7 +518,7 @@
         .container{
             padding: 3vw 0;
             .tl_pas{
-                img{width: 50%;}
+                svg{top: -60%;}
                 h2{
                     font-size: 7.5vw;
                     margin: 2vw 0 0 0;

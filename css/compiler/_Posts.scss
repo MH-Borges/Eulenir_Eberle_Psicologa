@@ -36,7 +36,6 @@
         span{font-weight: 700;}
     }
 }
-
 #article_Post{
     width: 100%;
     .container{
@@ -52,13 +51,14 @@
             font-family: 'Raleway';
             align-items: center;
             h1{
+                text-align: center;
                 padding: 2vw 0 0 0;
                 font-weight: 900;
                 color: $Brown;
             }
             img{
                 width: 85%;
-                border-radius: 1.5vw;
+                border-radius: 2vw;
             }
             article{
                 margin: 0;
@@ -68,6 +68,7 @@
                 line-height: 1.8vw;
             }
             :nth-child(1){
+                width: 100%;
                 border-radius: 0;
                 border-bottom-left-radius: 3vw;
                 border-bottom-right-radius: 3vw;
@@ -149,7 +150,6 @@
         }
     }
 }
-
 #recomend{
     width: 100%;
     display: flex;
@@ -191,7 +191,7 @@
             justify-content: space-around;
             a{
                 width: 30%;
-                height: 20vw;
+                height: 22vw;
                 color: $Black;
                 text-decoration: none;
                 .card_blog{
@@ -210,7 +210,7 @@
                     }
                     #img{
                         width: 100%;
-                        height: 75%;
+                        height: 72%;
                         img{
                             border-radius: 1vw;
                             width:100%;
@@ -224,9 +224,10 @@
                         align-items: center;
                         width: 100%;
                         height: 10%;
+                        margin-top: 0.5vw;
                         p{
                             margin: 0;
-                            font-size: 0,9vw;
+                            font-size: 0.9vw;
                             font-weight: 700;
                             background-color: $Pink;
                             padding: 0.15vw 0.6vw;
@@ -242,6 +243,7 @@
                         width: 100%;
                         height: 15%;
                         padding: 0.5vw;
+                        margin-top: 0.5vw;
                         h4{
                             font-weight: 700;
                             text-align: center;
@@ -254,4 +256,154 @@
             }
         }
     }
+}
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    #header_text{
+        margin-top: 30vw;
+        padding: 9vw 0 0 0;
+        border-bottom: 1.5vw solid $Brown;
+        .container{
+            max-width: 90%;
+            h1{font-size: 5.5vw;}
+            i{
+                font-size: 3vw;
+                padding: 0.5vw 1.5vw 1vw 2.5vw;
+            }
+            :nth-child(3){margin-left: -2vw;}
+            p{font-size: 2.5vw;}
+            h3{font-size: 2.8vw;}
+        }
+    }
+    #article_Post{
+        .container{
+            max-width: 90%;
+            margin-bottom: 0;
+            padding-bottom: 63vw;
+            flex-wrap: wrap;
+            position: relative;
+            .Text_Prin{
+                width: 100%;
+                h1{font-size: 5vw;}
+                img{
+                    width: 80%;
+                    border-radius: 5vw;
+                }
+                article{
+                    padding: 5vw 5vw 7vw 5vw;
+                    font-weight: 500;
+                    font-size: 3vw;
+                    line-height: 4.5vw;
+                }
+                :nth-child(1){
+                    height: 20%;
+                    border-bottom-left-radius: 5vw;
+                    border-bottom-right-radius: 5vw;
+                }
+                p{
+                    font-size: 2vw;
+                    margin: 1.5vw 0;
+                    padding: 0 0 0 10vw;
+                }
+                .fontes{
+                    width: 100%;
+                    margin-bottom: 5vw;
+                    h2{font-size: 5vw;}
+                    p{
+                        font-size: 2.5vw;
+                        padding: 0 8vw 0 6.5vw;
+                        margin: 2vw 0;
+                    }
+                }
+            }
+            .Pages_links{
+                position: absolute;
+                bottom: 0;
+                left: -5%;
+                width: 110%;
+                height: 60vw;
+                padding: 4vw;
+                border-radius: 0;
+                display: flex;
+                justify-content: space-around;
+                h3{font-size:5vw;}
+                ul{
+                    position: absolute;
+                    margin: 8vw 0 0 0;
+                    left: 14%;
+                    a{
+                        margin: 0.5vw 0;
+                        padding: 2vw;
+                        li{font-size: 2.5vw;}
+                        ::after{display: none;}
+                    }
+                }
+                #mobile{left: 54%;}
+            }
+        }
+    }
+    #recomend{
+        margin: 0;
+        padding: 2vw 0;
+        margin-bottom: 5vw;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 15vw;
+        }
+        .container{
+            h3{
+                width:auto;
+                font-size: 5.5vw;
+                padding: 0 3vw;
+                margin-top: 1vw;
+                span{font-size: 3.5vw;}
+            }
+            .Cards_Post{
+                margin: 7vw 0 1vw 0;
+                a{
+                    width: 85%;
+                    height: 65vw;
+                    margin: 3.5vw 0;
+                    .card_blog{
+                        padding: 2.5vw;
+                        border-radius: 3vw;
+                        transition: none;
+                        #img{img{border-radius: 3vw;}}
+                        .tag{margin-top: 1.5vw;
+                            p{
+                                font-size: 2.5vw;
+                                padding: 0.3vw 1.5vw;
+                            }
+                        }
+                        .title_blog{
+                            display: flex;
+                            position: relative;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 15%;
+                            padding: 0.5vw;
+                            margin-top: 1.5vw;
+                            h4{
+                                font-size: 3.5vw;
+                                padding: 0 10vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* Small Device = 320px */
+@media only screen and (max-width: 479px){
 }

@@ -51,9 +51,13 @@ img, svg {
   text-decoration: none;
 }
 
-.title img {
+.title svg {
   position: absolute;
   z-index: -1;
+}
+
+.title svg g path {
+  fill: #D0D8CE;
 }
 
 .title h2 {
@@ -479,10 +483,10 @@ img, svg {
   font-family: 'Raleway';
 }
 
-#banner .Block img {
+#banner .Block svg {
   position: absolute;
   height: 100%;
-  left: -26.6vw;
+  left: -24.3vw;
   width: 60%;
 }
 
@@ -525,7 +529,7 @@ img, svg {
     width: 100%;
     height: 72vw;
   }
-  #banner .Block img {
+  #banner .Block svg {
     display: none;
   }
   #banner .Block h3 {
@@ -948,6 +952,15 @@ img, svg {
           align-items: center;
 }
 
+#blog .container .Tt_Blog svg {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+#blog .container .Tt_Blog svg g path {
+  fill: #b8ccc1;
+}
+
 #blog .container .blog_Block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1265,7 +1278,7 @@ img, svg {
     text-align: center;
     font-size: 4vw;
     max-width: 100%;
-    top: 51.5vw;
+    top: 55vw;
   }
   #blog .container .blog_Block .Big_card a img {
     width: 100%;
@@ -1364,6 +1377,17 @@ img, svg {
 #contato .container .Tl_cont {
   position: absolute;
   margin-top: -13vw;
+}
+
+#contato .container .Tl_cont svg {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+#contato .container .Tl_cont svg g path {
+  fill: #51403f;
+  mix-blend-mode: multiply;
+  opacity: 0.4;
 }
 
 #contato .container .Tl_cont h2 {
@@ -2234,7 +2258,7 @@ footer .rodapeBox p a {
 #Eulenir_Page .container .text_Eule h2 {
   font-family: "Alex_Letter";
   font-size: 4.7vw;
-  -webkit-text-stroke: 0.05vw #51403F;
+  -webkit-text-stroke: 0.02vw #51403F;
 }
 
 #Eulenir_Page .container .text_Eule h2::before {
@@ -2318,8 +2342,16 @@ footer .rodapeBox p a {
           align-items: center;
 }
 
-#skill .container .Eulenir_title img {
+#skill .container .Eulenir_title svg {
+  position: absolute;
   z-index: 1;
+  top: -5%;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+#skill .container .Eulenir_title svg g path {
+  fill: #f0ece6;
 }
 
 #skill .container .Eulenir_title h2 {
@@ -2423,6 +2455,9 @@ footer .rodapeBox p a {
   }
   #skill .container {
     padding: 0 0 8vw 0;
+  }
+  #skill .container .Eulenir_title svg {
+    top: -45%;
   }
   #skill .container .Eulenir_title h2 {
     margin-top: 0.5vw;
@@ -2611,6 +2646,9 @@ footer .rodapeBox p a {
     margin-top: 8vw;
     padding: 28vw 0 3.5vw 0;
   }
+  #txt_um .container .Tl_Ebook svg {
+    top: -42%;
+  }
   #txt_um .container .Tl_Ebook h2 {
     font-size: 12vw;
     margin: 0;
@@ -2731,8 +2769,15 @@ footer .rodapeBox p a {
   width: 100%;
 }
 
-#oque .container .Tl_oq img {
-  width: 23%;
+#oque .container .Tl_oq svg {
+  position: absolute;
+  z-index: -1;
+  top: -10%;
+}
+
+#oque .container .Tl_oq svg g path {
+  fill: #ddb8b1;
+  opacity: 0.5;
 }
 
 #oque .container .Tl_oq h2 {
@@ -2825,8 +2870,15 @@ footer .rodapeBox p a {
   width: 100%;
 }
 
-#quem .container .tl_who img {
-  width: 23%;
+#quem .container .tl_who svg {
+  position: absolute;
+  z-index: -1;
+  top: -5%;
+}
+
+#quem .container .tl_who svg g path {
+  fill: #51403f;
+  opacity: 0.25;
 }
 
 #quem .container .tl_who h2 {
@@ -2891,8 +2943,15 @@ footer .rodapeBox p a {
   width: 100%;
 }
 
-#beneficios .container .tl_ben img {
-  width: 23%;
+#beneficios .container .tl_ben svg {
+  position: absolute;
+  z-index: -1;
+  top: -5%;
+}
+
+#beneficios .container .tl_ben svg g path {
+  fill: #94a89d;
+  opacity: 0.5;
 }
 
 #beneficios .container .tl_ben h2 {
@@ -2964,8 +3023,15 @@ footer .rodapeBox p a {
   width: 100%;
 }
 
-#funciona .container .tl_fun img {
-  width: 23%;
+#funciona .container .tl_fun svg {
+  position: absolute;
+  z-index: -1;
+  top: -5%;
+}
+
+#funciona .container .tl_fun svg g path {
+  fill: #b8ccc1;
+  opacity: 0.45;
 }
 
 #funciona .container .tl_fun h2 {
@@ -3110,8 +3176,15 @@ footer .rodapeBox p a {
   width: 100%;
 }
 
-#palestra .container .tl_pas img {
-  width: 30%;
+#palestra .container .tl_pas svg {
+  position: absolute;
+  z-index: -1;
+  top: -5%;
+}
+
+#palestra .container .tl_pas svg g path {
+  fill: #ddb8b1;
+  opacity: 0.45;
 }
 
 #palestra .container .tl_pas h2 {
@@ -3160,8 +3233,8 @@ footer .rodapeBox p a {
   #oque .container {
     padding: 3vw 0;
   }
-  #oque .container .Tl_oq img {
-    width: 50%;
+  #oque .container .Tl_oq svg {
+    top: -40%;
   }
   #oque .container .Tl_oq h2 {
     font-size: 9vw;
@@ -3199,8 +3272,8 @@ footer .rodapeBox p a {
   #quem .container {
     padding: 2vw 0;
   }
-  #quem .container .tl_who img {
-    width: 50%;
+  #quem .container .tl_who svg {
+    top: -37%;
   }
   #quem .container .tl_who h2 {
     font-size: 10vw;
@@ -3225,8 +3298,8 @@ footer .rodapeBox p a {
   #beneficios .container {
     padding: 1vw 0 40% 0;
   }
-  #beneficios .container .tl_ben img {
-    width: 50%;
+  #beneficios .container .tl_ben svg {
+    top: -37%;
   }
   #beneficios .container .tl_ben h2 {
     font-size: 10vw;
@@ -3256,8 +3329,8 @@ footer .rodapeBox p a {
   #funciona .container {
     padding: 3vw 0;
   }
-  #funciona .container .tl_fun img {
-    width: 50%;
+  #funciona .container .tl_fun svg {
+    top: -37%;
   }
   #funciona .container .tl_fun h2 {
     font-size: 10vw;
@@ -3317,8 +3390,8 @@ footer .rodapeBox p a {
   #palestra .container {
     padding: 3vw 0;
   }
-  #palestra .container .tl_pas img {
-    width: 50%;
+  #palestra .container .tl_pas svg {
+    top: -60%;
   }
   #palestra .container .tl_pas h2 {
     font-size: 7.5vw;
@@ -3432,6 +3505,7 @@ footer .rodapeBox p a {
 }
 
 #article_Post .container .Text_Prin h1 {
+  text-align: center;
   padding: 2vw 0 0 0;
   font-weight: 900;
   color: #51403F;
@@ -3439,7 +3513,7 @@ footer .rodapeBox p a {
 
 #article_Post .container .Text_Prin img {
   width: 85%;
-  border-radius: 1.5vw;
+  border-radius: 2vw;
 }
 
 #article_Post .container .Text_Prin article {
@@ -3451,6 +3525,7 @@ footer .rodapeBox p a {
 }
 
 #article_Post .container .Text_Prin :nth-child(1) {
+  width: 100%;
   border-radius: 0;
   border-bottom-left-radius: 3vw;
   border-bottom-right-radius: 3vw;
@@ -3616,7 +3691,7 @@ footer .rodapeBox p a {
 
 #recomend .container .Cards_Post a {
   width: 30%;
-  height: 20vw;
+  height: 22vw;
   color: #171A18;
   text-decoration: none;
 }
@@ -3645,7 +3720,7 @@ footer .rodapeBox p a {
 
 #recomend .container .Cards_Post a .card_blog #img {
   width: 100%;
-  height: 75%;
+  height: 72%;
 }
 
 #recomend .container .Cards_Post a .card_blog #img img {
@@ -3667,11 +3742,12 @@ footer .rodapeBox p a {
           align-items: center;
   width: 100%;
   height: 10%;
+  margin-top: 0.5vw;
 }
 
 #recomend .container .Cards_Post a .card_blog .tag p {
   margin: 0;
-  font-size: 0,9vw;
+  font-size: 0.9vw;
   font-weight: 700;
   background-color: #DDB8B1;
   padding: 0.15vw 0.6vw;
@@ -3693,6 +3769,7 @@ footer .rodapeBox p a {
   width: 100%;
   height: 15%;
   padding: 0.5vw;
+  margin-top: 0.5vw;
 }
 
 #recomend .container .Cards_Post a .card_blog .title_blog h4 {
@@ -3703,6 +3780,182 @@ footer .rodapeBox p a {
   padding: 0 3vw;
 }
 
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  #header_text {
+    margin-top: 30vw;
+    padding: 9vw 0 0 0;
+    border-bottom: 1.5vw solid #51403F;
+  }
+  #header_text .container {
+    max-width: 90%;
+  }
+  #header_text .container h1 {
+    font-size: 5.5vw;
+  }
+  #header_text .container i {
+    font-size: 3vw;
+    padding: 0.5vw 1.5vw 1vw 2.5vw;
+  }
+  #header_text .container :nth-child(3) {
+    margin-left: -2vw;
+  }
+  #header_text .container p {
+    font-size: 2.5vw;
+  }
+  #header_text .container h3 {
+    font-size: 2.8vw;
+  }
+  #article_Post .container {
+    max-width: 90%;
+    margin-bottom: 0;
+    padding-bottom: 63vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  #article_Post .container .Text_Prin {
+    width: 100%;
+  }
+  #article_Post .container .Text_Prin h1 {
+    font-size: 5vw;
+  }
+  #article_Post .container .Text_Prin img {
+    width: 80%;
+    border-radius: 5vw;
+  }
+  #article_Post .container .Text_Prin article {
+    padding: 5vw 5vw 7vw 5vw;
+    font-weight: 500;
+    font-size: 3vw;
+    line-height: 4.5vw;
+  }
+  #article_Post .container .Text_Prin :nth-child(1) {
+    height: 20%;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+  }
+  #article_Post .container .Text_Prin p {
+    font-size: 2vw;
+    margin: 1.5vw 0;
+    padding: 0 0 0 10vw;
+  }
+  #article_Post .container .Text_Prin .fontes {
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+  #article_Post .container .Text_Prin .fontes h2 {
+    font-size: 5vw;
+  }
+  #article_Post .container .Text_Prin .fontes p {
+    font-size: 2.5vw;
+    padding: 0 8vw 0 6.5vw;
+    margin: 2vw 0;
+  }
+  #article_Post .container .Pages_links {
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    width: 110%;
+    height: 60vw;
+    padding: 4vw;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #article_Post .container .Pages_links h3 {
+    font-size: 5vw;
+  }
+  #article_Post .container .Pages_links ul {
+    position: absolute;
+    margin: 8vw 0 0 0;
+    left: 14%;
+  }
+  #article_Post .container .Pages_links ul a {
+    margin: 0.5vw 0;
+    padding: 2vw;
+  }
+  #article_Post .container .Pages_links ul a li {
+    font-size: 2.5vw;
+  }
+  #article_Post .container .Pages_links ul a ::after {
+    display: none;
+  }
+  #article_Post .container .Pages_links #mobile {
+    left: 54%;
+  }
+  #recomend {
+    margin: 0;
+    padding: 2vw 0;
+    margin-bottom: 5vw;
+  }
+  #recomend::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 15vw;
+  }
+  #recomend .container h3 {
+    width: auto;
+    font-size: 5.5vw;
+    padding: 0 3vw;
+    margin-top: 1vw;
+  }
+  #recomend .container h3 span {
+    font-size: 3.5vw;
+  }
+  #recomend .container .Cards_Post {
+    margin: 7vw 0 1vw 0;
+  }
+  #recomend .container .Cards_Post a {
+    width: 85%;
+    height: 65vw;
+    margin: 3.5vw 0;
+  }
+  #recomend .container .Cards_Post a .card_blog {
+    padding: 2.5vw;
+    border-radius: 3vw;
+    -webkit-transition: none;
+    transition: none;
+  }
+  #recomend .container .Cards_Post a .card_blog #img img {
+    border-radius: 3vw;
+  }
+  #recomend .container .Cards_Post a .card_blog .tag {
+    margin-top: 1.5vw;
+  }
+  #recomend .container .Cards_Post a .card_blog .tag p {
+    font-size: 2.5vw;
+    padding: 0.3vw 1.5vw;
+  }
+  #recomend .container .Cards_Post a .card_blog .title_blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 15%;
+    padding: 0.5vw;
+    margin-top: 1.5vw;
+  }
+  #recomend .container .Cards_Post a .card_blog .title_blog h4 {
+    font-size: 3.5vw;
+    padding: 0 10vw;
+  }
+}
+
+/* Small Device = 320px */
 /* Medium Device = 1200px */
 /* Tablet Device = 768px */
 /* Wide Mobile = 480px */
@@ -3718,6 +3971,23 @@ footer .rodapeBox p a {
   }
   .title h2 {
     font-size: 13vw;
+  }
+  .title {
+    width: 100%;
+  }
+  .title svg {
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+    top: -37%;
+  }
+  .title svg g path {
+    fill: #D0D8CE;
+  }
+  .title h2 {
+    font-size: 13vw;
+    margin: 0;
+    -webkit-text-stroke: 0.1vw #51403F;
   }
   #btn_UP {
     bottom: 5vw;

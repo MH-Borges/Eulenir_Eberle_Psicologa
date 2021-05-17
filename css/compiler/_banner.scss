@@ -19,10 +19,10 @@
         color: $White;
         text-align: center;
         font-family: 'Raleway';
-        img{
+        svg{
             position: absolute;
             height: 100%;
-            left: -26.6vw;
+            left: -24.3vw;
             width: 60%;
         }
         h3{
@@ -65,8 +65,7 @@
         .Block{
             width: 100%;
             height: 72vw;
-            
-            img{display: none;}
+            svg{display: none;}
             h3{
                 font-size: 8vw;
                 text-transform:uppercase;

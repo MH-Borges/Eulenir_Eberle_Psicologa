@@ -17,6 +17,15 @@
         .Tl_cont{
             position: absolute;
             margin-top: -13vw;
+            svg{transform:scale(-1, -1);
+                g{
+                   path{
+                        fill:rgba(81, 64, 63, 1);
+                        mix-blend-mode: multiply;
+                        opacity: 0.4;
+                   } 
+                }
+            }
             h2{
                 margin-left: 0;
             }
