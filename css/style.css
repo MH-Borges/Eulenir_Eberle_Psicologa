@@ -44,15 +44,39 @@ img, svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 23%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .title a {
+  position: absolute;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 3.5vw;
+}
+
+.title a h2 {
+  padding: 0 2vw;
+  margin: 0;
 }
 
 .title svg {
-  position: absolute;
+  width: 23vw;
+  height: 6.5vw;
   z-index: -1;
 }
 
@@ -61,11 +85,12 @@ img, svg {
 }
 
 .title h2 {
+  position: absolute;
   font-family: "Alex_Letter" !important;
   font-size: 5.5vw;
   -webkit-text-stroke: 0.03vw #51403F;
   color: #51403F;
-  margin-left: 1.3vw;
+  margin-top: 1.5vw;
 }
 
 .botao {
@@ -558,15 +583,14 @@ img, svg {
   display: flex;
   position: relative;
   width: 100%;
-  height: 75vh;
+  height: 44vw;
   margin-bottom: 2vw;
 }
 
 #servicos #img_serv {
   position: absolute;
-  top: 0;
+  top: 3%;
   left: 0;
-  height: 100%;
 }
 
 #servicos .container {
@@ -588,7 +612,7 @@ img, svg {
   font-family: 'Raleway';
   font-weight: 600;
   font-size: 1.35vw;
-  margin: 1vw;
+  margin: 3vw 0 0 0;
 }
 
 #servicos .container .cards {
@@ -599,7 +623,7 @@ img, svg {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 90%;
-  margin-top: 4.5vw;
+  margin-top: 6.5%;
 }
 
 #servicos .container .cards a {
@@ -627,9 +651,10 @@ img, svg {
 }
 
 #servicos .container .cards a .Card img {
-  width: 58%;
+  width: 60%;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
+  margin-top: 2vw;
 }
 
 #servicos .container .cards a .Card h3 {
@@ -638,54 +663,54 @@ img, svg {
   font-weight: 800;
   font-size: 1.3vw;
   color: #51403F;
-  margin-top: 3vw;
+  margin-top: 4vw;
   padding: 0 1vw;
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
 
 #servicos .container .cards a :hover img {
-  margin-top: -0.5vw;
+  margin-top: 1.3vw;
 }
 
 #servicos .container .cards a :hover h3 {
-  margin-top: 4vw;
+  margin-top: 5.5vw;
 }
 
 #servicos .container .cards :nth-child(2) .Card img {
-  width: 55%;
+  width: 58%;
 }
 
 #servicos .container .cards :nth-child(2) .Card h3 {
-  margin-top: 2.8vw;
+  margin-top: 3.7vw;
 }
 
 #servicos .container .cards :nth-child(2) :hover img {
-  margin-top: -0.5vw;
+  margin-top: 1vw;
 }
 
 #servicos .container .cards :nth-child(2) :hover h3 {
-  margin-top: 3.8vw;
+  margin-top: 5.5vw;
 }
 
 #servicos .container .cards :nth-child(3) .Card {
-  margin-top: -0.8vw;
+  margin-top: -1vw;
 }
 
 #servicos .container .cards :nth-child(3) .Card img {
-  width: 53%;
+  width: 57%;
 }
 
 #servicos .container .cards :nth-child(3) .Card h3 {
-  margin-top: 2.8vw;
+  margin-top: 4vw;
 }
 
 #servicos .container .cards :nth-child(3) :hover img {
-  margin-top: -0.5vw;
+  margin-top: 1vw;
 }
 
 #servicos .container .cards :nth-child(3) :hover h3 {
-  margin-top: 3.8vw;
+  margin-top: 6vw;
 }
 
 /* Medium Device = 1200px */
@@ -961,6 +986,10 @@ img, svg {
   fill: #b8ccc1;
 }
 
+#blog .container .Tt_Blog h2 {
+  font-size: 6vw;
+}
+
 #blog .container .blog_Block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1004,6 +1033,7 @@ img, svg {
   padding: 1vw;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
+  font-weight: 200;
 }
 
 #blog .container .blog_Block .Simp_cards a .card_blog:hover {
@@ -1034,12 +1064,26 @@ img, svg {
   font-family: 'Raleway';
 }
 
-#blog .container .blog_Block .Simp_cards a .card_blog .blog_infos h3 {
+#blog .container .blog_Block .Simp_cards a .card_blog .blog_infos .titulo_blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 65%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#blog .container .blog_Block .Simp_cards a .card_blog .blog_infos .titulo_blog h3 {
   font-size: 1.5vw;
   font-weight: 700;
   color: #51403F;
   text-align: center;
-  margin: 2.5vw 1vw;
+  margin: 0 1vw 0 2VW;
 }
 
 #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos i {
@@ -1093,7 +1137,7 @@ img, svg {
   display: flex;
   position: relative;
   background-color: #D0D8CE;
-  margin: 1.5vw 0;
+  margin: 1vw 0;
   padding: 1vw;
   border-radius: 2vw;
   -webkit-transition: ease-in-out 0.3s;
@@ -1137,11 +1181,14 @@ img, svg {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin: 0;
   margin-top: 2vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  font-weight: 500;
+  padding: 0 1vw;
 }
 
 #blog .container .blog_Block .Big_card a .icons i {
@@ -1152,7 +1199,6 @@ img, svg {
 #blog .container .blog_Block .Big_card a .icons h4 {
   position: relative;
   font-size: 1vw;
-  font-weight: 600;
   margin-left: 0.4vw;
 }
 
@@ -1186,12 +1232,11 @@ img, svg {
 }
 
 #blog .container .blog_Block .Big_card a .resume_txt {
-  padding: 1.5vw;
+  padding: 1.5vw 2vw;
   background-color: #F9F3F2;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   font-weight: 600;
   border-radius: 1.5vw;
-  margin-top: 1vw;
   margin: 0;
 }
 
@@ -1201,7 +1246,7 @@ img, svg {
 
 #blog .container .blogBT button {
   font-size: 1.3vw;
-  color: #51403F;
+  color: #F9F3F2;
   background-color: #94A89D;
   border-radius: 0.7vw;
   padding: 0.5vw 1.3vw;
@@ -1214,6 +1259,9 @@ img, svg {
   #blog {
     margin-bottom: 0;
     padding: 7vw 0 15vw 0;
+  }
+  #blog .container .Tt_Blog h2 {
+    font-size: 15vw;
   }
   #blog .container .blog_Block {
     -ms-flex-wrap: wrap;
@@ -1240,9 +1288,9 @@ img, svg {
   #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos {
     width: 45%;
   }
-  #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos h3 {
+  #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos .titulo_blog h3 {
     font-size: 4vw;
-    margin: 3vw 2vw;
+    margin: 0 1vw 0 2vw;
   }
   #blog .container .blog_Block .Simp_cards a .card_blog .blog_infos i {
     font-size: 3.5vw;
@@ -1376,7 +1424,7 @@ img, svg {
 
 #contato .container .Tl_cont {
   position: absolute;
-  margin-top: -13vw;
+  top: -40%;
 }
 
 #contato .container .Tl_cont svg {
@@ -1391,7 +1439,7 @@ img, svg {
 }
 
 #contato .container .Tl_cont h2 {
-  margin-left: 0;
+  font-size: 6vw;
 }
 
 #contato .container h3 {
@@ -1493,7 +1541,10 @@ img, svg {
             justify-content: center;
   }
   #contato .container .Tl_cont {
-    top: -15%;
+    top: -30%;
+  }
+  #contato .container .Tl_cont h2 {
+    font-size: 15vw;
   }
   #contato .container h3 {
     font-size: 5vw;
@@ -1738,8 +1789,8 @@ footer .rodapeBox p {
 }
 
 footer .rodapeBox p a {
-  width: 50%;
-  margin-left: 1vw;
+  width: 55%;
+  margin-left: 0.3vw;
 }
 
 /* Medium Device = 1200px */
@@ -2343,9 +2394,7 @@ footer .rodapeBox p a {
 }
 
 #skill .container .Eulenir_title svg {
-  position: absolute;
   z-index: 1;
-  top: -5%;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
@@ -2378,8 +2427,8 @@ footer .rodapeBox p a {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 42%;
-  margin: 1.5vw;
+  width: 43.5%;
+  margin: 1.5vw 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2456,16 +2505,14 @@ footer .rodapeBox p a {
   #skill .container {
     padding: 0 0 8vw 0;
   }
-  #skill .container .Eulenir_title svg {
-    top: -45%;
-  }
   #skill .container .Eulenir_title h2 {
-    margin-top: 0.5vw;
-    font-size: 10vw;
+    margin-top: -2vw;
+    font-size: 13vw;
   }
   #skill .container .Itens_skills {
-    width: 85%;
+    width: 90%;
     padding: 2vw 0;
+    margin: 5vw 0;
   }
   #skill .container .Itens_skills p {
     width: 85%;
@@ -2510,8 +2557,7 @@ footer .rodapeBox p a {
 
 #txt_um .container .Tl_Ebook h2 {
   font-size: 4.5vw;
-  margin-top: 0.4vw;
-  margin-left: 1vw;
+  margin-top: 0.5vw;
 }
 
 #txt_um .container p {
@@ -2646,12 +2692,9 @@ footer .rodapeBox p a {
     margin-top: 8vw;
     padding: 28vw 0 3.5vw 0;
   }
-  #txt_um .container .Tl_Ebook svg {
-    top: -42%;
-  }
   #txt_um .container .Tl_Ebook h2 {
-    font-size: 12vw;
-    margin: 0;
+    font-size: 13vw;
+    margin: 2vw 0 0 0;
   }
   #txt_um .container p {
     width: 82%;
@@ -2770,9 +2813,7 @@ footer .rodapeBox p a {
 }
 
 #oque .container .Tl_oq svg {
-  position: absolute;
   z-index: -1;
-  top: -10%;
 }
 
 #oque .container .Tl_oq svg g path {
@@ -2871,9 +2912,7 @@ footer .rodapeBox p a {
 }
 
 #quem .container .tl_who svg {
-  position: absolute;
   z-index: -1;
-  top: -5%;
 }
 
 #quem .container .tl_who svg g path {
@@ -2888,7 +2927,7 @@ footer .rodapeBox p a {
 }
 
 #quem .container p {
-  width: 35%;
+  width: 38%;
   font-size: 1.25vw;
   line-height: 1.5vw;
   font-weight: 400;
@@ -2907,7 +2946,7 @@ footer .rodapeBox p a {
       -ms-flex-align: center;
           align-items: center;
   width: 37%;
-  margin-right: -7vw;
+  margin-right: -12vw;
 }
 
 #beneficios {
@@ -2944,9 +2983,7 @@ footer .rodapeBox p a {
 }
 
 #beneficios .container .tl_ben svg {
-  position: absolute;
   z-index: -1;
-  top: -5%;
 }
 
 #beneficios .container .tl_ben svg g path {
@@ -2964,11 +3001,11 @@ footer .rodapeBox p a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40%;
+  width: 47%;
   font-size: 1.25vw;
   line-height: 1.5vw;
   font-weight: 400;
-  margin-top: 2vw;
+  margin-top: 3vw;
   padding-top: 4vw;
 }
 
@@ -3024,9 +3061,7 @@ footer .rodapeBox p a {
 }
 
 #funciona .container .tl_fun svg {
-  position: absolute;
   z-index: -1;
-  top: -5%;
 }
 
 #funciona .container .tl_fun svg g path {
@@ -3177,9 +3212,7 @@ footer .rodapeBox p a {
 }
 
 #palestra .container .tl_pas svg {
-  position: absolute;
   z-index: -1;
-  top: -5%;
 }
 
 #palestra .container .tl_pas svg g path {
@@ -3233,12 +3266,9 @@ footer .rodapeBox p a {
   #oque .container {
     padding: 3vw 0;
   }
-  #oque .container .Tl_oq svg {
-    top: -40%;
-  }
   #oque .container .Tl_oq h2 {
-    font-size: 9vw;
-    margin: 2vw 0 0 0;
+    font-size: 10vw;
+    margin-top: -1.5vw;
   }
   #oque .container .icon_OQ {
     margin: 0;
@@ -3272,12 +3302,9 @@ footer .rodapeBox p a {
   #quem .container {
     padding: 2vw 0;
   }
-  #quem .container .tl_who svg {
-    top: -37%;
-  }
   #quem .container .tl_who h2 {
     font-size: 10vw;
-    margin: 2vw 0 0 0;
+    margin-top: -1.5vw;
   }
   #quem .container p {
     width: 80%;
@@ -3298,12 +3325,9 @@ footer .rodapeBox p a {
   #beneficios .container {
     padding: 1vw 0 40% 0;
   }
-  #beneficios .container .tl_ben svg {
-    top: -37%;
-  }
   #beneficios .container .tl_ben h2 {
     font-size: 10vw;
-    margin: 2vw 0 0 0;
+    margin-top: -1.5vw;
   }
   #beneficios .container p {
     width: 80%;
@@ -3317,7 +3341,7 @@ footer .rodapeBox p a {
     width: 65%;
     margin: 0;
     padding: 0;
-    top: 59%;
+    top: 65%;
   }
   #beneficios .container .Img_areaBen img {
     width: 65%;
@@ -3329,12 +3353,9 @@ footer .rodapeBox p a {
   #funciona .container {
     padding: 3vw 0;
   }
-  #funciona .container .tl_fun svg {
-    top: -37%;
-  }
   #funciona .container .tl_fun h2 {
     font-size: 10vw;
-    margin: 2vw 0 0 0;
+    margin-top: -1.5vw;
   }
   #funciona .container p {
     width: 80%;
@@ -3358,14 +3379,14 @@ footer .rodapeBox p a {
   }
   #agenda #VA1 {
     width: 30%;
-    top: 62.3vw;
+    top: 66.8vw;
   }
   #agenda #VA2 {
     width: 30%;
-    top: 62.3vw;
+    top: 66.8vw;
   }
   #agenda .container {
-    padding: 5vw 0;
+    padding: 7vw 0;
   }
   #agenda .container h2 {
     font-weight: 800;
@@ -3390,15 +3411,12 @@ footer .rodapeBox p a {
   #palestra .container {
     padding: 3vw 0;
   }
-  #palestra .container .tl_pas svg {
-    top: -60%;
-  }
   #palestra .container .tl_pas h2 {
-    font-size: 7.5vw;
-    margin: 2vw 0 0 0;
+    font-size: 9vw;
+    margin-top: -1vw;
   }
   #palestra .container p {
-    width: 80%;
+    width: 85%;
     font-size: 3vw;
     line-height: 4vw;
     margin: 2vw 0 0 0;
@@ -3963,31 +3981,21 @@ footer .rodapeBox p a {
   .container {
     max-width: 95%;
   }
-  .title {
-    width: 100%;
+  .title a {
+    top: -1vw;
   }
-  .title img {
-    width: 50%;
-  }
-  .title h2 {
-    font-size: 13vw;
-  }
-  .title {
-    width: 100%;
+  .title a h2 {
+    padding: 0 2vw;
+    margin: 0;
   }
   .title svg {
-    width: 50%;
-    position: absolute;
+    width: 55vw;
+    height: auto;
     z-index: -1;
-    top: -37%;
-  }
-  .title svg g path {
-    fill: #D0D8CE;
   }
   .title h2 {
-    font-size: 13vw;
-    margin: 0;
-    -webkit-text-stroke: 0.1vw #51403F;
+    font-size: 15vw;
+    margin-top: -3.5vw;
   }
   #btn_UP {
     bottom: 5vw;

@@ -19,6 +19,9 @@
                    } 
                 }
             }
+            h2{
+                font-size: 6vw;
+            }
         }
         .blog_Block{
             display: flex;
@@ -43,6 +46,7 @@
                         margin: 1vw 0;
                         padding: 1vw;
                         transition: ease-in-out 0.3s;
+                        font-weight: 200;
                         &:hover{
                             transform: translateY(-0.5vw);
                         }
@@ -59,12 +63,19 @@
                             justify-content: center;
                             align-items: center;
                             font-family: 'Raleway';
-                            h3{
-                                font-size: 1.5vw;
-                                font-weight: 700;
-                                color: $Brown;
-                                text-align: center;
-                                margin: 2.5vw 1vw;
+                            .titulo_blog{
+                                display: flex;
+                                width: 100%;
+                                height: 65%;
+                                justify-content: center;
+                                align-items: center;
+                                h3{
+                                    font-size: 1.5vw;
+                                    font-weight: 700;
+                                    color: $Brown;
+                                    text-align: center;
+                                    margin:0 1vw 0 2VW;
+                                }
                             }
                             i{
                                 color: $Green;
@@ -112,7 +123,7 @@
                 display: flex;
                 position: relative;
                 background-color: $Green_T;
-                margin: 1.5vw 0;
+                margin: 1vw 0;
                 padding: 1vw;
                 border-radius: 2vw;
                 transition: ease-in-out 0.3s;
@@ -142,9 +153,12 @@
                     .icons{
                         display: flex;
                         position: relative;
+                        margin: 0;
                         margin-top: 2vw;
                         justify-content: space-between;
                         width: 100%;
+                        font-weight: 500;
+                        padding: 0 1vw;
                         i{
                             color: $Green;
                             font-size: 1.3vw;
@@ -152,7 +166,6 @@
                         h4{
                             position: relative;
                             font-size: 1vw;
-                            font-weight: 600;
                             margin-left: 0.4vw;
                             &::before{
                                 position: absolute;
@@ -181,12 +194,11 @@
                         }
                     }
                     .resume_txt{
-                        padding: 1.5vw;
+                        padding: 1.5vw 2vw;
                         background-color: $White;
-                        font-size: 1.2vw;
+                        font-size: 1.1vw;
                         font-weight: 600;
                         border-radius: 1.5vw;
-                        margin-top: 1vw;
                         margin: 0;
                     }
                 }
@@ -196,7 +208,7 @@
             margin: 1.5vw 2vw 0 auto;
             button{
                 font-size: 1.3vw;
-                color: $Brown;
+                color: $White;
                 background-color: $Green;
                 border-radius: 0.7vw;
                 padding: 0.5vw 1.3vw;
@@ -217,6 +229,7 @@
         margin-bottom: 0;
         padding: 7vw 0 15vw 0;
         .container{
+            .Tt_Blog{h2{font-size: 15vw;}}
             .blog_Block{
                 flex-wrap: wrap;
                 margin: 2vw 0;
@@ -235,9 +248,11 @@
                             }
                             .blog_infos{
                                 width:45%;
-                                h3{
-                                    font-size: 4vw;
-                                    margin: 3vw 2vw;
+                                .titulo_blog{
+                                    h3{
+                                        font-size: 4vw;
+                                        margin:0 1vw 0 2vw;
+                                    }
                                 }
                                 i{
                                     font-size: 3.5vw;

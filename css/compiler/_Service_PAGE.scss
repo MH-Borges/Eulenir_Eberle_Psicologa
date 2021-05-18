@@ -31,9 +31,7 @@
             align-items: center;
             width: 100%;
             svg{
-                position: absolute;
                 z-index: -1;
-                top: -10%;
                 g{
                    path{
                         fill: rgba(221, 184, 177, 1);
@@ -95,9 +93,7 @@
             align-items: center;
             width: 100%;
             svg{
-                position: absolute;
                 z-index: -1;
-                top: -5%;
                 g{
                    path{
                         fill: rgba(81, 64, 63, 1);
@@ -112,7 +108,7 @@
             }
         }
         p{
-            width: 35%;
+            width: 38%;
             font-size: 1.25vw;
             line-height: 1.5vw;
             font-weight: 400;
@@ -124,7 +120,7 @@
             justify-content: center;
             align-items: center;
             width: 37%;
-            margin-right: -7vw;
+            margin-right: -12vw;
         }
     }
 }
@@ -145,9 +141,7 @@
             align-items: center;
             width: 100%;
             svg{
-                position: absolute;
                 z-index: -1;
-                top: -5%;
                 g{
                    path{
                         fill: rgba(148, 168, 157, 1);
@@ -163,11 +157,11 @@
         }
         p{
             display: flex;
-            width: 40%;
+            width: 47%;
             font-size: 1.25vw;
             line-height: 1.5vw;
             font-weight: 400;
-            margin-top: 2vw;
+            margin-top: 3vw;
             padding-top: 4vw;
         }
         .Img_areaBen{
@@ -199,9 +193,7 @@
             align-items: center;
             width: 100%;
             svg{
-                position: absolute;
                 z-index: -1;
-                top: -5%;
                 g{
                    path{
                         fill: rgba(184, 204, 193, 1);
@@ -307,9 +299,7 @@
             align-items: center;
             width: 100%;
             svg{
-                position: absolute;
                 z-index: -1;
-                top: -5%;
                 g{
                    path{
                         fill: rgba(221, 184, 177, 1);
@@ -365,10 +355,9 @@
         .container{
             padding: 3vw 0;
             .Tl_oq{
-                svg{top: -40%;}
                 h2{
-                    font-size: 9vw;
-                    margin: 2vw 0 0 0;
+                    font-size: 10vw;
+                    margin-top: -1.5vw;
                 }
             }
             .icon_OQ{
@@ -400,10 +389,9 @@
         .container{
             padding: 2vw 0;
             .tl_who{
-                svg{top: -37%;}
                 h2{
                     font-size: 10vw;
-                    margin: 2vw 0 0 0;
+                    margin-top: -1.5vw;
                 }
             }
             p{
@@ -426,10 +414,9 @@
         .container{
             padding: 1vw 0 40% 0;
             .tl_ben{
-                svg{top: -37%;}
                 h2{
                     font-size: 10vw;
-                    margin: 2vw 0 0 0;
+                    margin-top: -1.5vw;
                 }
             }
             p{
@@ -444,7 +431,7 @@
                 width: 65%;
                 margin: 0;
                 padding: 0;
-                top: 59%;
+                top: 65%;
                 img{width: 65%;}
             }
         }
@@ -455,10 +442,9 @@
         .container{
             padding: 3vw 0;
             .tl_fun{
-                svg{top: -37%;}
                 h2{
                     font-size: 10vw;
-                    margin: 2vw 0 0 0;
+                    margin-top: -1.5vw;
                 }
             }
             p{
@@ -484,14 +470,14 @@
         }
         #VA1{
             width: 30%;
-            top: 62.3vw;
+            top: 66.8vw;
         }
         #VA2{
             width: 30%;
-            top: 62.3vw;
+            top: 66.8vw;
         }
         .container{
-            padding:5vw 0;
+            padding:7vw 0;
             h2{
                 font-weight: 800;
                 font-size: 4.5vw;
@@ -518,14 +504,13 @@
         .container{
             padding: 3vw 0;
             .tl_pas{
-                svg{top: -60%;}
                 h2{
-                    font-size: 7.5vw;
-                    margin: 2vw 0 0 0;
+                    font-size: 9vw;
+                    margin-top: -1vw;
                 }
             }
             p{
-                width: 80%;
+                width: 85%;
                 font-size: 3vw;
                 line-height: 4vw;
                 margin: 2vw 0 0 0;

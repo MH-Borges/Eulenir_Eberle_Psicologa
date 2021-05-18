@@ -23,12 +23,27 @@ img,svg{
     display: flex;
     position: relative;
     justify-content: center;
-    width: 23%;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     a{
+        position: absolute;
         text-decoration: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 3.5vw;
+        h2{
+            padding: 0 2vw;
+            margin: 0;
+        }
     }
     svg{
-        position: absolute;
+        width: 23vw;
+        height: 6.5vw;
         z-index: -1;
         g{
            path{
@@ -37,11 +52,12 @@ img,svg{
         }
     }
     h2{
+        position: absolute;
         font-family:"Alex_Letter" !important;
         font-size: 5.5vw;
         -webkit-text-stroke: 0.03vw $Brown;
         color: $Brown;
-        margin-left: 1.3vw;
+        margin-top: 1.5vw;
     }
 }
 .botao{
@@ -109,27 +125,22 @@ img,svg{
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
     .container{max-width: 95%;}
-    .title{width: 100%;
-        img{width: 50%;}
-        h2{font-size: 13vw;}
-    }
     .title{
-        width: 100%;
-        svg{
-            width: 50%;
-            position: absolute;
-            z-index: -1;
-            top: -37%;
-            g{
-               path{
-                    fill: $Green_T;
-               } 
+        a{
+            top: -1vw;
+            h2{
+                padding: 0 2vw;
+                margin: 0;
             }
         }
+        svg{
+            width: 55vw;
+            height: auto;
+            z-index: -1;
+        }
         h2{
-            font-size: 13vw;
-            margin: 0;
-            -webkit-text-stroke: 0.1vw $Brown;
+            font-size: 15vw;
+            margin-top: -3.5vw;
         }
     }
     #btn_UP{

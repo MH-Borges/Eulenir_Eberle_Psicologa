@@ -78,18 +78,11 @@
         align-items: center;
         .Eulenir_title{
             svg{
-                position: absolute;
                 z-index: 1;
-                top: -5%;
                 transform: scaleX(-1);
-                g{
-                   path{
-                        fill: rgba(240, 236, 230, 1);
-                    } 
-                }
+                g{path{fill: rgba(240, 236, 230, 1);}}
             }
             h2{
-                
                 font-size: 4.5vw;
                 z-index: 2;
             }
@@ -105,8 +98,8 @@
             p{
                 display: flex;
                 position: relative;
-                width: 42%;
-                margin: 1.5vw;
+                width: 43.5%;
+                margin: 1.5vw 0;
                 align-items: center;
                 font-weight: 600;
                 font-size: 1.2vw;
@@ -182,12 +175,12 @@
         .container{
             padding: 0 0 8vw 0;
             .Eulenir_title{
-                svg{top: -45%;}
-                h2{margin-top: 0.5vw;font-size: 10vw;}
+                h2{margin-top: -2vw;font-size: 13vw;}
             }
             .Itens_skills{
-                width: 85%;
+                width: 90%;
                 padding: 2vw 0;
+                margin: 5vw 0;
                 p{
                     width: 85%;
                     margin: 2vw;

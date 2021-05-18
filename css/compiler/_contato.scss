@@ -16,7 +16,7 @@
         align-items: center;
         .Tl_cont{
             position: absolute;
-            margin-top: -13vw;
+            top: -40%;
             svg{transform:scale(-1, -1);
                 g{
                    path{
@@ -27,7 +27,7 @@
                 }
             }
             h2{
-                margin-left: 0;
+                font-size: 6vw;
             }
         }
         h3{
@@ -83,7 +83,6 @@
                 color:$Green;
             }
         }
-        
         .Bt_cont{ 
             position: absolute;
             left: 40%;
@@ -116,9 +115,7 @@
         }
         .container{
             justify-content: center;
-            .Tl_cont{
-                top: -15%;
-            }
+            .Tl_cont{top: -30%;h2{font-size: 15vw;}}
             h3{
                 font-size: 5vw;
                 margin: 0;
