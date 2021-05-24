@@ -94,13 +94,24 @@ img,svg{
     border: 1px $White solid;
     i{
         color: $White;
-        font-size: 1.7vw;
+        font-size: 1.8vw;
         padding: 1vw 1vw 1vw 1.3vw;
     }
 }
 ::-webkit-scrollbar-track{background-color:$Green_T;}
 ::-webkit-scrollbar{width: 12px;}
 ::-webkit-scrollbar-thumb{background:$Green;}
+.st-btn{display:flex !important; .st-label{margin-left: 0.3vw; font-family:'Raleway';}}//share button
+#st-el-4, #st-el-5, #st-el-6, #st-el-7, #st-el-8, #st-el-9, #st-el-10{ 
+    .st-btns{
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .st-disclaimer{display: none;}
+    .st-logo{display: none;}
+}
 @import 'compiler/menu';
 @import 'compiler/banner';
 @import 'compiler/servicos';
@@ -144,7 +155,7 @@ img,svg{
         }
     }
     #btn_UP{
-        bottom: 5vw;
+        bottom: 12vw;
         right: -0.5vw;
         border-top-left-radius: 2vw;
         border-bottom-left-radius: 2vw;

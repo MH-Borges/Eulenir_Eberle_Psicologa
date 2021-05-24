@@ -144,7 +144,7 @@ img, svg {
 
 #btn_UP i {
   color: #F9F3F2;
-  font-size: 1.7vw;
+  font-size: 1.8vw;
   padding: 1vw 1vw 1vw 1.3vw;
 }
 
@@ -158,6 +158,39 @@ img, svg {
 
 ::-webkit-scrollbar-thumb {
   background: #94A89D;
+}
+
+.st-btn {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.st-btn .st-label {
+  margin-left: 0.3vw;
+  font-family: 'Raleway';
+}
+
+#st-el-4 .st-btns, #st-el-5 .st-btns, #st-el-6 .st-btns, #st-el-7 .st-btns, #st-el-8 .st-btns, #st-el-9 .st-btns, #st-el-10 .st-btns {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#st-el-4 .st-disclaimer, #st-el-5 .st-disclaimer, #st-el-6 .st-disclaimer, #st-el-7 .st-disclaimer, #st-el-8 .st-disclaimer, #st-el-9 .st-disclaimer, #st-el-10 .st-disclaimer {
+  display: none;
+}
+
+#st-el-4 .st-logo, #st-el-5 .st-logo, #st-el-6 .st-logo, #st-el-7 .st-logo, #st-el-8 .st-logo, #st-el-9 .st-logo, #st-el-10 .st-logo {
+  display: none;
 }
 
 .head {
@@ -4000,7 +4033,7 @@ footer .rodapeBox p a {
     margin-top: 4vw;
   }
   #btn_UP {
-    bottom: 5vw;
+    bottom: 12vw;
     right: -0.5vw;
     border-top-left-radius: 2vw;
     border-bottom-left-radius: 2vw;
