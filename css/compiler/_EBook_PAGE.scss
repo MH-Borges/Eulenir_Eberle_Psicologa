@@ -93,96 +93,230 @@
             width: 61%;
             font-size: 1.2vw;
             padding: 2.5vw 0;
-            a{
-                font-weight: 800;
-                color: $Black;
-                text-decoration: none;
+        }
+    }
+}
+#ebookCall{
+    width: 100%;
+    background-color: $Green_light;
+    margin-bottom: 10vw;
+    padding: 3vw 0;
+    .CalltoEbook{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Raleway';
+        padding: 2vw 5vw;
+        h3{
+            color: $White;
+            font-size: 2.5vw;
+            font-weight: 700;
+            text-align: left;
+            padding-right: 10vw;
+            line-height: 2.7vw;
+            margin-bottom: 4vw;
+        }
+        p{
+            color: $White;
+            font-size: 1.9vw;
+            font-weight: 700;
+            text-align: center;
+            padding: 0 2vw;
+            line-height: 2.1vw;
+            margin-bottom: 3vw;
+        }
+        .EbookBT{
+            button{
+                font-size: 1.3vw;
+                color: $White;
+                background-color: $Pink_dark;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 0.5vw;
+                padding: 0.5vw 1.3vw;
+                border: none;
+                margin-bottom: 5vw;
             }
         }
     }
 }
 
-/* Medium Device = 1200px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
 /* Tablet Device = 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-}
-/* Wide Mobile = 480px */
-@media only screen and (max-width: 767px){
     #txt_um{
         margin-top: 8vw;
-        padding:28vw 0 3.5vw 0;
         .container{
+            padding: 5vw;
             .Tl_Ebook{
                 h2{
-                    font-size: 13vw;
-                    margin: 2vw 0 0 0;
+                    font-size: 6.5vw;
+                    margin-top: 2vw;
                 }
             }
             p{
-                width: 82%;
-                font-size: 3.2vw;
-                padding: 3vw 0;
-                margin: 2vw 0;
+                margin-top: 1vw;
+                width: 100%;
+                font-size: 1.6vw;
+                padding: 2.5vw 3vw;
             }
         }
     }
     #ebook_img{
+        align-items: center;
+        justify-content: center;
+        margin: -3vw 0 5vw 0;
         #V1{
             width: 30%;
-            position: absolute;
             top: -16.5vw;
-            left: 0;
         }
         #V2{
             width: 30%;
-            position: absolute;
             bottom: -16.5vw;
-            right: 0;
-            transform: rotate(180deg);
         }
         .container{
-            padding: 5vw 0;
-            a{
-                justify-content: center;
-                img{
-                    width: 70%;
-                    transition: none;
-                }   
-            }
+            padding: 3vw 0;
+            a{ img{width: 45%;} }
             h2{
-                font-size: 4vw;
-                margin-top: 3vw;
+                font-size: 2.3vw;
+                margin-top: 2vw;
             }
             p{
-                text-align: center;
-                margin: 0;
-                font-size: 3.5vw;
-                margin-top: 2vw;
+                font-size: 1.8vw;
+                margin-top: 1.5vw;
             }
         }
     }
     #txt_dois{
-        margin:3.5vw 0 8vw 0;
+        margin-bottom: 4vw;
         .container{
             p{
-                width: 82%;
-                font-size: 3.2vw;
-                padding: 5vw 0;
-                margin: 0;
-                a{
-                    font-size: 3.5vw;
-                    font-weight: 800;
-                    color: $Black;
-                    text-decoration: none;
+                margin-top: 1vw;
+                width: 100%;
+                font-size: 1.6vw;
+                padding: 2.5vw 3vw;
+            }
+        }
+    }
+    #ebookCall{
+        margin-bottom: 10vw;
+        padding: 4vw 0;
+        .CalltoEbook{
+            padding: 3vw 5vw;
+            h3{
+                font-size: 3vw;
+                padding-right: 12vw;
+                line-height: 3.5vw;
+                margin-bottom: 4vw;
+            }
+            p{
+                font-size: 2.5vw;
+                text-align: center;
+                padding: 0 5vw;
+                line-height: 2.7vw;
+                margin-bottom: 5vw;
+            }
+            .EbookBT{
+                button{
+                    font-size: 2vw;
+                    border-radius: 1vw;
+                    padding: 1vw 2.3vw;
+                    margin-bottom: 0;
                 }
             }
         }
     }
 }
-/* Small Device = 320px */
-@media only screen and (max-width: 479px){
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    #txt_um{
+        justify-content: center;
+        align-items: center;
+        margin-top: 30vw;
+        padding:  5vw;
+        .container{
+            padding: 0 5vw;
+            .Tl_Ebook{
+                margin-bottom: 2vw;
+                h2{
+                    font-size: 12vw;
+                    margin-top: 3vw;
+                }
+            }
+            p{
+                width: 100%;
+                font-size: 3vw;
+                padding: 3vw;
+            }
+        }
+    }
+    #ebook_img{
+        justify-content: center;
+        align-items: center;
+        #V1{
+            width: 30%;
+            top: -16.5vw;
+        }
+        #V2{
+            width: 30%;
+            bottom: -16.5vw;
+        }
+        .container{
+            padding: 5vw 0;
+            a{ img{width: 60%;} }
+            h2{
+                font-size: 3.5vw;
+                margin-top: 2vw;
+            }
+            p{
+                font-size: 2.8vw;
+                margin-top: 1.5vw;
+            }
+        }
+    }
+    #txt_dois{
+        padding:  5vw;
+        margin-bottom: 0;
+        .container{
+            padding: 0 5vw;
+            p{
+                width: 100%;
+                font-size: 3vw;
+                padding: 4.4vw;
+            }
+        }
+    }
+    #ebookCall{
+        margin-bottom: 18vw;
+        padding: 7vw 0;
+        .MockupEbook{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{width: 80%;}
+        }
+        .CalltoEbook{
+            padding: 5vw 10vw;
+            h3{
+                font-size: 5vw;
+                text-align: left;
+                padding-right: 12vw;
+                line-height: 4.5vw;
+                margin-bottom: 7vw;
+            }
+            p{
+                font-size: 4vw;
+                padding: 0 2vw;
+                line-height: 3.5vw;
+                margin-bottom: 7vw;
+            }
+            .EbookBT{
+                button{
+                    font-size: 3vw;
+                    border-radius: 1.5vw;
+                    padding: 1.5vw 2.5vw;
+                    margin: 0;
+                }
+            }
+        }
+    }
 }
-
-

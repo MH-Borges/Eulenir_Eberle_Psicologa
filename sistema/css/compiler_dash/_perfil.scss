@@ -1,0 +1,423 @@
+#PerfilAdm{
+    width: 100%;
+    display: flex;
+    position: relative;
+    background: $Green_T;
+    flex-wrap: wrap;
+    font-family: 'Raleway';
+    .infosUser{
+        background-color: #ebebeb;
+        padding: 0;
+        overflow: hidden;
+        border-bottom-left-radius: 3vw;
+        border-bottom-right-radius: 3vw;
+        padding-bottom: 1vw;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+        .banner{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 18vw;
+            button{
+                position: absolute;
+                z-index: 2;
+                background-color: #fff;
+                border-radius: 50%;
+                padding: 0;
+                width: 2.3vw;
+                height: 2.3vw;
+                top: 1vw;
+                right: 2vw;
+                outline: none;
+                border: none;
+                transition: 0.3s;
+                i{
+                    color: $Green;
+                    font-size: 1vw;
+                    transition: 0.3s;
+                }
+                &:hover{
+                    background-color: #ebe4e3;
+                    i{
+                        color: $Green_dark;
+                    }
+                }
+            }
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            #msgBanner{
+                z-index: 5;
+                position: absolute;
+                font-size: 1.3vw;
+                bottom: -2vw;
+                right: 1.5vw;
+                font-weight: 900;
+                color: $Brown;
+            }
+        }
+        .imgPerfil{
+            position: relative;
+            width: 13vw;
+            height: 13vw;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $White;
+            margin-left: 2vw;
+            margin-top: -8vw;
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                padding: 0.5vw;
+            }
+            #msgPerfil{
+                font-size: 2vw;
+                margin-top: 15vw;
+                color: $Green;
+                font-weight: 900;
+                z-index: 99;
+            }
+            button{ display: none; transition: 1s ease-in-out; }
+            &:hover{
+                button{
+                    display: block;
+                    position: absolute;
+                    z-index: 2;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    padding: 0;
+                    width: 2.3vw;
+                    height: 2.3vw;
+                    top: 1vw;
+                    right: 1vw;
+                    outline: none;
+                    border: none;
+                    transition: 0.3s;
+                    i{
+                        color: $Brown;
+                        font-size: 1vw;
+                        transition: 0.3s;
+                    }
+                    &:hover{
+                        background-color: #ebe4e3;
+                        i{
+                            color: $Brown_dark;
+                        }
+                    }
+                }
+            }
+        }
+        .infoUser{
+            position: relative;
+            margin: -5vw 0 0 14vw;
+            padding: 1.5vw 2vw;        
+            button{
+                position: absolute;
+                background-color: #ebebeb;
+                border-radius: 50%;
+                padding: 0;
+                width: 2vw;
+                height: 2vw;
+                top: 1vw;
+                right: 1vw;
+                outline: none;
+                border: none;
+                i{
+                    color: $Brown_light;
+                    font-size: 0.9vw;
+                    transition: 0.3s;
+                }
+                &:hover{ background-color: $White; i{ color: $Brown_dark; } }
+            }
+            h3{
+                color: $Brown;
+                font-size: 1.7vw;
+                font-weight: 800;
+            }
+            h4{
+                color: $Brown_light;
+                font-size: 1.1vw;
+                font-weight: 600;
+                margin-left: 1vw;
+                span{
+                    margin-left: 0.5vw;
+                }
+            }
+            #msgInfos{
+                position: absolute;
+                font-weight: 800;
+                font-size: 1.2vw;
+                bottom: 0;
+                right: 3vw;
+            }
+        }
+    }
+    .sobre{
+        position: relative;
+        background-color: #ebebeb;
+        padding: 1.5vw 2vw 2.5vw 2vw;
+        border-radius: 2.5vw;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+        margin-top: 2vw;
+        button{
+            position: absolute;
+            background-color: #ebebeb;
+            border-radius: 50%;
+            padding: 0;
+            width: 2vw;
+            height: 2vw;
+            top: 1.2vw;
+            right: 1.2vw;
+            outline: none;
+            border: none;
+            transition: 0.3s;
+            i{
+                color: $Brown_light;
+                font-size: 0.9vw;
+                transition: 0.3s;
+            }
+            &:hover{ background-color: $White; i{ color: $Brown_dark; } }
+        }
+        h3{
+            color: $Brown;
+            font-size: 2vw;
+            font-weight: 800;
+        }
+        .sobretxt{
+            color: $Brown;
+            font-size: 1vw;
+            font-weight: 400;
+            margin: 1vw 0 0 1vw;
+        }
+        #msgSobre{
+            position: absolute;
+            font-weight: 800;
+            font-size: 1.2vw;
+            bottom: -2.5vw;
+            left: 45%;
+        }
+    }
+    .coments{
+        position: relative;
+        background-color: #ebebeb;
+        padding: 2vw;
+        border-radius: 2.5vw;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+        margin-top: 2vw;
+        margin-bottom: 10vw;
+        h3{
+            color: $Brown;
+            font-size: 2vw;
+            font-weight: 800;
+        }
+        .comentario{
+            position: relative;
+            margin: 1.5vw 1vw;
+            padding: 0.5vw 2vw;
+            height: 12vw;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 2vw;
+            overflow: hidden;
+            .imgUser{
+                position: absolute;
+                width: 3.5vw;
+                height: 3.5vw;
+                left: 1vw;
+                top: 1vw;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            .NomeUser{
+                color: $Brown;
+                font-size: 1.2vw;
+                margin: 1.5vw 0 0 3.5vw;
+                font-weight: 700;
+                span{
+                    font-size: 0.9vw;
+                    font-weight: 500;
+                    margin: -1vw 0 0 0.5vw
+                }
+            }
+            .textUser{
+                font-size: 1vw;
+                font-weight: 500;
+                color: $Brown;
+                margin-left: 4vw;
+                margin-right: 15vw;
+                padding: 0.5vw;
+            }
+            .postInfo{
+                position: absolute;
+                display: flex;
+                flex-wrap: wrap;
+                width: 12vw;
+                top: 0.5vw;
+                right: 1vw;
+                padding: 0.5vw;
+                .imgPost{
+                    width: 100%;
+                    height: 7vw;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 1vw;
+                    }
+                }
+                h4{
+                    height: 2.5vw;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 0.8vw;
+                    font-weight: 600;
+                    padding: 0.5vw;
+                    color: $Brown;
+                    margin-bottom: 0;
+
+                }
+            }
+            .delet_Comment{
+                border: none;
+                position: absolute;
+                left: 2vw;
+                top: 5vw;
+                font-size: 1vw;
+            }
+        }
+    }
+   
+    /* Modal */
+    #Bannermd{
+        .modal-header{
+            margin: 0 !important;
+            h5{
+                color: $Brown;
+                font-weight: 800;
+                font-family: 1.5vw;
+            }
+        }
+        .modal-body{
+            padding: 0 !important;
+            .BannerIMG{
+                width: 100%;
+            }
+        }
+        .modal-footer{
+            position: relative;
+            margin: 0 !important;
+            padding: 1vw;
+            .form-group{
+                position: absolute;
+                left: 1vw;
+                top: 0.3vw;
+            }
+        }
+    }
+    #Perfilmd{
+        .modal-header{
+            margin: 0 !important;
+            h5{
+                color: $Brown;
+                font-weight: 800;
+                font-family: 1.5vw;
+            }
+        }
+        .modal-body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .PerfilIMG{
+                width: 55%;
+            }
+        }
+        .modal-footer{
+            position: relative;
+            margin: 0 !important;
+            padding: 1vw;
+            .form-group{
+                position: absolute;
+                left: 1vw;
+                top: 0.3vw;
+            }
+        }
+    }
+    #Infomd{
+        .modal-header{
+            margin: 0 !important;
+            h5{
+                color: $Brown;
+                font-weight: 800;
+                font-family: 1.5vw;
+            }
+        }
+        .modal-body{
+            padding: 1vw 2vw;
+            .senhas{
+                .form-group{
+                    .senhaBx{
+                        position: relative;
+                        button{
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            border: none;
+                            background: none;
+                            padding: 0.5vw;
+                            i{
+                                font-size: 1vw;
+                                color: $Brown;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    #Sobremd{
+        .modal-header{
+            margin: 0 !important;
+            h5{
+                color: $Brown;
+                font-weight: 800;
+                font-family: 1.5vw;
+            }
+        }
+        .modal-body{
+            padding: 1vw 2vw;
+            .form-group{
+                label{
+                    font-size: 1vw;
+                    font-weight: 600;
+                    span{
+                        font-size: 0.75vw;
+                        margin-left: 0.5vw;
+                    }
+                }
+                textarea{
+                    height: 10vw;
+                    max-height: 38vw;
+                }
+            }
+            
+        }
+        
+    }
+}

@@ -83,12 +83,14 @@
         }
     }
 }
-
-/* Medium Device = 1200px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
 /* Tablet Device = 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    #servicos{
+        .container{
+            p{font-size: 1.4vw;}
+            .cards{margin-top: 5%;}
+        }
+    }
 }
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
@@ -125,7 +127,4 @@
             }
         }
     } 
-}
-/* Small Device = 320px */
-@media only screen and (max-width: 479px){
 }

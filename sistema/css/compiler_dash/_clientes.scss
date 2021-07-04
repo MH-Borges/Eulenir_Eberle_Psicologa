@@ -1,0 +1,151 @@
+.clientesPage{
+    position: relative;
+    padding: 2vw 1vw;
+    .Bt_clientes{
+       padding: 0.5vw;
+       margin: 1vw 0 2vw;
+       a{
+           padding: 0.5vw 1vw;
+           color: $White;
+           background-color: $Green;
+           border-radius: 0.5vw;
+           font-weight: 600;
+           text-decoration: none;
+       }
+    }
+    .BxTable{
+        background-color: $White;
+        padding: 1.5vw 1vw;
+        border-radius: 1vw;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+        margin-bottom: 15.5vw;
+        .dataTables_length{
+            margin-bottom: 1vw;
+            color: $Brown;
+            font-weight: 600;
+        }
+        table{
+            margin-bottom: 1vw;
+            th{
+                background-color: $Pink_light !important;
+            }
+        }
+        .dataTables_info{
+            font-weight: 600;
+            color: $Brown;
+        }
+        .dataTables_paginate{
+            font-weight: 600;
+            color: $Brown;
+            .paginate_button{
+                &:hover{
+                    border-radius: 0.5vw;
+                    border: none;
+                    background: $Green_light !important;
+                    color: $Brown_dark !important;
+                }
+            }
+            .paginate_button.current {
+                background: none;
+                border: $Pink 2px solid;
+                border-radius: 0.5vw;
+            }
+        }
+    }
+}
+
+#modalDadosClT{
+    .modal-header{
+        margin: 0 !important;
+        h5{
+            color: $Brown;
+            font-weight: 800;
+            font-family: 1.5vw;
+        }
+    }
+    .modal-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1vw 2vw;
+        .row{
+            width: 100%;
+        }
+        .form-group{
+            width: 100%;
+            .senha{
+                position: relative;
+                display: flex;
+                align-items: center;
+                button{
+                    color: $Brown;
+                    font-size: 1.5vw;
+                    background: none;
+                    border: none;
+                    right: 1vw;
+                    position: absolute;
+                }
+            }
+            .Bx_txt{
+                background-color: #ebebeb;
+                margin-top: 0.5vw;
+                padding: 0.5vw 2vw;
+                border-radius: 1vw;
+                h4{
+                    color: $Brown;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+        }
+        
+    }
+    .modal-footer{
+        position: relative;
+        margin: 0 !important;
+        padding: 1vw;
+        .form-group{
+            position: absolute;
+            left: 1vw;
+            top: 0.3vw;
+        }
+    }
+}
+
+#modalFoto{
+    .modal-header{
+        margin: 0 !important;
+        h5{
+            color: $Brown;
+            font-weight: 800;
+            font-family: 1.5vw;
+        }
+    }
+    .modal-body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5vw;
+        #TargetIMG{
+            width: 50%;
+        }
+    }
+    .modal-footer{
+        position: relative;
+        margin: 0 !important;
+        padding: 1vw;
+        .form-group{
+            position: absolute;
+            left: 1vw;
+            top: 0.3vw;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .clientesPage{
+        max-width: 90%;
+    }
+}

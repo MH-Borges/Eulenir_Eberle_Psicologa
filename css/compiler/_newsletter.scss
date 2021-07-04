@@ -59,25 +59,16 @@
             position: absolute;
             right: 8vw;
             top: 2.1vw;
-            input{
+            #btn-enviar-EmailNews{
                 font-size: 1.5vw;
                 font-family:"Raleway";
                 color: $White;
                 background-color: $Brown;
                 padding: 0.5vw 1.5vw;
-                border-radius: 0.5vw;
-                
+                border-radius: 0.5vw; 
             }
         }
     }
-}
-
-
-/* Medium Device = 1200px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
-/* Tablet Device = 768px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
 }
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
@@ -116,18 +107,14 @@
                 }
             }
             .Bt_news{ 
-                position: absolute;
                 left: 40.5%;
                 top: 105%;
-                input{
-                    font-size: 3.6vw;
-                    padding: 1vw 3.5vw;
-                    border-radius: 1.5vw;
+                #btn-enviar-EmailNews{
+                    font-size: 4vw;
+                    padding: 0.5vw 2.5vw;
+                    border-radius: 2vw;  
                 }
             }
         }
     }
-}
-/* Small Device = 320px */
-@media only screen and (max-width: 479px){
 }

@@ -77,12 +77,40 @@
         }
     }
 }
-
-/* Medium Device = 1200px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
 /* Tablet Device = 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    #sobre{
+        .container{
+            .sobre_block{
+                &::before{height: 5vw;}
+                h2{font-size: 4.5vw;}
+                .Sobre_txt{
+                    font-size: 1.5vw;
+                    p{
+                        &::before{
+                            width: 1vw;
+                            height: 1vw;
+                            top: 1.5vw;
+                            left: -2vw;
+                        }
+                    }
+                }
+            }
+            img{
+                display: flex;
+                position: relative;
+                margin: 2.5vw 0;
+                height: 28vw;
+                width: 23%;
+                border-radius: 2vw;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+            &::before{
+                height: 27.5vw;
+                right: 8vw;
+            }
+        }
+    }
 }
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
@@ -149,7 +177,4 @@
             }
         }
     }
-}
-/* Small Device = 320px */
-@media only screen and (max-width: 479px){
 }

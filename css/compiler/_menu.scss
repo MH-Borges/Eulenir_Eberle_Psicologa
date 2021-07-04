@@ -50,8 +50,15 @@
                     justify-content: center;
                     align-items: center;
                     margin-left: auto;
+                    .login{
+                        color: $White;
+                        font-size: 1vw;
+                        text-decoration: none;
+                        font-weight: 700;
+                        padding-right: 0.3vw;
+                    }
                     i{
-                        font-size: 1.3vw;
+                        font-size: 1.25vw;
                         color: $White;
                         padding: 0 0.4vw;
                         &:hover{
@@ -143,12 +150,62 @@
         }
     }
 }
-
-/* Medium Device = 1200px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
 /* Tablet Device = 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .head{
+        .navbar{
+            .nav_contato{    
+                .cont_contato{
+                    .nav_email{
+                        font-size: 1.4vw;
+                        padding: 0.3vw 0;
+                        i{font-size: 1.7vw;}
+                    }
+                    .nav_redes{
+                        .login{
+                            font-size: 1.5vw;
+                            padding-right: 0.3vw;
+                            margin-left: 1vw;
+                        }
+                        i{
+                            font-size: 1.7vw;
+                        }
+                    }
+                }
+            }
+            .nav_menu{
+                .cont_menu{
+                    #logo.actived{
+                        margin-left: -0.2vw;
+                        width: 38%;
+                        padding: 0.2vw;
+                    }
+                    .menu_box{
+                        margin: 0 2vw 0 auto;
+                        li{
+                            font-size: 1.5vw;
+                            a{padding: 1vw;}
+                            ::after{ display: none;}
+                        }
+                    }
+                    .menu_box.actived{
+                        margin-right: 1vw;
+                        li{
+                            font-size: 1.4vw;
+                        }
+                    }
+                    .Menu_Mobile{
+                        position: absolute;
+                        color: $Brown;
+                        padding: 2vw;
+                        font-size: 1.3vw;
+                        right: 0;
+                        top: -8vw;
+                    }
+                }
+            }
+        }
+    }
 }
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){	
@@ -162,7 +219,18 @@
                         a{font-size: 3vw;}
                     }
                     .nav_redes{
-                        i{font-size: 4.5vw; padding:2.5vw;}
+                        .login{
+                            margin: -0.5vw 0 0 0.5vw;
+                            padding-right: 0.3vw;
+                            i{
+                                font-size: 4vw;
+                                padding: 0.5vw;
+                            }
+                            span{
+                                display: none;
+                            }
+                        }
+                        i{font-size: 4.5vw; padding:2vw;}
                     }
                 }
             }
@@ -231,7 +299,4 @@
             }
         }
     }
-}
-/* Small Device = 320px */
-@media only screen and (max-width: 479px){
 }

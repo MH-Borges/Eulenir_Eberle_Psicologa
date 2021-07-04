@@ -1,0 +1,134 @@
+#descadastrar{
+    width: 100%;
+    height: 71vh;
+    margin-top: 9vw;
+    padding: 6vw 8vw 10vw 8vw;
+    background-color: $Green;
+    color: $Brown;
+    .container{
+        text-align: center;
+        font-family: 'Raleway';
+        p{
+            padding: 1.5vw 0;
+            margin: 0;
+            font-weight: 600;
+            font-size: 1.25vw;
+        }
+        .form_desc{
+            padding: 1vw;
+            .Title_desc{
+                h2{
+                    font-size: 2.5vw;
+                    font-weight: 700;
+                    padding: 0 0 1vw 0;
+                }
+            }
+            .row{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .form-group{
+                    text-align: left !important;
+                    margin: 0 2vw 1vw 2vw;
+                    label{
+                        font-size: 1.2vw;
+                        margin-left: 0.3vw;
+                    }
+                    input{
+                        font-size: 1.2vw;
+                    }
+                }
+                #btn-descadastrar{
+                    font-size: 1.5vw;
+                    font-family:"Raleway";
+                    font-weight: 600;
+                    color: $White;
+                    background-color: $Brown;
+                    padding: 0.5vw 1.5vw;
+                    border-radius: 0.5vw;
+                    border: none;
+                    margin-top: 1.5vw;
+                }
+            }
+        }
+    }
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #descadastrar{
+        height: 83vh;
+        margin-top: 11vw;
+        .container{
+            p{
+                font-size: 2vw;
+            }
+            .form_desc{
+                .Title_desc{
+                    h2{
+                        font-size: 3vw;
+                        font-weight: 800;
+                    }
+                }
+                .row{
+                    .form-group{
+                        margin: 2vw 2vw 1vw 2vw;
+                        label{
+                            font-size: 1.8vw;
+                        }
+                        input{
+                            font-size: 1.8vw;
+                        }
+                    }
+                    #btn-descadastrar{
+                        font-size: 2.5vw;
+                        padding: 0.5vw 2vw;
+                        border-radius: 1vw;
+                        margin-top: 4vw;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    #descadastrar{
+        height: 75vh;
+        margin-top: 28vw;
+        padding: 10vw;
+        .container{
+            p{
+                padding: 1.5vw 3vw;
+                font-size: 3.2vw;
+                margin-bottom: 2vw;
+            }
+            .form_desc{
+                .Title_desc{
+                    margin-bottom: 4vw;
+                    h2{
+                        font-size: 5vw;
+                        font-weight: 900;
+                    }
+                }
+                .row{
+                    .form-group{
+                        margin: 2vw;
+                        label{
+                            font-size: 2.5vw;
+                            font-weight: 600;
+                            margin: 1vw 0;
+                        }
+                        input{font-size: 2.5vw;}
+                    }
+                    #btn-descadastrar{
+                        font-size: 2.5vw;
+                        padding: 1vw 2.5vw;
+                        border-radius: 1vw;
+                        margin-top: 5vw;
+                    }
+                }
+            }
+        }
+    }
+}

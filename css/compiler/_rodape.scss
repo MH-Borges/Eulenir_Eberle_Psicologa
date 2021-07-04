@@ -26,16 +26,33 @@ footer{
             a{
                 width: 55%;
                 margin-left: 0.3vw;
+                svg{
+                    fill: $White;
+                }
             }
         }
     }
 }
-
-/* Medium Device = 1200px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
 /* Tablet Device = 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    footer{
+        .rodapeBox{
+            h5{
+                font-size: 1.5vw;
+                margin-left: 2vw;
+            }
+            p{
+                width: 30%;
+                margin-right: 2vw;
+                justify-content: center;
+                font-size: 1.5vw;
+                a{
+                    width: 55%;
+                    margin: 0;
+                }
+            }
+        }
+    }
 }
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
@@ -61,12 +78,9 @@ footer{
                     margin:0;
                     padding: 1vw 0;
                     justify-content: center;
-                    img{width: 30%;}
+                    svg{width: 30%;}
                 }
             }
         }
     }
-}
-/* Small Device = 320px */
-@media only screen and (max-width: 479px){
 }

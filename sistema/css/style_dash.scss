@@ -1,0 +1,945 @@
+@import '../../css/compiler/colors_fonts';
+@import '../../css/compiler/rodape';
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+::-webkit-scrollbar-track{background-color:$Green_T;}
+::-webkit-scrollbar{width: 12px;}
+::-webkit-scrollbar-thumb{background:$Green;}
+.container{
+    max-width: 70%;
+}
+#menuSist{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: $Brown_light;
+    padding: 0;
+    align-items: center;
+    z-index: 999;
+    .Logo{
+        width: 20%;
+        margin: 0;
+        .nav-item{
+            display: flex;
+            position: relative;
+            list-style: none;
+            padding: 0 0.5vw;
+            align-items: center; 
+            width: 35vw;
+            a{
+                width: 15%;
+                img{
+                    width: 100%;
+                }
+            }
+            span{
+                color: $White;
+                font-weight: 600;
+                font-size: 1.2vw;
+                margin-left: 0.5vw;
+                width: 85%;
+            }  
+        }
+    }
+    .itens_menu{
+        list-style: none;
+        display: flex;
+        margin: 0 1vw 0 auto;
+        .nav-item{
+            font-size: 1.1vw;
+            a{
+                color: $White;
+            }
+            .dropdown-menu{
+                margin-left: -11vw;
+                a{
+                    color: $Brown;
+                }
+            }
+        }
+    }
+}
+#PerfilPage{
+    width: 100%;
+    display: flex;
+    position: relative;
+    background: $Green_T;
+    flex-wrap: wrap;
+    font-family: 'Raleway';
+    #menuSist{
+        width: 100%;
+        display: flex;
+        position: fixed;
+        background-color: $Brown_light;
+        padding: 0;
+        align-items: center;
+        z-index: 999;
+        .Logo{
+            width: 20%;
+            margin: 0;
+            .nav-item{
+                display: flex;
+                position: relative;
+                list-style: none;
+                padding: 0 0.5vw;
+                align-items: center; 
+                width: 35vw;
+                a{
+                    width: 15%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                span{
+                    color: $White;
+                    font-weight: 600;
+                    font-size: 1.2vw;
+                    margin-left: 0.5vw;
+                    width: 85%;
+                }  
+            }
+        }
+        .itens_menu{
+            list-style: none;
+            display: flex;
+            margin: 0 1vw 0 auto;
+            .nav-item{
+                font-size: 1.1vw;
+                a{
+                    color: $White;
+                }
+                .dropdown-menu{
+                    margin-left: -11vw;
+                    a{
+                        color: $Brown;
+                    }
+                }
+            }
+        }
+    }
+    .infosUser{
+        margin-top: 4.5vw;
+        background-color: #ebebeb;
+        padding: 0;
+        overflow: hidden;
+        border-bottom-left-radius: 3vw;
+        border-bottom-right-radius: 3vw;
+        padding-bottom: 1vw;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+        .banner{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 18vw;
+            button{
+                position: absolute;
+                z-index: 2;
+                background-color: #fff;
+                border-radius: 50%;
+                padding: 0;
+                width: 2.3vw;
+                height: 2.3vw;
+                top: 1vw;
+                right: 2vw;
+                outline: none;
+                border: none;
+                transition: 0.3s;
+                i{
+                    color: $Green;
+                    font-size: 1vw;
+                    transition: 0.3s;
+                }
+                &:hover{
+                    background-color: #ebe4e3;
+                    i{
+                        color: $Green_dark;
+                    }
+                }
+            }
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            #msgBanner{
+                z-index: 5;
+                position: absolute;
+                font-size: 1.3vw;
+                bottom: -2vw;
+                right: 1.5vw;
+                font-weight: 900;
+                color: $Brown;
+            }
+        }
+        .imgPerfil{
+            position: relative;
+            width: 13vw;
+            height: 13vw;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $White;
+            margin-left: 2vw;
+            margin-top: -8vw;
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                padding: 0.5vw;
+            }
+            #msgPerfil{
+                font-size: 2vw;
+                margin-top: 15vw;
+                color: $Green;
+                font-weight: 900;
+                z-index: 99;
+            }
+            button{ display: none; transition: 1s ease-in-out; }
+            &:hover{
+                button{
+                    display: block;
+                    position: absolute;
+                    z-index: 2;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    padding: 0;
+                    width: 2.3vw;
+                    height: 2.3vw;
+                    top: 1vw;
+                    right: 1vw;
+                    outline: none;
+                    border: none;
+                    transition: 0.3s;
+                    i{
+                        color: $Brown;
+                        font-size: 1vw;
+                        transition: 0.3s;
+                    }
+                    &:hover{
+                        background-color: #ebe4e3;
+                        i{
+                            color: $Brown_dark;
+                        }
+                    }
+                }
+            }
+        }
+        .infoUser{
+            position: relative;
+            margin: -5vw 0 0 14vw;
+            padding: 1.5vw 2vw;        
+            button{
+                position: absolute;
+                background-color: #ebebeb;
+                border-radius: 50%;
+                padding: 0;
+                width: 2vw;
+                height: 2vw;
+                top: 1vw;
+                right: 1vw;
+                outline: none;
+                border: none;
+                i{
+                    color: $Brown_light;
+                    font-size: 0.9vw;
+                    transition: 0.3s;
+                }
+                &:hover{ background-color: $White; i{ color: $Brown_dark; } }
+            }
+            h3{
+                color: $Brown;
+                font-size: 1.7vw;
+                font-weight: 800;
+            }
+            h4{
+                color: $Brown_light;
+                font-size: 1.1vw;
+                font-weight: 600;
+                margin-left: 1vw;
+                span{
+                    margin-left: 0.5vw;
+                }
+            }
+            #msgInfos{
+                position: absolute;
+                font-weight: 800;
+                font-size: 1.2vw;
+                bottom: 0;
+                right: 3vw;
+            }
+        }
+    }
+    .sobre{
+        position: relative;
+        background-color: #ebebeb;
+        padding: 1.5vw 2vw 2.5vw 2vw;
+        border-radius: 2.5vw;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+        margin-top: 2vw;
+        button{
+            position: absolute;
+            background-color: #ebebeb;
+            border-radius: 50%;
+            padding: 0;
+            width: 2vw;
+            height: 2vw;
+            top: 1.2vw;
+            right: 1.2vw;
+            outline: none;
+            border: none;
+            transition: 0.3s;
+            i{
+                color: $Brown_light;
+                font-size: 0.9vw;
+                transition: 0.3s;
+            }
+            &:hover{ background-color: $White; i{ color: $Brown_dark; } }
+        }
+        h3{
+            color: $Brown;
+            font-size: 2vw;
+            font-weight: 800;
+        }
+        .sobretxt{
+            color: $Brown;
+            font-size: 1vw;
+            font-weight: 400;
+            margin: 1vw 0 0 1vw;
+        }
+        #msgSobre{
+            position: absolute;
+            font-weight: 800;
+            font-size: 1.2vw;
+            bottom: -2.5vw;
+            left: 45%;
+        }
+    }
+    .coments{
+        position: relative;
+        background-color: #ebebeb;
+        padding: 2vw;
+        border-radius: 2.5vw;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+        margin-top: 2vw;
+        h3{
+            color: $Brown;
+            font-size: 2vw;
+            font-weight: 800;
+        }
+        .comentario{
+            position: relative;
+            margin: 1.5vw 1vw;
+            padding: 0.5vw 2vw;
+            height: 12vw;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 2vw;
+            overflow: hidden;
+            .imgUser{
+                position: absolute;
+                width: 3.5vw;
+                height: 3.5vw;
+                left: 1vw;
+                top: 1vw;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            .NomeUser{
+                color: $Brown;
+                font-size: 1.2vw;
+                margin: 1.5vw 0 0 3.5vw;
+                font-weight: 700;
+                span{
+                    font-size: 0.9vw;
+                    font-weight: 500;
+                    margin: -1vw 0 0 0.5vw
+                }
+            }
+            .textUser{
+                font-size: 1vw;
+                font-weight: 500;
+                color: $Brown;
+                margin-left: 4vw;
+                margin-right: 15vw;
+                padding: 0.5vw;
+            }
+            .postInfo{
+                position: absolute;
+                display: flex;
+                flex-wrap: wrap;
+                width: 12vw;
+                top: 0.5vw;
+                right: 1vw;
+                padding: 0.5vw;
+                .imgPost{
+                    width: 100%;
+                    height: 7vw;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 1vw;
+                    }
+                }
+                h4{
+                    height: 2.5vw;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 0.8vw;
+                    font-weight: 600;
+                    padding: 0.5vw;
+                    color: $Brown;
+                    margin-bottom: 0;
+
+                }
+            }
+            .delet_Comment{
+                border: none;
+                position: absolute;
+                left: 2vw;
+                top: 5vw;
+                font-size: 1vw;
+            }
+        }
+    }
+    #recomend{
+        width: 100%;
+        display: flex;
+        margin: 5vw 0 ;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 7.8vw;
+            background-color: $Pink;
+            opacity: 0.6;
+        }
+        .container{
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1vw 0;
+            font-family: 'Raleway';
+            h3{
+                color: $Brown;
+                font-weight: 800;
+                width: 100%;
+                font-size: 2.5vw;
+                text-align: center;
+                padding: 1.5vw 0 1vw 0;
+            }
+            .Cards_Post{
+                width: 100%;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                margin: 4vw 0 2vw 0;
+                justify-content: space-around;
+                a{
+                    width: 30%;
+                    height: 20vw;
+                    color: $Black;
+                    text-decoration: none;
+                    .card_blog{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        position: relative;
+                        flex-wrap: wrap;
+                        background-color: #ebebeb;
+                        padding: 1vw;
+                        border-radius: 1vw;
+                        font-family: 'Raleway';
+                        transition: 0.3s ease-in-out;
+                        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+                        &:hover{
+                            transform: translateY(-0.6vw);
+                        }
+                        #img{
+                            width: 100%;
+                            height: 65%;
+                            img{
+                                border-radius: 1vw;
+                                width:100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .tag{
+                            display: flex;
+                            position: relative;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 10%;
+                            p{
+                                margin: 0;
+                                font-size: 0.9vw;
+                                font-weight: 700;
+                                background-color: $Pink;
+                                padding: 0.15vw 0.6vw;
+                                border-radius: 1vw;
+                                color: $Brown;
+                            }
+                        }
+                        .title_blog{
+                            display: flex;
+                            position: relative;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 25%;
+                            padding: 0.5vw;
+                            h4{
+                                font-weight: 700;
+                                text-align: center;
+                                margin: 0;
+                                font-size: 1vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Modal */
+    #Bannermd{
+        .modal-header{
+            margin: 0 !important;
+            h5{
+                color: $Brown;
+                font-weight: 800;
+                font-family: 1.5vw;
+            }
+        }
+        .modal-body{
+            padding: 0 !important;
+            .BannerIMG{
+                width: 100%;
+            }
+        }
+        .modal-footer{
+            position: relative;
+            margin: 0 !important;
+            padding: 1vw;
+            .form-group{
+                position: absolute;
+                left: 1vw;
+                top: 0.3vw;
+            }
+        }
+    }
+    #Perfilmd{
+        .modal-header{
+            margin: 0 !important;
+            h5{
+                color: $Brown;
+                font-weight: 800;
+                font-family: 1.5vw;
+            }
+        }
+        .modal-body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .PerfilIMG{
+                width: 55%;
+            }
+        }
+        .modal-footer{
+            position: relative;
+            margin: 0 !important;
+            padding: 1vw;
+            .form-group{
+                position: absolute;
+                left: 1vw;
+                top: 0.3vw;
+            }
+        }
+    }
+    #Infomd{
+        .modal-header{
+            margin: 0 !important;
+            h5{
+                color: $Brown;
+                font-weight: 800;
+                font-family: 1.5vw;
+            }
+        }
+        .modal-body{
+            padding: 1vw 2vw;
+            .senhas{
+                .form-group{
+                    .senhaBx{
+                        position: relative;
+                        button{
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            border: none;
+                            background: none;
+                            padding: 0.5vw;
+                            i{
+                                font-size: 1vw;
+                                color: $Brown;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    #Sobremd{
+        .modal-header{
+            margin: 0 !important;
+            h5{
+                color: $Brown;
+                font-weight: 800;
+                font-family: 1.5vw;
+            }
+        }
+        .modal-body{
+            padding: 1vw 2vw;
+            .form-group{
+                label{
+                    font-size: 1vw;
+                    font-weight: 600;
+                    span{
+                        font-size: 0.75vw;
+                        margin-left: 0.5vw;
+                    }
+                }
+                textarea{
+                    height: 10vw;
+                    max-height: 38vw;
+                }
+            }
+            
+        }
+        
+    }
+}
+#AdminPage{
+    width: 100%;
+    display: flex;
+    position: relative;
+    background: $Green_T;
+    flex-wrap: wrap;
+    font-family: 'Raleway';
+    #menuSist{
+        width: 100%;
+        display: flex;
+        position: fixed;
+        background-color: $Brown_light;
+        padding: 1vw 0;
+        align-items: center;
+        z-index: 10;
+        .menuSide{
+            margin: 0;
+            margin-left: 9vw;
+            transition: 0.55s;
+            .nav-item{
+                list-style: none;
+                font-size: 1.2vw;
+                display: flex;
+                a{
+                    color: $White;
+                }
+            }
+        }
+        .menuSide.active{margin-left: 21vw;}
+        .itens_menu{
+            list-style: none;
+            display: flex;
+            margin: 0 1vw 0 auto;
+            .nav-item{
+                font-size: 1.1vw;
+                a{
+                    color: $White;
+                }
+                .dropdown-menu{
+                    margin-left: -11vw;
+                    a{
+                        color: $Brown;
+                    }
+                }
+            }
+        }
+    }
+    .Sidebar{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width:7.5vw;
+        height: 100%;
+        background-color: $Brown;
+        z-index: 11;
+        transition: 0.5s ease-in-out;
+        .BxUser{
+            position: relative;
+            width: 100%;
+            height: 11vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s ease-in-out;
+            .imgBannerAdm{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: black;
+                opacity: 0;
+                transition: 0.5s ease-in-out;
+                #ftBanner{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: -1;
+                }
+            }
+            .imgAdm{
+                width: 4vw;
+                height: 4vw;
+                z-index: 1;
+                transition: 0.5s ease-in-out;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            .nameUser{
+                z-index: 1;
+                width: 100%;
+                text-align: center;
+                margin: -2vw 0 0 0;
+                transition: 0.5s ease-in-out;
+                padding: 0 1vw;
+                a{
+                    text-decoration: none;
+                    color: $White;
+                    font-size: 1vw;
+                    font-weight: 700;
+                    letter-spacing: 0.02vw;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+        .divider{
+            opacity: 0.5;
+            width: 100%;
+            height: 0.01vw;
+            background-color: $Brown_dark;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+        }
+        .Painel{
+            width: 100%;
+            padding: 1vw 0;
+            a{
+                width: 100%;
+                display: flex;
+                padding: 0 0.5vw;
+                color: $White;
+                text-decoration: none;
+                transition: 0.5s ease-in-out;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                #rotate{
+                    transform: rotate(180deg);
+                }
+                span{
+                    font-weight: 600;
+                    font-size: 1vw;
+                    margin-left: 0;
+                    transition: 0.5s ease-in-out;
+                }
+                i{
+                    display: none;
+                }
+            }
+        }
+        .Icons{
+            .nav-item{
+                display: flex;
+                position: relative;
+                padding: 1vw;
+                a{
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: relative;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    width: 100%;
+                    text-decoration: none;
+                    color: $White;
+                    padding: 0 0.5vw;
+                    font-size: 1.3vw;
+                    p, i{transition: 0.2s ease-in-out;padding: 0;margin: 0;}
+                    p{
+                        margin-left: 0;
+                        font-size: 0.75vw;
+                        font-weight: 600;
+                        width: 100%;
+                        margin-top: 0.5vw;
+                    }
+                    &:hover{
+                        i{color: $Green_dark;}
+                    }
+                }
+            }
+        }
+    }
+    .Sidebar.active{
+        width: 20vw;
+        .BxUser{
+            height: 13vw;
+            .imgBannerAdm{
+                opacity: 0.5;
+            }
+            .imgAdm{
+                width: 6vw;
+                height: 6vw;
+            }
+            .nameUser{
+                margin: -3vw 0 0 0;
+                a{
+                    font-size: 1.35vw;
+                }
+            }
+        }
+        .Painel{
+            padding: 1vw 0;
+            a{
+                span{
+                    font-weight: 700;
+                    font-size: 1.3vw;
+                    margin: 0 1vw;
+                    transition: 0.5s ease-in-out;
+                }
+                i{
+                    display: block;
+                    font-size: 1vw;
+                    transition: 0.5s ease-in-out;
+                    color: $Green_dark;
+                }
+            }
+        }
+        .Icons{
+            .nav-item{
+                a{
+                    padding: 0.2vw 0.5vw;
+                    font-size: 1.5vw;
+                    justify-content: flex-start;
+                    p{
+                        width: auto;
+                        margin-left: 1.2vw;
+                        font-size: 0.9vw;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .Box_conteudo{
+        margin: 0;
+        margin-top: 4.5vw;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        transition: 0.5s ease-in-out;
+        margin-left: 7.5vw;
+    }
+    .Box_conteudo.active{
+        width: 100%;
+        margin-left: 20vw;
+    }
+    @import 'compiler_dash/home';
+    @import 'compiler_dash/perfil';
+    @import 'compiler_dash/clientes';
+    @import 'compiler_dash/posts';
+}
+
+#ModalEmail{
+    .modal-header{
+        margin: 0 !important;
+        h5{
+            color: $Brown;
+            font-weight: 800;
+            font-family: 1.5vw;
+        }
+    }
+    .modal-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1vw 2vw;
+        .form-group{
+            width: 100%;
+            .senha{
+                position: relative;
+                display: flex;
+                align-items: center;
+                button{
+                    color: $Brown;
+                    font-size: 1.5vw;
+                    background: none;
+                    border: none;
+                    right: 1vw;
+                    position: absolute;
+                }
+            }
+        }
+        
+    }
+    .modal-footer{
+        position: relative;
+        margin: 0 !important;
+        padding: 1vw;
+        .form-group{
+            position: absolute;
+            left: 1vw;
+            top: 0.3vw;
+        }
+    }
+}
+
+.tox-menu{
+    min-width: 13vw !important;
+    width: 13vw !important;
+}
+@media only screen and (max-width: 1300px) {
+    .container{
+        max-width: 75%;
+    }
+}

@@ -33,3 +33,4 @@ const timer = setInterval(() => {
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
 };
+

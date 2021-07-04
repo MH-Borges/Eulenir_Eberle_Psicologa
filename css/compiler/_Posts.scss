@@ -15,14 +15,14 @@
         p, i, span, h3{
             margin: 0;
             padding: 0;
-            color: $Brown;
+            color: $Brown_dark;
         }
         h1{
             width: 100%;
             font-weight: 700;
             font-size: 2.8vw;
             padding: 1vw 0 1.5vw 0;
-            color: $Black;
+            color: $Brown;
         }
         i{
             font-size: 1.2vw;
@@ -42,6 +42,7 @@
         display: flex;
         padding: 0;
         margin-bottom: 7vw;
+        
         .Text_Prin{
             width: 70%;
             color: $Black;
@@ -50,34 +51,28 @@
             flex-direction: column;
             font-family: 'Raleway';
             align-items: center;
-            h1{
-                text-align: center;
-                padding: 2vw 0 0 0;
-                font-weight: 900;
-                color: $Brown;
-            }
-            img{
-                width: 85%;
-                border-radius: 2vw;
+            #img_post{
+                width: 100%;
+                height: 42vw !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-bottom-right-radius: 3vw;
+                    border-bottom-left-radius: 3vw;
+                }
             }
             article{
                 margin: 0;
-                padding: 2vw 3.5vw 5vw 3.5vw;
-                font-weight: 500;
-                font-size: 1.1vw;
-                line-height: 1.8vw;
-            }
-            :nth-child(1){
-                width: 100%;
-                border-radius: 0;
-                border-bottom-left-radius: 3vw;
-                border-bottom-right-radius: 3vw;
-            }
-            p{
-                width: 100%;
-                font-size: 0.8vw;
-                margin: 1vw 0;
-                padding: 0 0 0 6vw;
+                padding: 4vw 5vw 6vw 5vw;
+                color: $Brown;
+                font-weight: 600;
+                img, svg{
+                    width: auto;
+                }
             }
             .fontes{
                 width: 100%;
@@ -103,6 +98,7 @@
             border-bottom-right-radius: 2.5vw;
             font-family: 'Raleway';
             color: $Brown;
+            position: relative;
             h3{
                 font-size: 1.7vw;
                 font-weight: 900;
@@ -146,6 +142,168 @@
                         }
                     }
                 }
+            }
+            h4{
+                display: flex;
+                align-items: center;
+                position: absolute;
+                font-size: 1vw;
+                font-weight: 700;
+                bottom: -2.5vw;
+                i{
+                    margin-right: 1vw;
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
+}
+#likes{
+    width: 100%;
+    .container{
+        display: flex;
+        align-items: center;
+        h3{
+            color: $Brown;
+            font-size: 1.1vw;
+            font-weight: 600;
+        }
+        form{
+            .LikeBtn{
+                border: none;
+                outline: none;
+                margin: 0;
+                margin-top: -0.3vw;
+                padding: 0.5vw;
+                i{
+                    color: $Green;
+                    font-size: 1.2vw;
+                }
+                span{
+                    font-weight: 600;
+                    color: $Brown;
+                    font-size: 1.2vw;
+                    margin-left: 0.5vw;
+                }
+            }
+            .LikeBtn.active{
+                outline: none;
+                i{
+                    color: $Pink;
+                    font-size: 1.2vw;
+                }
+
+            }
+        }
+    }
+}
+#comments{
+    width: 100%;
+    font-family: 'Raleway';
+    margin: 2vw 0 5vw 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        .chama_coment{
+            padding: 0.5vw;
+            p{
+                font-size: 1.1vw;
+                font-weight: 600;
+                color: $Brown;
+                a{
+                    color: $Green_dark;
+                    font-weight: 700;
+                }
+            }
+            
+        }
+        .comments_cont{
+            font-family: 'Raleway';
+            h3{
+                padding: 1vw;
+                font-size: 1.5vw;
+                color: $Brown;
+                font-weight: 800;
+            }
+            .commentsBk{
+                position: relative;
+                padding: 0.5vw;
+                display: flex;
+                flex-direction: column;
+                margin-left: 1vw;
+                .comentario{
+                    position: relative;
+                    margin: 0.5vw 0;
+                    a{
+                        text-decoration: none;
+                        .imgUser{
+                            position: absolute;
+                            width: 3.5vw;
+                            height: 3.5vw;
+                            left: 0.5vw;
+                            top: 0.5vw;
+                            img{
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                                border-radius: 50%;
+                            }
+                        }
+                        .NomeUser{
+                            color: $Brown;
+                            font-size: 1.2vw;
+                            margin: 1.3vw 0 0 5vw;
+                            font-weight: 700;
+                            span{
+                                font-size: 0.9vw;
+                                font-weight: 500;
+                                margin: -1vw 0 0 0.5vw
+                            }
+                        }
+                    }
+                    
+                    .textUser{
+                        font-size: 1vw;
+                        font-weight: 500;
+                        color: $Brown;
+                        margin-left: 5.5vw;
+                    }
+                    .delet_Comment{
+                        position: absolute;
+                        left: -1vw;
+                        top: 0.5vw;
+                    }
+                }
+            }
+        }
+        .comments_msg{
+            padding: 0.5vw;
+            position: relative;
+            .form-group{
+                color: $Brown;
+                label{
+                    font-size: 1.1vw;
+                    font-weight: 500;
+                }
+                textarea{
+                    border: none;
+                    background: $Green_T;
+                    max-width: 50vw;
+                    height: 15vh;
+                    max-height: 100vh;
+                    margin: 1vw;
+                }
+            }
+            button{
+                position: absolute;
+                right: 26vw;
+                top: 7vw;
+                border: none;
+                background-color: $Brown;
+                color: $White;
+                font-size: 0.9vw;
+                font-weight: 600;
             }
         }
     }
@@ -215,6 +373,7 @@
                             border-radius: 1vw;
                             width:100%;
                             height: 100%;
+                            object-fit: cover;
                         }
                     }
                     .tag{
@@ -258,68 +417,56 @@
     }
 }
 
-/* Medium Device = 1200px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
-/* Tablet Device = 768px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-}
 /* Wide Mobile = 480px */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px){  
     #header_text{
         margin-top: 30vw;
-        padding: 9vw 0 0 0;
-        border-bottom: 1.5vw solid $Brown;
+        padding: 5vw 0 0 0;
+        border-bottom: 1vw solid $Brown;
         .container{
-            max-width: 90%;
-            h1{font-size: 5.5vw;}
-            i{
-                font-size: 3vw;
-                padding: 0.5vw 1.5vw 1vw 2.5vw;
+            h1{
+                font-size: 5vw;
+                padding: 1vw 0 2.5vw 0;
             }
-            :nth-child(3){margin-left: -2vw;}
-            p{font-size: 2.5vw;}
-            h3{font-size: 2.8vw;}
+            i{
+                font-size: 2.5vw;
+                padding: 0.5vw 1vw 1vw 2.5vw;
+            }
+            :nth-child(3){margin-left: -1.5vw;}
+            p{font-size: 2.2vw;}
+            h3{font-size: 2.5vw;}
         }
     }
     #article_Post{
+        overflow: hidden;
         .container{
-            max-width: 90%;
+            display: flex;
+            padding-bottom: 70vw;
             margin-bottom: 0;
-            padding-bottom: 63vw;
             flex-wrap: wrap;
-            position: relative;
             .Text_Prin{
                 width: 100%;
-                h1{font-size: 5vw;}
-                img{
-                    width: 80%;
-                    border-radius: 5vw;
+                #img_post{
+                    width: 100%;
+                    height: 70vw !important;
+                    img{
+                        border-bottom-right-radius: 5vw;
+                        border-bottom-left-radius: 5vw;
+                    }
                 }
                 article{
-                    padding: 5vw 5vw 7vw 5vw;
-                    font-weight: 500;
-                    font-size: 3vw;
-                    line-height: 4.5vw;
-                }
-                :nth-child(1){
-                    height: 20%;
-                    border-bottom-left-radius: 5vw;
-                    border-bottom-right-radius: 5vw;
-                }
-                p{
-                    font-size: 2vw;
-                    margin: 1.5vw 0;
-                    padding: 0 0 0 10vw;
+                    margin: 0;
+                    padding: 5vw 4vw;
+                    font-size: 2.5vw;
+                    line-height: 3.5vw;
                 }
                 .fontes{
-                    width: 100%;
-                    margin-bottom: 5vw;
-                    h2{font-size: 5vw;}
+                    h2{
+                        font-size: 4.5vw;
+                    }
                     p{
                         font-size: 2.5vw;
-                        padding: 0 8vw 0 6.5vw;
-                        margin: 2vw 0;
+                        padding: 1vw 8vw 0 3vw;
                     }
                 }
             }
@@ -346,6 +493,84 @@
                     }
                 }
                 #mobile{left: 54%;}
+            }
+        }
+    }
+    #comments{
+        margin: 5vw;
+        .container{
+            .chama_coment{
+                width: 100%;
+                padding: 1vw;
+                p{
+                    padding: 0 5vw;
+                    font-size: 3vw;
+                    text-align: center;
+                    a{
+                        font-size: 3.2vw;
+                        padding: 0.5vw;
+                    }
+                }    
+            }
+            .comments_cont{
+                h3{
+                    padding: 0;
+                    font-size: 4vw;
+                }
+                .commentsBk{
+                    padding: 1vw;
+                    margin-left: 2vw;
+                    .comentario{
+                        margin: 1vw 0;
+                        .imgUser{
+                            width: 7vw;
+                            height: 7vw;
+                            left: 1vw;
+                            top: 1vw;
+                        }
+                        .NomeUser{
+                            font-size: 3vw;
+                            margin: 2vw 0 0 10vw;
+                            span{
+                                font-size: 2vw;
+                                margin: -3vw 0 0 1vw
+                            }
+                        }
+                        .textUser{
+                            font-size: 2.5vw;
+                            margin-left: 12vw;
+                            margin-top: 1vw;
+                        }
+                        .delet_Comment{
+                            position: absolute;
+                            left: -4vw;
+                            top: 1vw;
+                            font-size: 3vw;
+                        }
+                    }
+                }
+            }
+            .comments_msg{
+                padding: 1vw;
+                margin-bottom: 10vw;
+                .form-group{
+                    label{
+                        font-size: 3vw;
+                    }
+                    textarea{
+                        max-width: 100%;
+                        height: 18vh;
+                        max-height: 100vh;
+                        margin: 1vw 2vw;
+                    }
+                }
+                button{
+                    position: absolute;
+                    right: 42%;
+                    top: 25vh;
+                    font-size: 3vw;
+                    font-weight: 600;
+                }
             }
         }
     }
@@ -403,7 +628,4 @@
             }
         }
     }
-}
-/* Small Device = 320px */
-@media only screen and (max-width: 479px){
 }

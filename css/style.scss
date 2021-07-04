@@ -98,6 +98,8 @@ img,svg{
         padding: 1vw 1vw 1vw 1.3vw;
     }
 }
+
+.noneB{display: none;}
 ::-webkit-scrollbar-track{background-color:$Green_T;}
 ::-webkit-scrollbar{width: 12px;}
 ::-webkit-scrollbar-thumb{background:$Green;}
@@ -125,27 +127,50 @@ img,svg{
 @import 'compiler/EBook_PAGE';
 @import 'compiler/Service_PAGE';
 @import 'compiler/Posts';
-
+@import 'compiler/login';
+@import 'compiler/descadrastar';
+@import 'compiler/PerfilPage';
 
 /* Medium Device = 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 /* Tablet Device = 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width: 90% !important;
+        max-width: 100%;
+    }
+    .botao{
+        button, input{
+            font-size: 1.5vw;
+            border-radius: 1vw;
+            padding: 0.7vw 1.5vw;
+        }
+    }
+    #btn_UP{
+        bottom: 3vw;
+        i{
+            font-size: 3vw;
+            padding: 1.5vw;
+        }
+    }
 }
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
-    .container{max-width: 95%;}
+    .container{
+        width: 95% !important;
+        max-width: 100%;
+    }
     .title{
         a{
-            top: -1vw;
+            top: 0;
             h2{
                 padding: 0 2vw;
                 margin: 0;
             }
         }
         svg{
-            width: 55vw;
+            width: 50vw;
             height: auto;
             z-index: -1;
         }
@@ -166,7 +191,4 @@ img,svg{
             padding-left: 3vw;
         }
     }
-}
-/* Small Device = 320px */
-@media only screen and (max-width: 479px){
 }

@@ -1,0 +1,2690 @@
+@font-face {
+  font-family: "Alex_Letter";
+  src: url(../fonts/Alexander_Lettering.otf);
+}
+
+/*font-family: "Alexander Lettering"*/
+/*Base Colors*/
+/*Base Colors*/
+/*Light n Shadows*/
+/*Light n Shadows*/
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #51403F;
+}
+
+footer .rodapeBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1vw 0;
+  font-family: 'Raleway';
+  color: #F9F3F2;
+}
+
+footer .rodapeBox h5 {
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+footer .rodapeBox p {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1vw;
+  margin-top: 0.8vw;
+}
+
+footer .rodapeBox p a {
+  width: 55%;
+  margin-left: 0.3vw;
+}
+
+footer .rodapeBox p a svg {
+  fill: #F9F3F2;
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  footer .rodapeBox h5 {
+    font-size: 1.5vw;
+    margin-left: 2vw;
+  }
+  footer .rodapeBox p {
+    width: 30%;
+    margin-right: 2vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.5vw;
+  }
+  footer .rodapeBox p a {
+    width: 55%;
+    margin: 0;
+  }
+}
+
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  footer .rodapeBox {
+    padding: 5vw 0;
+  }
+  footer .rodapeBox h5 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.4vw;
+    margin: 0;
+  }
+  footer .rodapeBox p {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2.8vw;
+    margin: 0;
+    margin-top: 5vw;
+  }
+  footer .rodapeBox p a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 1vw 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .rodapeBox p a svg {
+    width: 30%;
+  }
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #D0D8CE;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94A89D;
+}
+
+.container {
+  max-width: 70%;
+}
+
+#menuSist {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background-color: #735D5C;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+}
+
+#menuSist .Logo {
+  width: 20%;
+  margin: 0;
+}
+
+#menuSist .Logo .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  list-style: none;
+  padding: 0 0.5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35vw;
+}
+
+#menuSist .Logo .nav-item a {
+  width: 15%;
+}
+
+#menuSist .Logo .nav-item a img {
+  width: 100%;
+}
+
+#menuSist .Logo .nav-item span {
+  color: #F9F3F2;
+  font-weight: 600;
+  font-size: 1.2vw;
+  margin-left: 0.5vw;
+  width: 85%;
+}
+
+#menuSist .itens_menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1vw 0 auto;
+}
+
+#menuSist .itens_menu .nav-item {
+  font-size: 1.1vw;
+}
+
+#menuSist .itens_menu .nav-item a {
+  color: #F9F3F2;
+}
+
+#menuSist .itens_menu .nav-item .dropdown-menu {
+  margin-left: -11vw;
+}
+
+#menuSist .itens_menu .nav-item .dropdown-menu a {
+  color: #51403F;
+}
+
+#PerfilPage {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: #D0D8CE;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Raleway';
+  /* Modal */
+}
+
+#PerfilPage #menuSist {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background-color: #735D5C;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+}
+
+#PerfilPage #menuSist .Logo {
+  width: 20%;
+  margin: 0;
+}
+
+#PerfilPage #menuSist .Logo .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  list-style: none;
+  padding: 0 0.5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35vw;
+}
+
+#PerfilPage #menuSist .Logo .nav-item a {
+  width: 15%;
+}
+
+#PerfilPage #menuSist .Logo .nav-item a img {
+  width: 100%;
+}
+
+#PerfilPage #menuSist .Logo .nav-item span {
+  color: #F9F3F2;
+  font-weight: 600;
+  font-size: 1.2vw;
+  margin-left: 0.5vw;
+  width: 85%;
+}
+
+#PerfilPage #menuSist .itens_menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1vw 0 auto;
+}
+
+#PerfilPage #menuSist .itens_menu .nav-item {
+  font-size: 1.1vw;
+}
+
+#PerfilPage #menuSist .itens_menu .nav-item a {
+  color: #F9F3F2;
+}
+
+#PerfilPage #menuSist .itens_menu .nav-item .dropdown-menu {
+  margin-left: -11vw;
+}
+
+#PerfilPage #menuSist .itens_menu .nav-item .dropdown-menu a {
+  color: #51403F;
+}
+
+#PerfilPage .infosUser {
+  margin-top: 4.5vw;
+  background-color: #ebebeb;
+  padding: 0;
+  overflow: hidden;
+  border-bottom-left-radius: 3vw;
+  border-bottom-right-radius: 3vw;
+  padding-bottom: 1vw;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+#PerfilPage .infosUser .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 18vw;
+}
+
+#PerfilPage .infosUser .banner button {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0;
+  width: 2.3vw;
+  height: 2.3vw;
+  top: 1vw;
+  right: 2vw;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#PerfilPage .infosUser .banner button i {
+  color: #94A89D;
+  font-size: 1vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#PerfilPage .infosUser .banner button:hover {
+  background-color: #ebe4e3;
+}
+
+#PerfilPage .infosUser .banner button:hover i {
+  color: #678775;
+}
+
+#PerfilPage .infosUser .banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#PerfilPage .infosUser .banner #msgBanner {
+  z-index: 5;
+  position: absolute;
+  font-size: 1.3vw;
+  bottom: -2vw;
+  right: 1.5vw;
+  font-weight: 900;
+  color: #51403F;
+}
+
+#PerfilPage .infosUser .imgPerfil {
+  position: relative;
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F9F3F2;
+  margin-left: 2vw;
+  margin-top: -8vw;
+}
+
+#PerfilPage .infosUser .imgPerfil img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  padding: 0.5vw;
+}
+
+#PerfilPage .infosUser .imgPerfil #msgPerfil {
+  font-size: 2vw;
+  margin-top: 15vw;
+  color: #94A89D;
+  font-weight: 900;
+  z-index: 99;
+}
+
+#PerfilPage .infosUser .imgPerfil button {
+  display: none;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+#PerfilPage .infosUser .imgPerfil:hover button {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0;
+  width: 2.3vw;
+  height: 2.3vw;
+  top: 1vw;
+  right: 1vw;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#PerfilPage .infosUser .imgPerfil:hover button i {
+  color: #51403F;
+  font-size: 1vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#PerfilPage .infosUser .imgPerfil:hover button:hover {
+  background-color: #ebe4e3;
+}
+
+#PerfilPage .infosUser .imgPerfil:hover button:hover i {
+  color: #332322;
+}
+
+#PerfilPage .infosUser .infoUser {
+  position: relative;
+  margin: -5vw 0 0 14vw;
+  padding: 1.5vw 2vw;
+}
+
+#PerfilPage .infosUser .infoUser button {
+  position: absolute;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  padding: 0;
+  width: 2vw;
+  height: 2vw;
+  top: 1vw;
+  right: 1vw;
+  outline: none;
+  border: none;
+}
+
+#PerfilPage .infosUser .infoUser button i {
+  color: #735D5C;
+  font-size: 0.9vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#PerfilPage .infosUser .infoUser button:hover {
+  background-color: #F9F3F2;
+}
+
+#PerfilPage .infosUser .infoUser button:hover i {
+  color: #332322;
+}
+
+#PerfilPage .infosUser .infoUser h3 {
+  color: #51403F;
+  font-size: 1.7vw;
+  font-weight: 800;
+}
+
+#PerfilPage .infosUser .infoUser h4 {
+  color: #735D5C;
+  font-size: 1.1vw;
+  font-weight: 600;
+  margin-left: 1vw;
+}
+
+#PerfilPage .infosUser .infoUser h4 span {
+  margin-left: 0.5vw;
+}
+
+#PerfilPage .infosUser .infoUser #msgInfos {
+  position: absolute;
+  font-weight: 800;
+  font-size: 1.2vw;
+  bottom: 0;
+  right: 3vw;
+}
+
+#PerfilPage .sobre {
+  position: relative;
+  background-color: #ebebeb;
+  padding: 1.5vw 2vw 2.5vw 2vw;
+  border-radius: 2.5vw;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+  margin-top: 2vw;
+}
+
+#PerfilPage .sobre button {
+  position: absolute;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  padding: 0;
+  width: 2vw;
+  height: 2vw;
+  top: 1.2vw;
+  right: 1.2vw;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#PerfilPage .sobre button i {
+  color: #735D5C;
+  font-size: 0.9vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#PerfilPage .sobre button:hover {
+  background-color: #F9F3F2;
+}
+
+#PerfilPage .sobre button:hover i {
+  color: #332322;
+}
+
+#PerfilPage .sobre h3 {
+  color: #51403F;
+  font-size: 2vw;
+  font-weight: 800;
+}
+
+#PerfilPage .sobre .sobretxt {
+  color: #51403F;
+  font-size: 1vw;
+  font-weight: 400;
+  margin: 1vw 0 0 1vw;
+}
+
+#PerfilPage .sobre #msgSobre {
+  position: absolute;
+  font-weight: 800;
+  font-size: 1.2vw;
+  bottom: -2.5vw;
+  left: 45%;
+}
+
+#PerfilPage .coments {
+  position: relative;
+  background-color: #ebebeb;
+  padding: 2vw;
+  border-radius: 2.5vw;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+  margin-top: 2vw;
+}
+
+#PerfilPage .coments h3 {
+  color: #51403F;
+  font-size: 2vw;
+  font-weight: 800;
+}
+
+#PerfilPage .coments .comentario {
+  position: relative;
+  margin: 1.5vw 1vw;
+  padding: 0.5vw 2vw;
+  height: 12vw;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 2vw;
+  overflow: hidden;
+}
+
+#PerfilPage .coments .comentario .imgUser {
+  position: absolute;
+  width: 3.5vw;
+  height: 3.5vw;
+  left: 1vw;
+  top: 1vw;
+}
+
+#PerfilPage .coments .comentario .imgUser img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+#PerfilPage .coments .comentario .NomeUser {
+  color: #51403F;
+  font-size: 1.2vw;
+  margin: 1.5vw 0 0 3.5vw;
+  font-weight: 700;
+}
+
+#PerfilPage .coments .comentario .NomeUser span {
+  font-size: 0.9vw;
+  font-weight: 500;
+  margin: -1vw 0 0 0.5vw;
+}
+
+#PerfilPage .coments .comentario .textUser {
+  font-size: 1vw;
+  font-weight: 500;
+  color: #51403F;
+  margin-left: 4vw;
+  margin-right: 15vw;
+  padding: 0.5vw;
+}
+
+#PerfilPage .coments .comentario .postInfo {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 12vw;
+  top: 0.5vw;
+  right: 1vw;
+  padding: 0.5vw;
+}
+
+#PerfilPage .coments .comentario .postInfo .imgPost {
+  width: 100%;
+  height: 7vw;
+}
+
+#PerfilPage .coments .comentario .postInfo .imgPost img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1vw;
+}
+
+#PerfilPage .coments .comentario .postInfo h4 {
+  height: 2.5vw;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8vw;
+  font-weight: 600;
+  padding: 0.5vw;
+  color: #51403F;
+  margin-bottom: 0;
+}
+
+#PerfilPage .coments .comentario .delet_Comment {
+  border: none;
+  position: absolute;
+  left: 2vw;
+  top: 5vw;
+  font-size: 1vw;
+}
+
+#PerfilPage #recomend {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5vw 0;
+}
+
+#PerfilPage #recomend::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 7.8vw;
+  background-color: #DDB8B1;
+  opacity: 0.6;
+}
+
+#PerfilPage #recomend .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1vw 0;
+  font-family: 'Raleway';
+}
+
+#PerfilPage #recomend .container h3 {
+  color: #51403F;
+  font-weight: 800;
+  width: 100%;
+  font-size: 2.5vw;
+  text-align: center;
+  padding: 1.5vw 0 1vw 0;
+}
+
+#PerfilPage #recomend .container .Cards_Post {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4vw 0 2vw 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#PerfilPage #recomend .container .Cards_Post a {
+  width: 30%;
+  height: 20vw;
+  color: #171A18;
+  text-decoration: none;
+}
+
+#PerfilPage #recomend .container .Cards_Post a .card_blog {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #ebebeb;
+  padding: 1vw;
+  border-radius: 1vw;
+  font-family: 'Raleway';
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#PerfilPage #recomend .container .Cards_Post a .card_blog:hover {
+  -webkit-transform: translateY(-0.6vw);
+          transform: translateY(-0.6vw);
+}
+
+#PerfilPage #recomend .container .Cards_Post a .card_blog #img {
+  width: 100%;
+  height: 65%;
+}
+
+#PerfilPage #recomend .container .Cards_Post a .card_blog #img img {
+  border-radius: 1vw;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#PerfilPage #recomend .container .Cards_Post a .card_blog .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+#PerfilPage #recomend .container .Cards_Post a .card_blog .tag p {
+  margin: 0;
+  font-size: 0.9vw;
+  font-weight: 700;
+  background-color: #DDB8B1;
+  padding: 0.15vw 0.6vw;
+  border-radius: 1vw;
+  color: #51403F;
+}
+
+#PerfilPage #recomend .container .Cards_Post a .card_blog .title_blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 25%;
+  padding: 0.5vw;
+}
+
+#PerfilPage #recomend .container .Cards_Post a .card_blog .title_blog h4 {
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  font-size: 1vw;
+}
+
+#PerfilPage #Bannermd .modal-header {
+  margin: 0 !important;
+}
+
+#PerfilPage #Bannermd .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#PerfilPage #Bannermd .modal-body {
+  padding: 0 !important;
+}
+
+#PerfilPage #Bannermd .modal-body .BannerIMG {
+  width: 100%;
+}
+
+#PerfilPage #Bannermd .modal-footer {
+  position: relative;
+  margin: 0 !important;
+  padding: 1vw;
+}
+
+#PerfilPage #Bannermd .modal-footer .form-group {
+  position: absolute;
+  left: 1vw;
+  top: 0.3vw;
+}
+
+#PerfilPage #Perfilmd .modal-header {
+  margin: 0 !important;
+}
+
+#PerfilPage #Perfilmd .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#PerfilPage #Perfilmd .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#PerfilPage #Perfilmd .modal-body .PerfilIMG {
+  width: 55%;
+}
+
+#PerfilPage #Perfilmd .modal-footer {
+  position: relative;
+  margin: 0 !important;
+  padding: 1vw;
+}
+
+#PerfilPage #Perfilmd .modal-footer .form-group {
+  position: absolute;
+  left: 1vw;
+  top: 0.3vw;
+}
+
+#PerfilPage #Infomd .modal-header {
+  margin: 0 !important;
+}
+
+#PerfilPage #Infomd .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#PerfilPage #Infomd .modal-body {
+  padding: 1vw 2vw;
+}
+
+#PerfilPage #Infomd .modal-body .senhas .form-group .senhaBx {
+  position: relative;
+}
+
+#PerfilPage #Infomd .modal-body .senhas .form-group .senhaBx button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: none;
+  padding: 0.5vw;
+}
+
+#PerfilPage #Infomd .modal-body .senhas .form-group .senhaBx button i {
+  font-size: 1vw;
+  color: #51403F;
+}
+
+#PerfilPage #Sobremd .modal-header {
+  margin: 0 !important;
+}
+
+#PerfilPage #Sobremd .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#PerfilPage #Sobremd .modal-body {
+  padding: 1vw 2vw;
+}
+
+#PerfilPage #Sobremd .modal-body .form-group label {
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+#PerfilPage #Sobremd .modal-body .form-group label span {
+  font-size: 0.75vw;
+  margin-left: 0.5vw;
+}
+
+#PerfilPage #Sobremd .modal-body .form-group textarea {
+  height: 10vw;
+  max-height: 38vw;
+}
+
+#AdminPage {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: #D0D8CE;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Raleway';
+}
+
+#AdminPage #menuSist {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background-color: #735D5C;
+  padding: 1vw 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+#AdminPage #menuSist .menuSide {
+  margin: 0;
+  margin-left: 9vw;
+  -webkit-transition: 0.55s;
+  transition: 0.55s;
+}
+
+#AdminPage #menuSist .menuSide .nav-item {
+  list-style: none;
+  font-size: 1.2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#AdminPage #menuSist .menuSide .nav-item a {
+  color: #F9F3F2;
+}
+
+#AdminPage #menuSist .menuSide.active {
+  margin-left: 21vw;
+}
+
+#AdminPage #menuSist .itens_menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1vw 0 auto;
+}
+
+#AdminPage #menuSist .itens_menu .nav-item {
+  font-size: 1.1vw;
+}
+
+#AdminPage #menuSist .itens_menu .nav-item a {
+  color: #F9F3F2;
+}
+
+#AdminPage #menuSist .itens_menu .nav-item .dropdown-menu {
+  margin-left: -11vw;
+}
+
+#AdminPage #menuSist .itens_menu .nav-item .dropdown-menu a {
+  color: #51403F;
+}
+
+#AdminPage .Sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 7.5vw;
+  height: 100%;
+  background-color: #51403F;
+  z-index: 11;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#AdminPage .Sidebar .BxUser {
+  position: relative;
+  width: 100%;
+  height: 11vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#AdminPage .Sidebar .BxUser .imgBannerAdm {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#AdminPage .Sidebar .BxUser .imgBannerAdm #ftBanner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+#AdminPage .Sidebar .BxUser .imgAdm {
+  width: 4vw;
+  height: 4vw;
+  z-index: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#AdminPage .Sidebar .BxUser .imgAdm img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+#AdminPage .Sidebar .BxUser .nameUser {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  margin: -2vw 0 0 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  padding: 0 1vw;
+}
+
+#AdminPage .Sidebar .BxUser .nameUser a {
+  text-decoration: none;
+  color: #F9F3F2;
+  font-size: 1vw;
+  font-weight: 700;
+  letter-spacing: 0.02vw;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#AdminPage .Sidebar .divider {
+  opacity: 0.5;
+  width: 100%;
+  height: 0.01vw;
+  background-color: #332322;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+#AdminPage .Sidebar .Painel {
+  width: 100%;
+  padding: 1vw 0;
+}
+
+#AdminPage .Sidebar .Painel a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0.5vw;
+  color: #F9F3F2;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#AdminPage .Sidebar .Painel a #rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#AdminPage .Sidebar .Painel a span {
+  font-weight: 600;
+  font-size: 1vw;
+  margin-left: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#AdminPage .Sidebar .Painel a i {
+  display: none;
+}
+
+#AdminPage .Sidebar .Icons .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 1vw;
+}
+
+#AdminPage .Sidebar .Icons .nav-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: #F9F3F2;
+  padding: 0 0.5vw;
+  font-size: 1.3vw;
+}
+
+#AdminPage .Sidebar .Icons .nav-item a p, #AdminPage .Sidebar .Icons .nav-item a i {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  padding: 0;
+  margin: 0;
+}
+
+#AdminPage .Sidebar .Icons .nav-item a p {
+  margin-left: 0;
+  font-size: 0.75vw;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 0.5vw;
+}
+
+#AdminPage .Sidebar .Icons .nav-item a:hover i {
+  color: #678775;
+}
+
+#AdminPage .Sidebar.active {
+  width: 20vw;
+}
+
+#AdminPage .Sidebar.active .BxUser {
+  height: 13vw;
+}
+
+#AdminPage .Sidebar.active .BxUser .imgBannerAdm {
+  opacity: 0.5;
+}
+
+#AdminPage .Sidebar.active .BxUser .imgAdm {
+  width: 6vw;
+  height: 6vw;
+}
+
+#AdminPage .Sidebar.active .BxUser .nameUser {
+  margin: -3vw 0 0 0;
+}
+
+#AdminPage .Sidebar.active .BxUser .nameUser a {
+  font-size: 1.35vw;
+}
+
+#AdminPage .Sidebar.active .Painel {
+  padding: 1vw 0;
+}
+
+#AdminPage .Sidebar.active .Painel a span {
+  font-weight: 700;
+  font-size: 1.3vw;
+  margin: 0 1vw;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#AdminPage .Sidebar.active .Painel a i {
+  display: block;
+  font-size: 1vw;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  color: #678775;
+}
+
+#AdminPage .Sidebar.active .Icons .nav-item a {
+  padding: 0.2vw 0.5vw;
+  font-size: 1.5vw;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#AdminPage .Sidebar.active .Icons .nav-item a p {
+  width: auto;
+  margin-left: 1.2vw;
+  font-size: 0.9vw;
+  margin-top: 0;
+}
+
+#AdminPage .Box_conteudo {
+  margin: 0;
+  margin-top: 4.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  margin-left: 7.5vw;
+}
+
+#AdminPage .Box_conteudo.active {
+  width: 100%;
+  margin-left: 20vw;
+}
+
+#AdminPage .IndexAdm {
+  width: 100%;
+  position: relative;
+  padding: 4vw 1.5vw 3vw 1.5vw;
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+#AdminPage .IndexAdm .infosBx {
+  position: relative;
+  width: 25%;
+  background: #94A89D;
+  margin: 0.5vw;
+  padding: 1vw;
+  border-radius: 1vw;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  color: #51403F;
+}
+
+#AdminPage .IndexAdm .infosBx h3 {
+  font-size: 2vw;
+  font-weight: 700;
+}
+
+#AdminPage .IndexAdm .infosBx p {
+  font-size: 1.1vw;
+  font-weight: 500;
+  margin-top: 1vw;
+}
+
+#AdminPage .IndexAdm .infosBx i {
+  color: #F9F3F2;
+  opacity: 0.5;
+  position: absolute;
+  top: 0.5vw;
+  right: 0.5vw;
+  font-size: 4vw;
+  z-index: 1;
+}
+
+#AdminPage .IndexAdm .pink {
+  background: #DDB8B1;
+}
+
+#AdminPage .comentsIdx {
+  position: relative;
+  background-color: #ebebeb;
+  padding: 2vw 2vw 4vw 2vw;
+  border-radius: 2.5vw;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+  margin-top: 2.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 30vw;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease-in-out !important;
+  transition: 0.5s ease-in-out !important;
+}
+
+#AdminPage .comentsIdx h3 {
+  width: 50%;
+  color: #51403F;
+  font-size: 2vw;
+  font-weight: 800;
+}
+
+#AdminPage .comentsIdx h4 {
+  width: 50%;
+  color: #51403F;
+  font-size: 1.3vw;
+  font-weight: 800;
+  text-align: right;
+}
+
+#AdminPage .comentsIdx .comentario {
+  width: 100%;
+  position: relative;
+  margin: 1vw;
+  padding: 0.5vw 2vw;
+  height: 12vw;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 2vw;
+  overflow: hidden;
+}
+
+#AdminPage .comentsIdx .comentario .imgUser {
+  position: absolute;
+  width: 3.5vw;
+  height: 3.5vw;
+  left: 1vw;
+  top: 1vw;
+}
+
+#AdminPage .comentsIdx .comentario .imgUser img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+#AdminPage .comentsIdx .comentario .NomeUser {
+  color: #51403F;
+  font-size: 1.2vw;
+  margin: 1.5vw 0 0 3.5vw;
+  font-weight: 700;
+}
+
+#AdminPage .comentsIdx .comentario .NomeUser span {
+  font-size: 0.9vw;
+  font-weight: 500;
+  margin: -1vw 0 0 0.5vw;
+}
+
+#AdminPage .comentsIdx .comentario .textUser {
+  font-size: 1vw;
+  font-weight: 500;
+  color: #51403F;
+  margin-left: 4vw;
+  margin-right: 15vw;
+  padding: 0.5vw;
+}
+
+#AdminPage .comentsIdx .comentario .postInfo {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 12vw;
+  top: 0.5vw;
+  right: 1vw;
+  padding: 0.5vw;
+}
+
+#AdminPage .comentsIdx .comentario .postInfo .imgPost {
+  width: 100%;
+  height: 7vw;
+}
+
+#AdminPage .comentsIdx .comentario .postInfo .imgPost img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1vw;
+}
+
+#AdminPage .comentsIdx .comentario .postInfo h4 {
+  height: 2.5vw;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8vw;
+  font-weight: 600;
+  padding: 0.5vw;
+  color: #51403F;
+  margin-bottom: 0;
+}
+
+#AdminPage .comentsIdx .comentario .delet_Comment, #AdminPage .comentsIdx .comentario .edit_Comment {
+  border: none;
+  position: absolute;
+  left: 2.2vw;
+  top: 5vw;
+  font-size: 1vw;
+}
+
+#AdminPage .comentsIdx .comentario .edit_Comment {
+  top: 7vw;
+  color: #678775;
+}
+
+#AdminPage .comentsIdx .ArrowComment {
+  background-color: #ebebeb;
+  width: 100%;
+  position: absolute;
+  font-size: 2.5vw;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 0.5vw;
+}
+
+#AdminPage .comentsIdx .ArrowComment a {
+  color: #51403F;
+}
+
+#AdminPage .comentsIdx .ArrowComment a i {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#AdminPage .comentsIdx .ArrowComment.active a i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#AdminPage .comentsIdx.active {
+  height: auto;
+}
+
+#AdminPage .Posts {
+  position: relative;
+  background-color: #ebebeb;
+  padding: 2vw;
+  border-radius: 2.5vw;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+  margin-top: 2.5vw;
+  margin-bottom: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#AdminPage .Posts h3 {
+  width: 50%;
+  color: #51403F;
+  font-size: 2vw;
+  font-weight: 800;
+}
+
+#AdminPage .Posts .Cards_Blog_Page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#AdminPage .Posts .Cards_Blog_Page a {
+  width: 28%;
+  height: 25vw;
+  color: #171A18;
+  text-decoration: none;
+  margin: 2vw 1vw;
+}
+
+#AdminPage .Posts .Cards_Blog_Page a .card_blog {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #D0D8CE;
+  padding: 1vw;
+  border-radius: 1vw;
+  font-family: 'Raleway';
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#AdminPage .Posts .Cards_Blog_Page a .card_blog:hover {
+  -webkit-transform: translateY(-0.6vw);
+          transform: translateY(-0.6vw);
+}
+
+#AdminPage .Posts .Cards_Blog_Page a .card_blog #img {
+  width: 100%;
+  height: 50%;
+}
+
+#AdminPage .Posts .Cards_Blog_Page a .card_blog #img img {
+  border-radius: 1vw;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#AdminPage .Posts .Cards_Blog_Page a .card_blog .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 20%;
+}
+
+#AdminPage .Posts .Cards_Blog_Page a .card_blog .tag p {
+  margin: 0;
+  font-size: 0.75vw;
+  font-weight: 700;
+  background-color: #DDB8B1;
+  padding: 0.15vw 0.6vw;
+  border-radius: 1vw;
+  color: #51403F;
+}
+
+#AdminPage .Posts .Cards_Blog_Page a .card_blog .title_blog_70 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 20%;
+  padding: 0.5vw;
+  text-align: center;
+}
+
+#AdminPage .Posts .Cards_Blog_Page a .card_blog .title_blog_70 h4 {
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  font-size: 1vw;
+}
+
+#AdminPage .Posts .Cards_Blog_Page a .card_blog .title_blog_100 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 20%;
+  padding: 0.5vw;
+  text-align: center;
+}
+
+#AdminPage .Posts .Cards_Blog_Page a .card_blog .title_blog_100 h4 {
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  font-size: 1vw;
+}
+
+#AdminPage .Posts .Cards_Blog_Page a .card_blog .prev {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30%;
+  background-color: #F9F3F2;
+  margin: 0;
+  text-align: center;
+  padding: 0 1.1vw;
+  border-radius: 1vw;
+  font-weight: 600;
+  font-size: 0.8vw;
+  overflow: hidden;
+}
+
+#AdminPage #EditComent .modal-header {
+  margin: 0 !important;
+}
+
+#AdminPage #EditComent .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#AdminPage #EditComent .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1vw 2vw;
+}
+
+#AdminPage #EditComent .modal-body .form-group {
+  width: 100%;
+}
+
+#AdminPage #EditComent .modal-body .form-group .senha {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#AdminPage #EditComent .modal-body .form-group .senha button {
+  color: #51403F;
+  font-size: 1.5vw;
+  background: none;
+  border: none;
+  right: 1vw;
+  position: absolute;
+}
+
+#AdminPage #EditComent .modal-footer {
+  position: relative;
+  margin: 0 !important;
+  padding: 1vw;
+}
+
+#AdminPage #EditComent .modal-footer .form-group {
+  position: absolute;
+  left: 1vw;
+  top: 0.3vw;
+}
+
+@media only screen and (max-width: 1300px) {
+  #AdminPage .IndexAdm, #AdminPage .comentsIdx, #AdminPage .Posts {
+    max-width: 90%;
+  }
+}
+
+#AdminPage #PerfilAdm {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background: #D0D8CE;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Raleway';
+  /* Modal */
+}
+
+#AdminPage #PerfilAdm .infosUser {
+  background-color: #ebebeb;
+  padding: 0;
+  overflow: hidden;
+  border-bottom-left-radius: 3vw;
+  border-bottom-right-radius: 3vw;
+  padding-bottom: 1vw;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+}
+
+#AdminPage #PerfilAdm .infosUser .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 18vw;
+}
+
+#AdminPage #PerfilAdm .infosUser .banner button {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0;
+  width: 2.3vw;
+  height: 2.3vw;
+  top: 1vw;
+  right: 2vw;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#AdminPage #PerfilAdm .infosUser .banner button i {
+  color: #94A89D;
+  font-size: 1vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#AdminPage #PerfilAdm .infosUser .banner button:hover {
+  background-color: #ebe4e3;
+}
+
+#AdminPage #PerfilAdm .infosUser .banner button:hover i {
+  color: #678775;
+}
+
+#AdminPage #PerfilAdm .infosUser .banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#AdminPage #PerfilAdm .infosUser .banner #msgBanner {
+  z-index: 5;
+  position: absolute;
+  font-size: 1.3vw;
+  bottom: -2vw;
+  right: 1.5vw;
+  font-weight: 900;
+  color: #51403F;
+}
+
+#AdminPage #PerfilAdm .infosUser .imgPerfil {
+  position: relative;
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F9F3F2;
+  margin-left: 2vw;
+  margin-top: -8vw;
+}
+
+#AdminPage #PerfilAdm .infosUser .imgPerfil img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  padding: 0.5vw;
+}
+
+#AdminPage #PerfilAdm .infosUser .imgPerfil #msgPerfil {
+  font-size: 2vw;
+  margin-top: 15vw;
+  color: #94A89D;
+  font-weight: 900;
+  z-index: 99;
+}
+
+#AdminPage #PerfilAdm .infosUser .imgPerfil button {
+  display: none;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+#AdminPage #PerfilAdm .infosUser .imgPerfil:hover button {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0;
+  width: 2.3vw;
+  height: 2.3vw;
+  top: 1vw;
+  right: 1vw;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#AdminPage #PerfilAdm .infosUser .imgPerfil:hover button i {
+  color: #51403F;
+  font-size: 1vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#AdminPage #PerfilAdm .infosUser .imgPerfil:hover button:hover {
+  background-color: #ebe4e3;
+}
+
+#AdminPage #PerfilAdm .infosUser .imgPerfil:hover button:hover i {
+  color: #332322;
+}
+
+#AdminPage #PerfilAdm .infosUser .infoUser {
+  position: relative;
+  margin: -5vw 0 0 14vw;
+  padding: 1.5vw 2vw;
+}
+
+#AdminPage #PerfilAdm .infosUser .infoUser button {
+  position: absolute;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  padding: 0;
+  width: 2vw;
+  height: 2vw;
+  top: 1vw;
+  right: 1vw;
+  outline: none;
+  border: none;
+}
+
+#AdminPage #PerfilAdm .infosUser .infoUser button i {
+  color: #735D5C;
+  font-size: 0.9vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#AdminPage #PerfilAdm .infosUser .infoUser button:hover {
+  background-color: #F9F3F2;
+}
+
+#AdminPage #PerfilAdm .infosUser .infoUser button:hover i {
+  color: #332322;
+}
+
+#AdminPage #PerfilAdm .infosUser .infoUser h3 {
+  color: #51403F;
+  font-size: 1.7vw;
+  font-weight: 800;
+}
+
+#AdminPage #PerfilAdm .infosUser .infoUser h4 {
+  color: #735D5C;
+  font-size: 1.1vw;
+  font-weight: 600;
+  margin-left: 1vw;
+}
+
+#AdminPage #PerfilAdm .infosUser .infoUser h4 span {
+  margin-left: 0.5vw;
+}
+
+#AdminPage #PerfilAdm .infosUser .infoUser #msgInfos {
+  position: absolute;
+  font-weight: 800;
+  font-size: 1.2vw;
+  bottom: 0;
+  right: 3vw;
+}
+
+#AdminPage #PerfilAdm .sobre {
+  position: relative;
+  background-color: #ebebeb;
+  padding: 1.5vw 2vw 2.5vw 2vw;
+  border-radius: 2.5vw;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+  margin-top: 2vw;
+}
+
+#AdminPage #PerfilAdm .sobre button {
+  position: absolute;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  padding: 0;
+  width: 2vw;
+  height: 2vw;
+  top: 1.2vw;
+  right: 1.2vw;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#AdminPage #PerfilAdm .sobre button i {
+  color: #735D5C;
+  font-size: 0.9vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#AdminPage #PerfilAdm .sobre button:hover {
+  background-color: #F9F3F2;
+}
+
+#AdminPage #PerfilAdm .sobre button:hover i {
+  color: #332322;
+}
+
+#AdminPage #PerfilAdm .sobre h3 {
+  color: #51403F;
+  font-size: 2vw;
+  font-weight: 800;
+}
+
+#AdminPage #PerfilAdm .sobre .sobretxt {
+  color: #51403F;
+  font-size: 1vw;
+  font-weight: 400;
+  margin: 1vw 0 0 1vw;
+}
+
+#AdminPage #PerfilAdm .sobre #msgSobre {
+  position: absolute;
+  font-weight: 800;
+  font-size: 1.2vw;
+  bottom: -2.5vw;
+  left: 45%;
+}
+
+#AdminPage #PerfilAdm .coments {
+  position: relative;
+  background-color: #ebebeb;
+  padding: 2vw;
+  border-radius: 2.5vw;
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+  margin-top: 2vw;
+  margin-bottom: 10vw;
+}
+
+#AdminPage #PerfilAdm .coments h3 {
+  color: #51403F;
+  font-size: 2vw;
+  font-weight: 800;
+}
+
+#AdminPage #PerfilAdm .coments .comentario {
+  position: relative;
+  margin: 1.5vw 1vw;
+  padding: 0.5vw 2vw;
+  height: 12vw;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 2vw;
+  overflow: hidden;
+}
+
+#AdminPage #PerfilAdm .coments .comentario .imgUser {
+  position: absolute;
+  width: 3.5vw;
+  height: 3.5vw;
+  left: 1vw;
+  top: 1vw;
+}
+
+#AdminPage #PerfilAdm .coments .comentario .imgUser img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+#AdminPage #PerfilAdm .coments .comentario .NomeUser {
+  color: #51403F;
+  font-size: 1.2vw;
+  margin: 1.5vw 0 0 3.5vw;
+  font-weight: 700;
+}
+
+#AdminPage #PerfilAdm .coments .comentario .NomeUser span {
+  font-size: 0.9vw;
+  font-weight: 500;
+  margin: -1vw 0 0 0.5vw;
+}
+
+#AdminPage #PerfilAdm .coments .comentario .textUser {
+  font-size: 1vw;
+  font-weight: 500;
+  color: #51403F;
+  margin-left: 4vw;
+  margin-right: 15vw;
+  padding: 0.5vw;
+}
+
+#AdminPage #PerfilAdm .coments .comentario .postInfo {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 12vw;
+  top: 0.5vw;
+  right: 1vw;
+  padding: 0.5vw;
+}
+
+#AdminPage #PerfilAdm .coments .comentario .postInfo .imgPost {
+  width: 100%;
+  height: 7vw;
+}
+
+#AdminPage #PerfilAdm .coments .comentario .postInfo .imgPost img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1vw;
+}
+
+#AdminPage #PerfilAdm .coments .comentario .postInfo h4 {
+  height: 2.5vw;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8vw;
+  font-weight: 600;
+  padding: 0.5vw;
+  color: #51403F;
+  margin-bottom: 0;
+}
+
+#AdminPage #PerfilAdm .coments .comentario .delet_Comment {
+  border: none;
+  position: absolute;
+  left: 2vw;
+  top: 5vw;
+  font-size: 1vw;
+}
+
+#AdminPage #PerfilAdm #Bannermd .modal-header {
+  margin: 0 !important;
+}
+
+#AdminPage #PerfilAdm #Bannermd .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#AdminPage #PerfilAdm #Bannermd .modal-body {
+  padding: 0 !important;
+}
+
+#AdminPage #PerfilAdm #Bannermd .modal-body .BannerIMG {
+  width: 100%;
+}
+
+#AdminPage #PerfilAdm #Bannermd .modal-footer {
+  position: relative;
+  margin: 0 !important;
+  padding: 1vw;
+}
+
+#AdminPage #PerfilAdm #Bannermd .modal-footer .form-group {
+  position: absolute;
+  left: 1vw;
+  top: 0.3vw;
+}
+
+#AdminPage #PerfilAdm #Perfilmd .modal-header {
+  margin: 0 !important;
+}
+
+#AdminPage #PerfilAdm #Perfilmd .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#AdminPage #PerfilAdm #Perfilmd .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#AdminPage #PerfilAdm #Perfilmd .modal-body .PerfilIMG {
+  width: 55%;
+}
+
+#AdminPage #PerfilAdm #Perfilmd .modal-footer {
+  position: relative;
+  margin: 0 !important;
+  padding: 1vw;
+}
+
+#AdminPage #PerfilAdm #Perfilmd .modal-footer .form-group {
+  position: absolute;
+  left: 1vw;
+  top: 0.3vw;
+}
+
+#AdminPage #PerfilAdm #Infomd .modal-header {
+  margin: 0 !important;
+}
+
+#AdminPage #PerfilAdm #Infomd .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#AdminPage #PerfilAdm #Infomd .modal-body {
+  padding: 1vw 2vw;
+}
+
+#AdminPage #PerfilAdm #Infomd .modal-body .senhas .form-group .senhaBx {
+  position: relative;
+}
+
+#AdminPage #PerfilAdm #Infomd .modal-body .senhas .form-group .senhaBx button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: none;
+  padding: 0.5vw;
+}
+
+#AdminPage #PerfilAdm #Infomd .modal-body .senhas .form-group .senhaBx button i {
+  font-size: 1vw;
+  color: #51403F;
+}
+
+#AdminPage #PerfilAdm #Sobremd .modal-header {
+  margin: 0 !important;
+}
+
+#AdminPage #PerfilAdm #Sobremd .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#AdminPage #PerfilAdm #Sobremd .modal-body {
+  padding: 1vw 2vw;
+}
+
+#AdminPage #PerfilAdm #Sobremd .modal-body .form-group label {
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+#AdminPage #PerfilAdm #Sobremd .modal-body .form-group label span {
+  font-size: 0.75vw;
+  margin-left: 0.5vw;
+}
+
+#AdminPage #PerfilAdm #Sobremd .modal-body .form-group textarea {
+  height: 10vw;
+  max-height: 38vw;
+}
+
+#AdminPage .clientesPage {
+  position: relative;
+  padding: 2vw 1vw;
+}
+
+#AdminPage .clientesPage .Bt_clientes {
+  padding: 0.5vw;
+  margin: 1vw 0 2vw;
+}
+
+#AdminPage .clientesPage .Bt_clientes a {
+  padding: 0.5vw 1vw;
+  color: #F9F3F2;
+  background-color: #94A89D;
+  border-radius: 0.5vw;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#AdminPage .clientesPage .BxTable {
+  background-color: #F9F3F2;
+  padding: 1.5vw 1vw;
+  border-radius: 1vw;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  margin-bottom: 15.5vw;
+}
+
+#AdminPage .clientesPage .BxTable .dataTables_length {
+  margin-bottom: 1vw;
+  color: #51403F;
+  font-weight: 600;
+}
+
+#AdminPage .clientesPage .BxTable table {
+  margin-bottom: 1vw;
+}
+
+#AdminPage .clientesPage .BxTable table th {
+  background-color: #F2D4CE !important;
+}
+
+#AdminPage .clientesPage .BxTable .dataTables_info {
+  font-weight: 600;
+  color: #51403F;
+}
+
+#AdminPage .clientesPage .BxTable .dataTables_paginate {
+  font-weight: 600;
+  color: #51403F;
+}
+
+#AdminPage .clientesPage .BxTable .dataTables_paginate .paginate_button:hover {
+  border-radius: 0.5vw;
+  border: none;
+  background: #B8CCC1 !important;
+  color: #332322 !important;
+}
+
+#AdminPage .clientesPage .BxTable .dataTables_paginate .paginate_button.current {
+  background: none;
+  border: #DDB8B1 2px solid;
+  border-radius: 0.5vw;
+}
+
+#AdminPage #modalDadosClT .modal-header {
+  margin: 0 !important;
+}
+
+#AdminPage #modalDadosClT .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#AdminPage #modalDadosClT .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1vw 2vw;
+}
+
+#AdminPage #modalDadosClT .modal-body .row {
+  width: 100%;
+}
+
+#AdminPage #modalDadosClT .modal-body .form-group {
+  width: 100%;
+}
+
+#AdminPage #modalDadosClT .modal-body .form-group .senha {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#AdminPage #modalDadosClT .modal-body .form-group .senha button {
+  color: #51403F;
+  font-size: 1.5vw;
+  background: none;
+  border: none;
+  right: 1vw;
+  position: absolute;
+}
+
+#AdminPage #modalDadosClT .modal-body .form-group .Bx_txt {
+  background-color: #ebebeb;
+  margin-top: 0.5vw;
+  padding: 0.5vw 2vw;
+  border-radius: 1vw;
+}
+
+#AdminPage #modalDadosClT .modal-body .form-group .Bx_txt h4 {
+  color: #51403F;
+  font-weight: 700;
+  text-align: center;
+}
+
+#AdminPage #modalDadosClT .modal-footer {
+  position: relative;
+  margin: 0 !important;
+  padding: 1vw;
+}
+
+#AdminPage #modalDadosClT .modal-footer .form-group {
+  position: absolute;
+  left: 1vw;
+  top: 0.3vw;
+}
+
+#AdminPage #modalFoto .modal-header {
+  margin: 0 !important;
+}
+
+#AdminPage #modalFoto .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#AdminPage #modalFoto .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5vw;
+}
+
+#AdminPage #modalFoto .modal-body #TargetIMG {
+  width: 50%;
+}
+
+#AdminPage #modalFoto .modal-footer {
+  position: relative;
+  margin: 0 !important;
+  padding: 1vw;
+}
+
+#AdminPage #modalFoto .modal-footer .form-group {
+  position: absolute;
+  left: 1vw;
+  top: 0.3vw;
+}
+
+@media only screen and (max-width: 1300px) {
+  #AdminPage .clientesPage {
+    max-width: 90%;
+  }
+}
+
+#AdminPage .PostsPage {
+  position: relative;
+  padding: 2vw 1vw;
+}
+
+#AdminPage .PostsPage .Bt_Post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 0.5vw;
+  margin: 1vw 0 2vw;
+}
+
+#AdminPage .PostsPage .Bt_Post #TagsBt {
+  margin-left: auto;
+}
+
+#AdminPage .PostsPage .Bt_Post a {
+  padding: 0.5vw 1vw;
+  color: #F9F3F2;
+  background-color: #94A89D;
+  border-radius: 0.5vw;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#AdminPage .PostsPage .BxTable {
+  background-color: #F9F3F2;
+  padding: 1.5vw 1vw;
+  border-radius: 1vw;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  margin-bottom: 18vw;
+}
+
+#AdminPage .PostsPage .BxTable .dataTables_length {
+  margin-bottom: 1vw;
+  color: #51403F;
+  font-weight: 600;
+}
+
+#AdminPage .PostsPage .BxTable table {
+  margin-bottom: 1vw;
+}
+
+#AdminPage .PostsPage .BxTable table th {
+  background-color: #F2D4CE !important;
+}
+
+#AdminPage .PostsPage .BxTable .dataTables_info {
+  font-weight: 600;
+  color: #51403F;
+}
+
+#AdminPage .PostsPage .BxTable .dataTables_paginate {
+  font-weight: 600;
+  color: #51403F;
+}
+
+#AdminPage .PostsPage .BxTable .dataTables_paginate .paginate_button:hover {
+  border-radius: 0.5vw;
+  border: none;
+  background: #B8CCC1 !important;
+  color: #332322 !important;
+}
+
+#AdminPage .PostsPage .BxTable .dataTables_paginate .paginate_button.current {
+  background: none;
+  border: #DDB8B1 2px solid;
+  border-radius: 0.5vw;
+}
+
+#AdminPage #modalDados .modal-header {
+  margin: 0 !important;
+}
+
+#AdminPage #modalDados .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#AdminPage #modalDados .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1vw 2vw;
+}
+
+#AdminPage #modalDados .modal-body .row {
+  width: 100%;
+}
+
+#AdminPage #modalDados .modal-body .form-group {
+  width: 100%;
+}
+
+#AdminPage #modalDados .modal-body .form-group .Bx_txt {
+  background-color: #ebebeb;
+  margin-top: 0.5vw;
+  padding: 0.5vw 2vw;
+  border-radius: 1vw;
+}
+
+#AdminPage #modalDados .modal-body .form-group .Bx_txt h4 {
+  color: #51403F;
+  font-weight: 700;
+  text-align: center;
+}
+
+#AdminPage #modalDados .modal-footer {
+  position: relative;
+  margin: 0 !important;
+  padding: 1vw;
+}
+
+#AdminPage #modalDados .modal-footer .form-group {
+  position: absolute;
+  left: 1vw;
+  top: 0.3vw;
+}
+
+@media only screen and (max-width: 1300px) {
+  #AdminPage .PostsPage {
+    max-width: 90%;
+  }
+}
+
+#ModalEmail .modal-header {
+  margin: 0 !important;
+}
+
+#ModalEmail .modal-header h5 {
+  color: #51403F;
+  font-weight: 800;
+  font-family: 1.5vw;
+}
+
+#ModalEmail .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1vw 2vw;
+}
+
+#ModalEmail .modal-body .form-group {
+  width: 100%;
+}
+
+#ModalEmail .modal-body .form-group .senha {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ModalEmail .modal-body .form-group .senha button {
+  color: #51403F;
+  font-size: 1.5vw;
+  background: none;
+  border: none;
+  right: 1vw;
+  position: absolute;
+}
+
+#ModalEmail .modal-footer {
+  position: relative;
+  margin: 0 !important;
+  padding: 1vw;
+}
+
+#ModalEmail .modal-footer .form-group {
+  position: absolute;
+  left: 1vw;
+  top: 0.3vw;
+}
+
+.tox-menu {
+  min-width: 13vw !important;
+  width: 13vw !important;
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    max-width: 75%;
+  }
+}
+/*# sourceMappingURL=style_dash.css.map */

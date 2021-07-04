@@ -28,16 +28,19 @@
             position: relative;
             justify-content: space-between;
             margin-top: 1vw;
+            height: 39vw;
             .Simp_cards{
                 display: flex;
                 flex-direction: column;
                 position: relative;
-                width: 43%;     
+                width: 43%;
+                height: 100%;
                 a{
                     display: flex;
                     position: relative;
                     text-decoration: none;
                     color: $Brown;
+                    height: 50%;  
                     .card_blog{
                         background-color: $Green_T;
                         display: flex;
@@ -54,6 +57,8 @@
                             border-radius: 2.3vw;
                             border-bottom-right-radius: 10vw;
                             width: 60%;
+                            height: 100%;
+                            object-fit: cover;
                         }
                         .blog_infos{
                             width:40%;
@@ -98,22 +103,6 @@
                                     transform: rotate(45deg);
                                 }
                             }
-                            p{
-                                font-size: 0.9vw;
-                                position: relative;
-                                font-weight: 600;
-                                margin: 0.2vw 0.9vw 0 2vw;
-                                &::before{
-                                    position: absolute;
-                                    content: '';
-                                    width: 0.6vw;
-                                    height: 0.6vw;
-                                    background-color: $Pink;
-                                    top: 0.35vw;
-                                    left: -1.2vw;
-                                    transform: rotate(45deg);
-                                }
-                            }
                         }
                     }
                 }
@@ -139,16 +128,20 @@
                     font-family: 'Raleway';
                     color: $Brown;
                     h2{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         text-align: center;
                         font-size: 1.5vw;
                         font-weight: 700;
                         max-width: 10vw;
-                        margin-top: 9vw;
                     }
                     img{
                         width: 75%;
+                        height: 65%;
                         margin-left: auto;
                         border-radius: 2vw;
+                        object-fit: cover;
                     }
                     .icons{
                         display: flex;
@@ -194,6 +187,12 @@
                         }
                     }
                     .resume_txt{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: left;
+                        width: 100%;
+                        height: 20%;
                         padding: 1.5vw 2vw;
                         background-color: $White;
                         font-size: 1.1vw;
@@ -216,57 +215,57 @@
         }
     }
 }
-
-/* Medium Device = 1200px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-}
-/* Tablet Device = 768px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-}
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
     #blog{
-        margin-bottom: 0;
-        padding: 7vw 0 15vw 0;
+        margin-bottom: 15vw;
+        padding: 5vw 0;
         .container{
-            .Tt_Blog{h2{font-size: 15vw; margin-top: 18vw;}}
+            .Tt_Blog{
+                margin-bottom: 5vw;
+                h2{
+                    font-size: 13vw;
+                    margin-top: 15vw;
+                }
+            }
             .blog_Block{
+                height: auto;
                 flex-wrap: wrap;
-                margin: 2vw 0;
                 .Simp_cards{
-                    width: 100%;     
+                    width: 100%;
+                    height: 80vw;
                     a{
                         .card_blog{
                             border-radius: 3vw;
-                            margin: 2.5vw 0;
+                            margin: 2vw 0;
                             padding: 2vw;
-                            &:hover{transform:none;}
                             img{
-                                border-radius: 3vw;
-                                border-bottom-right-radius: 25vw;
+                                border-radius: 2.5vw;
+                                border-bottom-right-radius: 20vw;
                                 width: 55%;
                             }
                             .blog_infos{
                                 width:45%;
                                 .titulo_blog{
+                                    height: 80%;
                                     h3{
-                                        font-size: 4vw;
-                                        margin:0 1vw 0 2vw;
+                                        font-size: 3vw;
+                                        margin:0;
                                     }
                                 }
                                 i{
-                                    font-size: 3.5vw;
-                                    margin-left: 3.5vw;
+                                    font-size: 2.5vw;
+                                    margin-left: 0;
                                 }
                                 h4{
-                                    font-size: 3vw;
-                                    margin: 0.5vw 3vw 0 3vw;
-                                    &::before{display: none;}
-                                }
-                                p{
-                                    font-size: 2vw;
-                                    margin: 0 1vw 0 2vw;
-                                    &::before{display: none;}
+                                    font-size: 2.5vw;
+                                    margin: 0.5vw 0 0 3vw;
+                                    &::before{
+                                        width: 1.2vw;
+                                        height: 1.2vw;
+                                        top: 0.7vw;
+                                        left: -2vw;
+                                    }
                                 }
                             }
                         }
@@ -274,79 +273,54 @@
                 }
                 .Big_card{
                     width: 100%;
+                    height: 70vw;
+                    padding: 2vw;
                     border-radius: 3vw;
-                    margin: 2.5vw 0;
-                    padding: 3vw;
-                    &:hover{transform: none;}
                     a{
                         h2{
-                            position: absolute;
-                            width: 100%;
-                            text-align: center;
-                            font-size: 4vw;
-                            max-width: 100%;
-                            top: 55vw;
-                        }
-                        img{
-                            width: 100%;
-                            border-radius: 3vw;
-                            margin-bottom: 9vw;
+                            font-size: 3.2vw;
+                            max-width: 20vw;
                         }
                         .icons{
-                            justify-content: space-around;
-                            width: 100%;
-                            padding: 2.5vw 0;
-                            margin: 0;
-                            :nth-child(3){
-                                display: none;
-                            }
-                            :nth-child(4){
-                                display: none;
-                            }
-                            i{
-                                color: $Green;
-                                font-size: 3.8vw;
-                            }
+                            i{ font-size: 2.8vw; }
                             h4{
-                                font-size: 3vw;
-                                margin: 0;
-                                padding: 0;
-                                &::before{display: none;}
+                                font-size: 2.5vw;
+                                margin-left: 0.4vw;
+                                &::before{
+                                    width: 1.2vw;
+                                    height: 1.2vw;
+                                    top: 1vw;
+                                    left: -2vw;
+                                }
                             }
                             p{
-                                font-size: 2.8vw;
-                                margin: 0;
+                                font-size: 2.3vw;
                                 padding: 0;
-                                &::before{display: none;}
+                                &::before{
+                                    width: 1.2vw;
+                                    height: 1.2vw;
+                                    top: 1vw;
+                                    left: -2vw;
+                                }
                             }
                         }
                         .resume_txt{
+                            height: 22%;
+                            padding: 3vw 7vw;
+                            font-size: 2.5vw;
                             text-align: center;
-                            padding: 2vw 4vw;
-                            font-size: 2.8vw;
-                            border-radius: 2vw;
-                            margin: 0;
                         }
                     }
                 }
             }
             .blogBT{
-                width: 100%;
-                margin: 3vw 0 0 0;
-                a{
-                    margin-left: auto;
-                    padding: 2vw 0 2vw 2vw;
-                    button{
-                        font-size: 4vw;
-                        border-radius: 2vw;
-                        padding: 1vw 3vw;
-                        transition: none;
-                    }
+                margin: 3vw 1.5vw 0 auto;
+                button{
+                    font-size: 3vw;
+                    border-radius: 1vw;
+                    padding: 0.8vw 1.5vw;
                 }
             }
         }
     }
-}
-/* Small Device = 320px */
-@media only screen and (max-width: 479px){
 }
